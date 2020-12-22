@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.4.1</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+    <groupId>org.yzz</groupId>
+    <artifactId>YzzUtils</artifactId>
+    <version>1.0</version>
+    <name>top0</name>
+
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>practice_mybatis-plus</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+
+            <!--子项目依赖-->
+            <dependency>
+                <groupId>com.yzz</groupId>
+                <artifactId>practice_mybatis-plus</artifactId>
+                <version>1.0</version>
+            </dependency>
+
+            <!--基础springboot依赖-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter</artifactId>
+                <exclusions><!-- 去掉springboot默认配置 -->
+                    <exclusion>
+                        <groupId>org.springframework.boot</groupId>
+                        <artifactId>spring-boot-starter-logging</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-test</artifactId>
+                <version>2.4.1</version>
+                <scope>test</scope>
+            </dependency>
+
+            <!--lombok begin-->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.12</version>
+                <scope>provided</scope>
+            </dependency>
+            <!--lombok end-->
+
+            <!--mybatis-plus begin-->
+            <dependency>
+                <groupId>com.baomidou</groupId>
+                <artifactId>mybatis-plus-boot-starter</artifactId>
+                <version>3.4.1</version>
+            </dependency>
+
+            <!--mybatis-plus end-->
+
+            <!--mysql begin-->
+            <dependency>
+                <groupId>mysql</groupId>
+                <artifactId>mysql-connector-java</artifactId>
+                <version>8.0.21</version>
+            </dependency>
+            <!--mysql end-->
+
+            <!-- druid begin-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid</artifactId>
+                <version>1.1.23</version>
+            </dependency>
+            <!-- druid end-->
+
+            <!--
+            log4j2 begin，注意在springboot-starter中去掉原生日志的依赖
+            如果想要用@Sl4j这个注解，还必须加上lombok这个依赖
+            -->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-log4j2</artifactId>
+                <version>2.2.2.RELEASE</version>
+            </dependency>
+            <!--log4j2 end-->
+
+            <!--thymleaf begin-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-thymeleaf</artifactId>
+                <version>2.2.2.RELEASE</version>
+            </dependency>
+            <!--thymleaf end-->
+
+
+
+
+
+
+        </dependencies>
+    </dependencyManagement>
+
+
+</project>
