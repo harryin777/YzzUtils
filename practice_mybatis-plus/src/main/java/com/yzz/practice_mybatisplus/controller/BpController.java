@@ -1,6 +1,7 @@
 package com.yzz.practice_mybatisplus.controller;
 
 import com.yzz.practice_mybatisplus.dao.StuDao;
+import com.yzz.practice_mybatisplus.entity.Stu;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,7 +18,7 @@ public class BpController {
 	private StuDao stuDao;
 
 	@RequestMapping(value = "/setStu", method = RequestMethod.POST)
-	public String setStu(){
-		return null;
+	public int setStu(@RequestParam Stu stu){
+		return stuDao.updateById(stu);
 	}
 }
