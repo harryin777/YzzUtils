@@ -1,2 +1,9 @@
 server:
   port: 8082
+spring:
+  profiles:
+    active: @activatedProperties@
+
+mybatis-plus:
+  mapper-locations: /mapper/*.xml
+  type-aliases-package: com.yzz.practice_mybatisplus.entity
