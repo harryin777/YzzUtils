@@ -2,7 +2,7 @@ spring:
   profiles: home
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.202.3:3306/db1?useUnicode=true&characterEncoding=utf8&nullCatalogMeansCurrent=true
+    url: jdbc:mysql://192.168.23.3:3306/db1?useUnicode=true&characterEncoding=utf8&nullCatalogMeansCurrent=true
     username: root
     password: Rootroot123!
     type: com.alibaba.druid.pool.DruidDataSource
@@ -11,5 +11,3 @@ spring:
       initialSize: 5
       minIdle: 1
       maxActive: 50
-      # 配置获取连接等待超时的时间
-      maxWait: 60000

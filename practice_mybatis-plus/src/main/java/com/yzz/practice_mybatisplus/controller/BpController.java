@@ -3,6 +3,7 @@ package com.yzz.practice_mybatisplus.controller;
 import com.yzz.practice_mybatisplus.dao.StuDao;
 import com.yzz.practice_mybatisplus.entity.Stu;
 import com.yzz.practice_mybatisplus.service.StuService;
+import lombok.Value;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
@@ -50,5 +51,11 @@ public class BpController {
 	@RequestMapping(value = "/getOne", method = RequestMethod.GET)
 	public Stu getOne(@RequestParam(value = "id") int id){
 		return stuService.getOne(id);
+	}
+
+	@ResponseBody
+	@RequestMapping(value = "/insertOne", method = RequestMethod.POST)
+	public Integer insertOne(@RequestBody @Valid Stu stu){
+		return stuDao.insert(stu);
 	}
 }

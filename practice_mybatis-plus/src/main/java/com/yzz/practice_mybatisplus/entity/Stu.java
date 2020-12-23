@@ -1,6 +1,8 @@
 package com.yzz.practice_mybatisplus.entity;
 
+import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -11,6 +13,7 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
+import java.util.Date;
 
 @Data
 @AllArgsConstructor
@@ -30,4 +33,10 @@ public class Stu implements Serializable {
 	
 	@NotNull(message = "id不能为空")
 	private String gender;
+
+	@TableField(fill = FieldFill.INSERT)
+	private Date insert_time;
+
+	@TableField(fill = FieldFill.UPDATE)
+	private Date update_time;
 }

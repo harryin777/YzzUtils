@@ -1,5 +1,57 @@
 # mybatis-plus的使用
 
+## 自动填充功能
+
+entity
+
+```java
+public class Stu implements Serializable {
+
+	@TableId(type = IdType.ID_WORKER)
+	@NotNull(message = "id不能为空")
+	private Long id;
+	
+	@Size(max = 10, message = "姓名长度不能超过10")
+	private String name;
+	
+	@Min(value = 5, message = "不能小于5岁")
+	@Max(value = 25, message = "不能超过25岁")
+	private int age;
+	
+	@NotNull(message = "id不能为空")
+	private String gender;
+
+    //注意以下这两个
+	@TableField(fill = FieldFill.INSERT)
+	private Date insert_time;
+
+	@TableField(fill = FieldFill.UPDATE)
+	private Date update_time;
+}
+```
+
+config，配置一个handler
+
+```java
+@Slf4j
+@Component
+public class MyMetaObjectHandler implements MetaObjectHandler {
+	@Override
+	public void insertFill(MetaObject metaObject) {
+		log.info("start autofill insertTime...");
+		this.strictInsertFill(metaObject, "createTime", LocalDateTime.class, LocalDateTime.now());
+		log.info("end autofill insertTime...");
+	}
+
+	@Override
+	public void updateFill(MetaObject metaObject) {
+		log.info("start autofill updateTime...");
+		this.strictUpdateFill(metaObject, "updateTime", LocalDateTime.class, LocalDateTime.now());
+		log.info("end autofill updateTime...");
+	}
+}
+```
+
 
 
 # @Valid的使用
