@@ -1,9 +1,7 @@
 package com.yzz.practice_mybatisplus.entity;
 
-import com.baomidou.mybatisplus.annotation.FieldFill;
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableField;
-import com.baomidou.mybatisplus.annotation.TableId;
+import com.baomidou.mybatisplus.annotation.*;
+import com.baomidou.mybatisplus.core.toolkit.IdWorker;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -19,24 +17,27 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Stu implements Serializable {
-
-	@TableId(type = IdType.ID_WORKER)
-	@NotNull(message = "id不能为空")
+	
+	@TableId( type = IdType.AUTO)
 	private Long id;
 	
 	@Size(max = 10, message = "姓名长度不能超过10")
 	private String name;
 	
 	@Min(value = 5, message = "不能小于5岁")
-	@Max(value = 25, message = "不能超过25岁")
+	@Max(value = 85, message = "不能超过25岁")
 	private int age;
 	
 	@NotNull(message = "id不能为空")
 	private String gender;
 
-	@TableField(fill = FieldFill.INSERT)
-	private Date insert_time;
-
-	@TableField(fill = FieldFill.UPDATE)
-	private Date update_time;
+	@TableField(value = "insert_time", fill = FieldFill.INSERT)
+	private Date insertTime;
+	
+	@TableField(value = "update_time", fill = FieldFill.INSERT_UPDATE)
+	private Date updateTime;
+	
+	@Version
+	@TableField(value = "version", fill = FieldFill.INSERT)
+	private Integer version;
 }

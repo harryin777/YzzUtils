@@ -3,7 +3,7 @@
 <mapper namespace="com.yzz.practice_mybatisplus.dao.StuDao">
 
     <select id="getAll" resultType="Stu">
-        select id,name,age,gender from stu;
+        select id,name,age,gender from stu
     </select>
 
 </mapper>

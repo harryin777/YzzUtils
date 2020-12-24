@@ -1,5 +1,7 @@
 package com.yzz.practice_mybatisplus.controller;
 
+import com.github.pagehelper.PageInfo;
+import com.yzz.practice_mybatisplus.DTO.ResultDTO;
 import com.yzz.practice_mybatisplus.dao.StuDao;
 import com.yzz.practice_mybatisplus.entity.Stu;
 import com.yzz.practice_mybatisplus.service.StuService;
@@ -57,5 +59,23 @@ public class BpController {
 	@RequestMapping(value = "/insertOne", method = RequestMethod.POST)
 	public Integer insertOne(@RequestBody @Valid Stu stu){
 		return stuDao.insert(stu);
+	}
+	
+	@ResponseBody
+	@RequestMapping(value = "/update", method = RequestMethod.POST)
+	public Integer update(@RequestBody @Valid Stu stu){
+		return stuDao.updateById(stu);
+	}
+	
+	@ResponseBody
+	@RequestMapping(value = "/supdate", method = RequestMethod.POST)
+	public Integer supdate(@RequestBody @Valid Stu stu){
+		return stuService.updateAfterSelect(stu.getId(), stu);
+	}
+	
+	@ResponseBody
+	@RequestMapping(value = "/selectBatch", method = RequestMethod.GET)
+	public ResultDTO selectBatch(@RequestParam int pageCur, @RequestParam int pageSize){
+		return stuService.selectBatch(pageCur, pageSize);
 	}
 }
