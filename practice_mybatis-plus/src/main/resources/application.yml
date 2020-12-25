@@ -3,6 +3,9 @@ server:
 spring:
   profiles:
     active: @activatedProperties@
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
 
 mybatis-plus:
   mapper-locations: /mapper/*.xml
@@ -25,6 +28,8 @@ mybatis-plus:
     cache-enabled: false
     #配置JdbcTypeForNull, oracle数据库必须配置
     jdbc-type-for-null: 'null'
+    # 日志配置到标准输出
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
 logging:
   level:

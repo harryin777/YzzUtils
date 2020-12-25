@@ -2,6 +2,7 @@ package com.yzz.practice_mybatisplus.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import com.yzz.practice_mybatisplus.DTO.ResultDTO;
@@ -14,8 +15,12 @@ import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.List;
 
+/**
+ * 注意这个地方继承了ServiceImpl，这个集成了一些常用方法，只是方便了controller调用service
+ * 但是一般的业务逻辑都在service中进行，所以其实还是需要对ServiceImpl的结果进行再加工
+ */
 @Service
-public class StuServiceImpl implements StuService {
+public class StuServiceImpl extends ServiceImpl<StuDao, Stu> implements StuService {
 	
 	@Resource
 	private StuDao stuDao;

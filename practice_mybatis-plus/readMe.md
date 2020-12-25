@@ -52,7 +52,7 @@ public class Stu implements Serializable {
 
 	@TableField(value = "insert_time", fill = FieldFill.INSERT)
 	private Date insertTime;
-	
+	//一般udpate也需要配置insert
 	@TableField(value = "update_time", fill = FieldFill.INSERT_UPDATE)
 	private Date updateTime;
 }
@@ -69,6 +69,7 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
 		log.info("start autofill insertTime...");
         //注意这里的class类型需要和entity里的属性类型保持一致
         //同时注意是update还是insert
+        //在这里的属性，注解必须要有insert，哪怕是insert_update也可以
 		this.strictInsertFill(metaObject, "insertTime", Date.class, new Date());
 		this.strictInsertFill(metaObject, "updateTime", Date.class, new Date());
 		this.strictInsertFill(metaObject, "version", Integer.class, 1);
