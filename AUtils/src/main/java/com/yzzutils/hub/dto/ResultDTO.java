@@ -1,4 +1,4 @@
-package com.yzz.practice_mybatisplus.DTO;
+package com.yzzutils.hub.dto;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

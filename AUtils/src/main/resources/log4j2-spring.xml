@@ -79,7 +79,7 @@
     <loggers>
 
         <!--若是additivity设为false，则 子Logger 只会在自己的appender，这个地方指定了append是conslo里输出，而不会在 父Logger 的appender里输出。如果同时开了additvity而且没有指定appender，那么会出现重复打印日志的情况-->
-        <logger name="com.mytools.tools" level="trace" additivity="false">
+        <logger name="com.yzz.practice_mybatisplus.dao" level="trace" additivity="false">
             <AppenderRef ref="Console"/>
         </logger>
 

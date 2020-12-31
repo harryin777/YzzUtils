@@ -112,6 +112,7 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
 
 - 使用BaseMapper中的方法可以填充数据，但是使用自定义的Mapper.xml中写的语句却不生效。后来发现填充数据是在执行完自定义的sql之后填充的数据，所以在写sql语句的时候，需要自动填充的字段不可以使用非空判
 - handler中的数据类型需要和实体类中的保持一致
+- mybatis-plus使用提供的方法进行curd，时间类型默认为timestamp，而且一直是改不过来。很不友好！！！
 
 
 

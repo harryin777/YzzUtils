@@ -1,15 +1,14 @@
 package com.yzz.practice_mybatisplus.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.yzz.practice_mybatisplus.DTO.ResultDTO;
+import com.yzzutils.hub.dto.ResultDTO;
 import com.yzz.practice_mybatisplus.dao.StuDao;
 import com.yzz.practice_mybatisplus.entity.Stu;
 import com.yzz.practice_mybatisplus.service.StuService;
-import com.yzz.practice_mybatisplus.vo.PageData;
+import com.yzzutils.hub.vo.PageData;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
