@@ -1,9 +1,7 @@
 package com.yzz.practice_mybatisplus.service;
 
-import com.github.pagehelper.PageInfo;
-import com.yzz.practice_mybatisplus.DTO.ResultDTO;
+import com.yzzutils.hub.dto.ResultDTO;
 import com.yzz.practice_mybatisplus.entity.Stu;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 

@@ -11,7 +11,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>org.yzz</groupId>
+    <groupId>com.yzz</groupId>
     <artifactId>YzzUtils</artifactId>
     <version>1.0</version>
     <name>top0</name>
@@ -20,6 +20,7 @@
 
     <modules>
         <module>practice_mybatis-plus</module>
+        <module>AUtils</module>
     </modules>
 
     <dependencyManagement>
@@ -32,17 +33,7 @@
                 <version>1.0</version>
             </dependency>
 
-            <!--基础springboot依赖-->
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter</artifactId>
-                <exclusions><!-- 去掉springboot默认配置 -->
-                    <exclusion>
-                        <groupId>org.springframework.boot</groupId>
-                        <artifactId>spring-boot-starter-logging</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
+
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-test</artifactId>
@@ -135,12 +126,48 @@
                 <artifactId>springfox-swagger2</artifactId>
                 <version>3.0.0</version>
             </dependency>
-
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-boot-starter</artifactId>
+                <version>3.0.0</version>
+            </dependency>
 
             <!-- swagger-annotations  end -->
 
 
+            <!-- joda-time begin -->
+            <!--https://blog.csdn.net/xiaopu99/article/details/110819737-->
+            <dependency>
+                <groupId>joda-time</groupId>
+                <artifactId>joda-time</artifactId>
+                <version>2.10.8</version>
+            </dependency>
+            <!-- joda-time end -->
 
+
+            <!-- com.google.code.gson/gson begin-->
+            <dependency>
+                <groupId>com.google.code.gson</groupId>
+                <artifactId>gson</artifactId>
+                <version>2.8.6</version>
+            </dependency>
+            <!-- com.google.code.gson/gson end-->
+
+            <!-- guava begin -->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>30.0-jre</version>
+            </dependency>
+            <!-- guava end -->
+
+            <!--hutools begin-->
+            <dependency>
+                <groupId>cn.hutool</groupId>
+                <artifactId>hutool-all</artifactId>
+                <version>5.5.6</version>
+            </dependency>
+            <!--hutools begin-->
 
 
 

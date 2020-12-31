@@ -1,4 +1,4 @@
-package com.yzz.practice_mybatisplus.vo;
+package com.yzzutils.hub.vo;
 
 import com.alibaba.druid.proxy.jdbc.ClobProxyImpl;
 

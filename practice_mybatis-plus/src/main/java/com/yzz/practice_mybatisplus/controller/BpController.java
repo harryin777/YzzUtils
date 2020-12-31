@@ -1,11 +1,9 @@
 package com.yzz.practice_mybatisplus.controller;
 
-import com.github.pagehelper.PageInfo;
-import com.yzz.practice_mybatisplus.DTO.ResultDTO;
+import com.yzzutils.hub.dto.ResultDTO;
 import com.yzz.practice_mybatisplus.dao.StuDao;
 import com.yzz.practice_mybatisplus.entity.Stu;
 import com.yzz.practice_mybatisplus.service.StuService;
-import lombok.Value;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
