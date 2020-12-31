@@ -36,11 +36,11 @@
             <!--            <ThresholdFilter level="info" onMatch="ACCEPT" onMismatch="DENY"/>-->
             <PatternLayout pattern="${LOG_PATTERN}"/>
             <Policies>
-                <!--interval属性用来指定多久滚动一次，默认是1 hour-->
+                <!--interval属性用来指定多久滚动一次，默认是1 day,为什么是天，因为上面的filePattern的最后精确是在天，如果需要是小时，%d{yyyy-MM-dd-HH}_%i.log.gz-->
                 <TimeBasedTriggeringPolicy interval="1"/>
                 <SizeBasedTriggeringPolicy size="10MB"/>
             </Policies>
-            <!-- DefaultRolloverStrategy属性如不设置，则默认为最多同一文件夹下7个文件开始覆盖-->
+            <!-- 关键在于 <DefaultRolloverStrategy max="15"/>，如果不做配置，默认是7，这个7指的是上面i的最大值，超过了就会覆盖之前的-->
             <DefaultRolloverStrategy max="15"/>
         </RollingFile>
 

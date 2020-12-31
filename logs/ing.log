@@ -1,24 +1,9 @@
-2020-12-24 16:56:25.203 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
-2020-12-24 16:56:25.239 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Starting PracticeMybatisPlusApplication using Java 1.8.0_231 on MECH-YKY with PID 21244 (D:\java\things\YzzUtils\practice_mybatis-plus\target\classes started by harry in D:\java\things\YzzUtils)
-2020-12-24 16:56:25.242 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - The following profiles are active: office
-2020-12-24 16:56:26.407 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
-2020-12-24 16:56:26.407 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2020-12-24 16:56:26.407 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2020-12-24 16:56:26.525 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2020-12-24 16:56:27.888 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
-2020-12-24 16:56:27.928 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Started PracticeMybatisPlusApplication in 3.274 seconds (JVM running for 4.858)
-2020-12-24 16:56:47.438 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2020-12-24 16:56:50.543 [http-nio-8082-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
-2020-12-24 16:56:51.222 [http-nio-8082-exec-1] DEBUG com.yzz.practice_mybatisplus.dao.StuDao.getAll - ==>  Preparing: select id,name,age,gender from stu LIMIT ?, ?
-2020-12-24 16:56:51.251 [http-nio-8082-exec-1] DEBUG com.yzz.practice_mybatisplus.dao.StuDao.getAll - ==> Parameters: 3(Long), 3(Integer)
-2020-12-24 16:56:51.271 [http-nio-8082-exec-1] TRACE com.yzz.practice_mybatisplus.dao.StuDao.getAll - <==    Columns: id, name, age, gender
-2020-12-24 16:56:51.272 [http-nio-8082-exec-1] TRACE com.yzz.practice_mybatisplus.dao.StuDao.getAll - <==        Row: 4, 小c, 26, female
-2020-12-24 16:56:51.273 [http-nio-8082-exec-1] TRACE com.yzz.practice_mybatisplus.dao.StuDao.getAll - <==        Row: 5, 小d, 26, female
-2020-12-24 16:56:51.274 [http-nio-8082-exec-1] TRACE com.yzz.practice_mybatisplus.dao.StuDao.getAll - <==        Row: 6, 小e, 26, female
-2020-12-24 16:56:51.274 [http-nio-8082-exec-1] DEBUG com.yzz.practice_mybatisplus.dao.StuDao.getAll - <==      Total: 3
-2020-12-24 16:57:14.513 [http-nio-8082-exec-3] DEBUG com.yzz.practice_mybatisplus.dao.StuDao.getAll - ==>  Preparing: select id,name,age,gender from stu LIMIT ?, ?
-2020-12-24 16:57:14.514 [http-nio-8082-exec-3] DEBUG com.yzz.practice_mybatisplus.dao.StuDao.getAll - ==> Parameters: 4(Long), 2(Integer)
-2020-12-24 16:57:14.516 [http-nio-8082-exec-3] TRACE com.yzz.practice_mybatisplus.dao.StuDao.getAll - <==    Columns: id, name, age, gender
-2020-12-24 16:57:14.516 [http-nio-8082-exec-3] TRACE com.yzz.practice_mybatisplus.dao.StuDao.getAll - <==        Row: 5, 小d, 26, female
-2020-12-24 16:57:14.516 [http-nio-8082-exec-3] TRACE com.yzz.practice_mybatisplus.dao.StuDao.getAll - <==        Row: 6, 小e, 26, female
-2020-12-24 16:57:14.516 [http-nio-8082-exec-3] DEBUG com.yzz.practice_mybatisplus.dao.StuDao.getAll - <==      Total: 2
+2020-12-28 22:41:45.506 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2020-12-28 22:41:45.514 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Starting PracticeMybatisPlusApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 8972 (E:\Dev\project\YzzUtils\practice_mybatis-plus\target\classes started by yky in E:\Dev\project\YzzUtils)
+2020-12-28 22:41:45.522 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - The following profiles are active: home
+2020-12-28 22:41:46.365 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2020-12-28 22:41:46.366 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-12-28 22:41:46.366 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2020-12-28 22:41:46.412 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-12-28 22:41:47.617 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2020-12-28 22:41:47.637 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Started PracticeMybatisPlusApplication in 2.568 seconds (JVM running for 3.697)
