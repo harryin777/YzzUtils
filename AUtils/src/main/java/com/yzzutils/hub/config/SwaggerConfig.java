@@ -18,7 +18,11 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  * @Version 1.0
  */
 @Configuration
-//swagger3.0改成了这个注解@EnableOpenApi，不过2.0也可以用
+/**
+ * swagger3.0改成了这个注解@EnableOpenApi，不过2.0也可以用
+ * swagger-ui/index.html
+ */
+
 @EnableSwagger2
 public class SwaggerConfig {
 	
