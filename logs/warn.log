@@ -1,2 +1,2 @@
-2020-12-31 16:12:24.207 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.yzz.practice_mybatisplus]' package. Please check your configuration.
-2020-12-31 16:12:27.083 [restartedMain] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.yzz.practice_mybatisplus]' package. Please check your configuration.
+2021-01-04 17:31:34.623 [http-nio-8083-exec-7] ERROR com.yzz.easyexcel.service.impl.EasyExcelServiceImpl - 写入excel异常
+2021-01-04 17:31:34.633 [http-nio-8083-exec-7] ERROR com.yzz.easyexcel.service.impl.EasyExcelServiceImpl - com.alibaba.excel.exception.ExcelGenerateException: java.lang.NoClassDefFoundError: org/apache/poi/POIXMLTypeLoader

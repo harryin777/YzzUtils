@@ -1,10 +1,14 @@
-2020-12-31 17:00:05.177 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
-2020-12-31 17:00:05.249 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Starting PracticeMybatisPlusApplication using Java 1.8.0_231 on MECH-YKY with PID 11916 (D:\java\things\YzzUtils\practice_mybatis-plus\target\classes started by harry in D:\java\things\YzzUtils)
-2020-12-31 17:00:05.254 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - The following profiles are active: office
-2020-12-31 17:00:06.939 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
-2020-12-31 17:00:06.940 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2020-12-31 17:00:06.940 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2020-12-31 17:00:07.027 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2020-12-31 17:00:08.674 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
-2020-12-31 17:00:08.984 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Started PracticeMybatisPlusApplication in 4.414 seconds (JVM running for 6.017)
-2020-12-31 17:00:35.218 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-04 17:53:34.936 [main] INFO  com.yzz.easyexcel.EasyexcelApplication - Starting EasyexcelApplication using Java 1.8.0_231 on MECH-YKY with PID 33828 (D:\java\things\YzzUtils\easyexcel\target\classes started by harry in D:\java\things\YzzUtils)
+2021-01-04 17:53:34.950 [main] INFO  com.yzz.easyexcel.EasyexcelApplication - No active profile set, falling back to default profiles: default
+2021-01-04 17:53:36.456 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+2021-01-04 17:53:36.457 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-04 17:53:36.458 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-04 17:53:36.573 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-04 17:53:37.438 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+2021-01-04 17:53:37.729 [main] INFO  com.yzz.easyexcel.EasyexcelApplication - Started EasyexcelApplication in 3.493 seconds (JVM running for 5.402)
+2021-01-04 17:53:49.593 [http-nio-8083-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-04 17:53:59.874 [http-nio-8083-exec-7] INFO  com.yzz.easyexcel.service.impl.EasyExcelServiceImpl - key:0
+2021-01-04 17:53:59.875 [http-nio-8083-exec-7] INFO  com.yzz.easyexcel.service.impl.EasyExcelServiceImpl - value:学生编号
+2021-01-04 17:53:59.875 [http-nio-8083-exec-7] INFO  com.yzz.easyexcel.service.impl.EasyExcelServiceImpl - key:1
+2021-01-04 17:53:59.875 [http-nio-8083-exec-7] INFO  com.yzz.easyexcel.service.impl.EasyExcelServiceImpl - value:学生姓名
+2021-01-04 17:53:59.915 [http-nio-8083-exec-7] INFO  com.yzz.easyexcel.service.impl.EasyExcelServiceImpl - 读取完成
