@@ -110,9 +110,59 @@ public class MyMetaObjectHandler implements MetaObjectHandler {
 
 ### 注意事项
 
-- 使用BaseMapper中的方法可以填充数据，但是使用自定义的Mapper.xml中写的语句却不生效。后来发现填充数据是在执行完自定义的sql之后填充的数据，所以在写sql语句的时候，需要自动填充的字段不可以使用非空判
+- 使用BaseMapper中的方法可以填充数据，但是使用自定义的Mapper.xml中写的语句却不生效。后来发现填充数据是在执行完自定义的sql之后填充的数据，所以在写sql语句的时候，需要自动填充的字段不可以使用非空判，下面的id，insert，update，version都是自动填充
+
+  ```xml
+  
+  <insert id="insertStu" parameterType="Stu">
+          insert stu
+          <trim prefix="(" suffix=")" suffixOverrides=",">
+              id,
+              <if test="name != null">
+                  name,
+              </if>
+              <if test="age != null">
+                  age,
+              </if>
+              <if test="gender != null">
+                  gender,
+              </if>
+              version,
+              insert_time,
+              update_time
+          </trim>
+  
+          <trim prefix=" values (" suffix=")" suffixOverrides=",">
+              #{id},
+              <if test="name != null">
+                  #{name},
+              </if>
+              <if test="age != null">
+                  #{age},
+              </if>
+              <if test="gender != null">
+                  #{gender}
+              </if>
+              #{version},
+              #{insert_time},
+              #{update_time}
+  
+          </trim>
+      </insert>
+  ```
+
+  
+
 - handler中的数据类型需要和实体类中的保持一致
-- mybatis-plus使用提供的方法进行curd，时间类型默认为timestamp，而且一直是改不过来。很不友好！！！
+
+- mybatis-plus使用提供的方法进行curd，时间类型默认为timestamp，url需要加上时区，不然会少8小时
+
+  ```yml
+      url: jdbc:mysql://192.168.23.3:3306/db1?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true
+  
+  ```
+
+  
 
 
 

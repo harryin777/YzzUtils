@@ -2,8 +2,8 @@ package com.yzz.easyexcel.controller;
 
 import com.yzz.easyexcel.service.EasyExcelService;
 import com.yzz.easyexcel.vo.Stu;
-import com.yzzutils.hub.dto.ResultDTO;
-import com.yzzutils.hub.vo.StatusCode;
+import com.yzz.hub.dto.ResultDTO;
+import com.yzz.hub.vo.StatusCode;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
@@ -22,7 +22,7 @@ import java.util.List;
  * @Date 2021/1/4
  * @Version 1.0
  */
-@Api(description = "EasyExcel服务")
+@Api(tags = "EasyExcel服务")
 @Slf4j
 @RestController
 @RequestMapping("/EasyExcelService")

@@ -17,4 +17,6 @@ public interface StuDao extends BaseMapper<Stu> {
 	
 	List<Stu> getAll();
 
+	Integer insertStu(Stu stu);
+
 }

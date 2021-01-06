@@ -1,4 +1,4 @@
-package com.yzzutils.hub.controller;
+package com.yzz.hub.controller;
 
 /**
  * @ClassName TestController

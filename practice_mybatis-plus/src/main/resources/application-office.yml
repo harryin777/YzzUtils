@@ -2,7 +2,7 @@ spring:
   profiles: office
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.160.4:3306/db1?useUnicode=true&characterEncoding=utf8&nullCatalogMeansCurrent=true
+    url: jdbc:mysql://192.168.160.4:3306/db1?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true
     username: root
     password: rootroot
     type: com.alibaba.druid.pool.DruidDataSource

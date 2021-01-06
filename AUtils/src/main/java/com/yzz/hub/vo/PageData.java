@@ -1,4 +1,4 @@
-package com.yzzutils.hub.vo;
+package com.yzz.hub.vo;
 
 import com.alibaba.druid.proxy.jdbc.ClobProxyImpl;
 

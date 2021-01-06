@@ -18,8 +18,8 @@ import java.util.Date;
 @NoArgsConstructor
 public class Stu implements Serializable {
 	
-	@TableId( type = IdType.AUTO)
-	private Long id;
+	@TableId( type = IdType.ID_WORKER_STR)
+	private String id;
 	
 	@Size(max = 10, message = "姓名长度不能超过10")
 	private String name;

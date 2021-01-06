@@ -28,11 +28,17 @@
         <dependencies>
 
             <!--子项目依赖-->
-<!--            <dependency>-->
-<!--                <groupId>com.yzz</groupId>-->
-<!--                <artifactId>practice_mybatis-plus</artifactId>-->
-<!--                <version>1.0</version>-->
-<!--            </dependency>-->
+            <dependency>
+                <groupId>com.yzz</groupId>
+                <artifactId>practice_mybatis-plus</artifactId>
+                <version>1.0</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.yzz</groupId>
+                <artifactId>AUtils</artifactId>
+                <version>1.0</version>
+            </dependency>
 
 
             <dependency>
@@ -125,24 +131,15 @@
 
             <!-- swagger-annotations  begin -->
             <dependency>
-                <groupId>io.swagger.core.v3</groupId>
-                <artifactId>swagger-annotations</artifactId>
-                <version>2.1.5</version>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-swagger2</artifactId>
+                <version>2.7.0</version>
             </dependency>
+            <!--swagger ui-->
             <dependency>
                 <groupId>io.springfox</groupId>
                 <artifactId>springfox-swagger-ui</artifactId>
-                <version>3.0.0</version>
-            </dependency>
-            <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-swagger2</artifactId>
-                <version>3.0.0</version>
-            </dependency>
-            <dependency>
-                <groupId>io.springfox</groupId>
-                <artifactId>springfox-boot-starter</artifactId>
-                <version>3.0.0</version>
+                <version>2.7.0</version>
             </dependency>
 
             <!-- swagger-annotations  end -->

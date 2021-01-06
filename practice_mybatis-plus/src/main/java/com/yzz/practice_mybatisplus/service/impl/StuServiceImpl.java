@@ -4,11 +4,11 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.yzzutils.hub.dto.ResultDTO;
+import com.yzz.hub.dto.ResultDTO;
 import com.yzz.practice_mybatisplus.dao.StuDao;
 import com.yzz.practice_mybatisplus.entity.Stu;
 import com.yzz.practice_mybatisplus.service.StuService;
-import com.yzzutils.hub.vo.PageData;
+import com.yzz.hub.vo.PageData;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -35,7 +35,14 @@ public class StuServiceImpl extends ServiceImpl<StuDao, Stu> implements StuServi
 		qw.eq("id", id);
 		return stuDao.selectOne(qw);
 	}
-	
+
+	/**
+	 * mybatis-plus的乐观锁
+	 * 有点鸡肋，还得先查询才能更新
+	 * @param id
+	 * @param stu
+	 * @return
+	 */
 	@Override
 	public Integer updateAfterSelect(Long id, Stu stu) {
 		Stu stuOld = stuDao.selectById(id);
@@ -61,5 +68,10 @@ public class StuServiceImpl extends ServiceImpl<StuDao, Stu> implements StuServi
 		pageData.put("list", listStu);
 		
 		return new ResultDTO(true, 200, "查询成功", pageData);
+	}
+
+	@Override
+	public Integer insertStu(Stu stu) {
+		return stuDao.insert(stu);
 	}
 }

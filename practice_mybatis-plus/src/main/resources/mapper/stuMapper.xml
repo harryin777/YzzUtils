@@ -6,4 +6,40 @@
         select id,name,age,gender from stu
     </select>
 
+    <insert id="insertStu" parameterType="Stu">
+        insert stu
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            id,
+            <if test="name != null">
+                name,
+            </if>
+            <if test="age != null">
+                age,
+            </if>
+            <if test="gender != null">
+                gender,
+            </if>
+            version,
+            insert_time,
+            update_time
+        </trim>
+
+        <trim prefix=" values (" suffix=")" suffixOverrides=",">
+            #{id},
+            <if test="name != null">
+                #{name},
+            </if>
+            <if test="age != null">
+                #{age},
+            </if>
+            <if test="gender != null">
+                #{gender}
+            </if>
+            #{version},
+            #{insert_time},
+            #{update_time}
+
+        </trim>
+    </insert>
+
 </mapper>

@@ -23,7 +23,6 @@
         <dependency>
             <groupId>com.yzz</groupId>
             <artifactId>AUtils</artifactId>
-            <version>1.0</version>
         </dependency>
 
         <dependency>
