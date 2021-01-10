@@ -1,7 +1,14 @@
 package com.yzz.hub.dto;
 
+import com.yzz.hub.vo.StatusCode;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @ClassName Result
@@ -9,6 +16,9 @@ import io.swagger.annotations.ApiModelProperty;
  * @Date 2020/12/24
  * @Version 1.0
  */
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 @ApiModel(value = "返回结果DTO",description = "返回结果")
 public class ResultDTO {
 	
@@ -36,21 +46,9 @@ public class ResultDTO {
 	@ApiModelProperty(
 			value = "返回数据",
 			name = "data",
-			dataType = "Object"
+			dataType = "Map"
 	)
-	private Object data; //返回数据
-	
-	
-	public ResultDTO() {
-	
-	}
-	public ResultDTO(boolean success, Integer code, String message, Object data) {
-		super();
-		this.success = success;
-		this.code = code;
-		this.message = message;
-		this.data = data;
-	}
+	private Map data; //返回数据
 	
 	public ResultDTO(boolean success, Integer code, String message) {
 		super();
@@ -58,28 +56,46 @@ public class ResultDTO {
 		this.code = code;
 		this.message = message;
 	}
-	public boolean isSuccess() {
-		return success;
+
+	public static ResultDTO success(){
+		ResultDTO dto = new ResultDTO();
+		dto.success = true;
+		dto.code = StatusCode.success;
+		dto.message = "成功";
+		return dto;
 	}
-	public void setSuccess(boolean success) {
-		this.success = success;
+
+	public static ResultDTO fail(){
+		ResultDTO dto = new ResultDTO();
+		dto.success = false;
+		dto.code = StatusCode.fail;
+		dto.message = "失败";
+		return dto;
 	}
-	public Integer getCode() {
-		return code;
+
+	public ResultDTO success(Boolean success){
+		this.setSuccess(success);
+		return this;
 	}
-	public void setCode(Integer code) {
-		this.code = code;
+
+	public ResultDTO message(String message){
+		this.setMessage(message);
+		return this;
 	}
-	public String getMessage() {
-		return message;
+
+	public ResultDTO code(Integer code){
+		this.setCode(code);
+		return this;
 	}
-	public void setMessage(String message) {
-		this.message = message;
+
+	public ResultDTO data(String key, Object value){
+		this.data.put(key, value);
+		return this;
 	}
-	public Object getData() {
-		return data;
+
+	public ResultDTO data(Map<String, Object> map){
+		this.setData(map);
+		return this;
 	}
-	public void setData(Object data) {
-		this.data = data;
-	}
+
 }
