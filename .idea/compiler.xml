@@ -8,12 +8,14 @@
         <outputRelativeToContentRoot value="true" />
         <module name="AUtils" />
         <module name="practice_mybatis-plus" />
+        <module name="easyexcel" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="AUtils" options="-parameters" />
+      <module name="easyexcel" options="-parameters" />
       <module name="practice_mybatis-plus" options="-parameters" />
     </option>
   </component>
