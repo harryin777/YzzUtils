@@ -1,0 +1,7 @@
+2021-01-10 11:32:18.071 [main] INFO  com.yzz.uploadfile.UploadfileApplicationTests - Starting UploadfileApplicationTests using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 20268 (started by yky in E:\Dev\project\YzzUtils\uploadfile)
+2021-01-10 11:32:18.078 [main] INFO  com.yzz.uploadfile.UploadfileApplicationTests - No active profile set, falling back to default profiles: default
+2021-01-10 11:32:19.037 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-10 11:32:19.397 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-01-10 11:32:19.413 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-01-10 11:32:19.443 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-10 11:32:19.556 [main] INFO  com.yzz.uploadfile.UploadfileApplicationTests - Started UploadfileApplicationTests in 1.769 seconds (JVM running for 2.613)

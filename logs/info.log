@@ -1,573 +1,124 @@
-2021-01-05 00:15:38.595 [main] INFO  com.yzz.easyexcel.EasyexcelApplication - Starting EasyexcelApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 224828 (E:\Dev\project\YzzUtils\easyexcel\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-01-05 00:15:38.604 [main] INFO  com.yzz.easyexcel.EasyexcelApplication - No active profile set, falling back to default profiles: default
-2021-01-05 00:15:39.361 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
-2021-01-05 00:15:39.361 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-01-05 00:15:39.362 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-05 00:15:39.410 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-01-05 00:15:39.819 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
-2021-01-05 00:15:39.959 [main] INFO  com.yzz.easyexcel.EasyexcelApplication - Started EasyexcelApplication in 1.77 seconds (JVM running for 2.769)
-2021-01-05 00:16:18.527 [http-nio-8083-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-05 00:17:25.339 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
-2021-01-05 00:17:25.347 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Starting PracticeMybatisPlusApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 236388 (E:\Dev\project\YzzUtils\practice_mybatis-plus\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-01-05 00:17:25.350 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - The following profiles are active: home
-2021-01-05 00:17:26.504 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
-2021-01-05 00:17:26.505 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-01-05 00:17:26.505 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-05 00:17:26.557 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-01-05 00:17:27.983 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
-2021-01-05 00:17:28.207 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Started PracticeMybatisPlusApplication in 3.283 seconds (JVM running for 4.492)
-2021-01-05 00:17:35.934 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-05 00:20:59.673 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
-2021-01-05 00:20:59.720 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Starting PracticeMybatisPlusApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 247492 (E:\Dev\project\YzzUtils\practice_mybatis-plus\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-01-05 00:20:59.723 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - The following profiles are active: home
-2021-01-05 00:21:00.730 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
-2021-01-05 00:21:00.731 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-01-05 00:21:00.731 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-05 00:21:00.782 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-01-05 00:21:02.053 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
-2021-01-05 00:21:02.267 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Started PracticeMybatisPlusApplication in 2.97 seconds (JVM running for 3.956)
-2021-01-05 00:21:18.194 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-05 00:33:58.504 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
-2021-01-05 00:34:04.914 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
-2021-01-05 00:34:04.965 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Starting PracticeMybatisPlusApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 287168 (E:\Dev\project\YzzUtils\practice_mybatis-plus\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-01-05 00:34:04.969 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - The following profiles are active: home
-2021-01-05 00:34:06.005 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
-2021-01-05 00:34:06.005 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-01-05 00:34:06.005 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-05 00:34:06.059 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-01-05 00:34:07.319 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
-2021-01-05 00:34:07.321 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
-2021-01-05 00:34:49.477 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
-2021-01-05 00:34:49.524 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Starting PracticeMybatisPlusApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 288656 (E:\Dev\project\YzzUtils\practice_mybatis-plus\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-01-05 00:34:49.527 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - The following profiles are active: home
-2021-01-05 00:34:50.528 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
-2021-01-05 00:34:50.528 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-01-05 00:34:50.528 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-05 00:34:50.579 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-01-05 00:34:51.838 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
-2021-01-05 00:34:52.054 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Started PracticeMybatisPlusApplication in 2.946 seconds (JVM running for 3.888)
-2021-01-05 00:34:59.930 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-05 00:41:44.875 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
-2021-01-05 00:41:51.406 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
-2021-01-05 00:41:51.455 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Starting PracticeMybatisPlusApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 302796 (E:\Dev\project\YzzUtils\practice_mybatis-plus\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-01-05 00:41:51.458 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - The following profiles are active: home
-2021-01-05 00:41:52.457 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
-2021-01-05 00:41:52.457 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-01-05 00:41:52.458 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-05 00:41:52.508 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-01-05 00:41:53.774 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
-2021-01-05 00:41:53.991 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Started PracticeMybatisPlusApplication in 2.949 seconds (JVM running for 3.923)
-2021-01-05 00:42:02.888 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-05 00:43:03.648 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
-2021-01-05 00:43:06.086 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
-2021-01-05 00:43:06.134 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Starting PracticeMybatisPlusApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 317964 (E:\Dev\project\YzzUtils\practice_mybatis-plus\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-01-05 00:43:06.137 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - The following profiles are active: home
-2021-01-05 00:43:07.132 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
-2021-01-05 00:43:07.133 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-01-05 00:43:07.133 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-05 00:43:07.184 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-01-05 00:43:08.424 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
-2021-01-05 00:43:08.641 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Started PracticeMybatisPlusApplication in 2.919 seconds (JVM running for 3.892)
-2021-01-05 00:45:11.632 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
-2021-01-05 00:45:15.213 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
-2021-01-05 00:45:15.261 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Starting PracticeMybatisPlusApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 318512 (E:\Dev\project\YzzUtils\practice_mybatis-plus\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-01-05 00:45:15.264 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - The following profiles are active: home
-2021-01-05 00:45:16.279 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
-2021-01-05 00:45:16.280 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-01-05 00:45:16.280 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-05 00:45:16.332 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-01-05 00:45:17.578 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
-2021-01-05 00:45:17.790 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Started PracticeMybatisPlusApplication in 2.955 seconds (JVM running for 3.917)
-2021-01-05 00:45:24.350 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-05 01:00:06.095 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
-2021-01-05 01:00:26.743 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
-2021-01-05 01:00:26.791 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Starting PracticeMybatisPlusApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 339760 (E:\Dev\project\YzzUtils\practice_mybatis-plus\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-01-05 01:00:26.793 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - The following profiles are active: home
-2021-01-05 01:00:27.783 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
-2021-01-05 01:00:27.783 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-01-05 01:00:27.783 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-05 01:00:27.835 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-01-05 01:00:29.081 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
-2021-01-05 01:00:29.082 [restartedMain] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
-2021-01-05 01:00:40.780 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
-2021-01-05 01:00:40.828 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Starting PracticeMybatisPlusApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 357496 (E:\Dev\project\YzzUtils\practice_mybatis-plus\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-01-05 01:00:40.831 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - The following profiles are active: home
-2021-01-05 01:00:41.830 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
-2021-01-05 01:00:41.830 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-01-05 01:00:41.831 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-05 01:00:41.881 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-01-05 01:00:43.146 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
-2021-01-05 01:00:43.363 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Started PracticeMybatisPlusApplication in 2.956 seconds (JVM running for 3.918)
-2021-01-05 01:00:48.539 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-05 01:01:19.838 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
-2021-01-05 01:01:26.015 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
-2021-01-05 01:01:26.068 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Starting PracticeMybatisPlusApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 359948 (E:\Dev\project\YzzUtils\practice_mybatis-plus\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-01-05 01:01:26.071 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - The following profiles are active: home
-2021-01-05 01:01:27.066 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
-2021-01-05 01:01:27.066 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-01-05 01:01:27.066 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-05 01:01:27.116 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-01-05 01:01:28.374 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
-2021-01-05 01:01:28.586 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Started PracticeMybatisPlusApplication in 2.935 seconds (JVM running for 3.882)
-2021-01-05 01:01:30.990 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-05 01:05:12.788 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
-2021-01-05 01:05:12.834 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Starting PracticeMybatisPlusApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 371624 (E:\Dev\project\YzzUtils\practice_mybatis-plus\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-01-05 01:05:12.837 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - The following profiles are active: home
-2021-01-05 01:05:13.648 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
-2021-01-05 01:05:13.649 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-01-05 01:05:13.649 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-05 01:05:13.700 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-01-05 01:05:14.784 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
-2021-01-05 01:05:14.806 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Started PracticeMybatisPlusApplication in 2.384 seconds (JVM running for 3.324)
-2021-01-05 01:05:29.820 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-05 01:06:04.722 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
-2021-01-05 01:06:04.769 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Starting PracticeMybatisPlusApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 364664 (E:\Dev\project\YzzUtils\practice_mybatis-plus\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-01-05 01:06:04.771 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - The following profiles are active: home
-2021-01-05 01:06:05.684 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
-2021-01-05 01:06:05.684 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-01-05 01:06:05.685 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-05 01:06:07.495 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-01-05 01:06:08.628 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
-2021-01-05 01:06:08.649 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Started PracticeMybatisPlusApplication in 4.307 seconds (JVM running for 5.294)
-2021-01-05 01:06:10.929 [http-nio-8082-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-05 01:06:43.409 [Thread-14] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
-2021-01-05 01:08:00.253 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
-2021-01-05 01:08:00.302 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Starting PracticeMybatisPlusApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 374496 (E:\Dev\project\YzzUtils\practice_mybatis-plus\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-01-05 01:08:00.304 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - The following profiles are active: home
-2021-01-05 01:08:01.116 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
-2021-01-05 01:08:01.117 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-01-05 01:08:01.117 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-05 01:08:01.170 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-01-05 01:08:02.252 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
-2021-01-05 01:08:02.272 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Started PracticeMybatisPlusApplication in 2.417 seconds (JVM running for 3.409)
-2021-01-05 01:08:14.211 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-05 01:12:15.129 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
-2021-01-05 01:12:15.175 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Starting PracticeMybatisPlusApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 411644 (E:\Dev\project\YzzUtils\practice_mybatis-plus\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-01-05 01:12:15.178 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - The following profiles are active: home
-2021-01-05 01:12:15.979 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
-2021-01-05 01:12:15.979 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-01-05 01:12:15.979 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-05 01:12:16.032 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-01-05 01:12:17.133 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
-2021-01-05 01:12:17.153 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Started PracticeMybatisPlusApplication in 2.377 seconds (JVM running for 3.312)
-2021-01-05 01:12:27.110 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-05 01:13:19.960 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
-2021-01-05 01:13:39.760 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
-2021-01-05 01:13:39.809 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Starting PracticeMybatisPlusApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 416424 (E:\Dev\project\YzzUtils\practice_mybatis-plus\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-01-05 01:13:39.812 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - The following profiles are active: home
-2021-01-05 01:13:40.621 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
-2021-01-05 01:13:40.621 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-01-05 01:13:40.621 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-05 01:13:40.674 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-01-05 01:13:41.765 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
-2021-01-05 01:13:41.786 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Started PracticeMybatisPlusApplication in 2.394 seconds (JVM running for 3.336)
-2021-01-05 01:13:45.311 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-05 10:18:04.413 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
-2021-01-05 10:18:04.424 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Starting PracticeMybatisPlusApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 553040 (E:\Dev\project\YzzUtils\practice_mybatis-plus\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-01-05 10:18:04.428 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - The following profiles are active: home
-2021-01-05 10:18:06.178 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
-2021-01-05 10:18:06.178 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-01-05 10:18:06.178 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-05 10:18:06.237 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-01-05 10:18:08.912 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
-2021-01-05 10:18:08.995 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Started PracticeMybatisPlusApplication in 5.207 seconds (JVM running for 7.194)
-2021-01-05 10:18:17.058 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-05 10:18:46.103 [main] INFO  HubApplication - Starting HubApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 535424 (E:\Dev\project\YzzUtils\AUtils\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-01-05 10:18:46.110 [main] INFO  HubApplication - No active profile set, falling back to default profiles: default
-2021-01-05 10:18:46.845 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2021-01-05 10:18:46.845 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-01-05 10:18:46.845 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-05 10:18:46.909 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-01-05 10:18:47.175 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-01-05 10:18:47.383 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2021-01-05 10:18:47.397 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
-2021-01-05 10:18:47.409 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2021-01-05 10:18:47.441 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2021-01-05 10:18:47.456 [main] INFO  HubApplication - Started HubApplication in 1.677 seconds (JVM running for 2.643)
-2021-01-05 10:18:58.240 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-05 10:19:32.976 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
-2021-01-05 10:19:33.025 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Starting PracticeMybatisPlusApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 534420 (E:\Dev\project\YzzUtils\practice_mybatis-plus\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-01-05 10:19:33.028 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - The following profiles are active: home
-2021-01-05 10:19:33.841 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
-2021-01-05 10:19:33.841 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-01-05 10:19:33.841 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-05 10:19:33.894 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-01-05 10:19:34.984 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
-2021-01-05 10:19:35.004 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Started PracticeMybatisPlusApplication in 2.4 seconds (JVM running for 3.388)
-2021-01-05 10:19:44.256 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-05 10:20:38.736 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
-2021-01-05 10:20:42.512 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
-2021-01-05 10:20:42.560 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Starting PracticeMybatisPlusApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 571776 (E:\Dev\project\YzzUtils\practice_mybatis-plus\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-01-05 10:20:42.562 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - The following profiles are active: home
-2021-01-05 10:20:43.389 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
-2021-01-05 10:20:43.389 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-01-05 10:20:43.389 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-05 10:20:43.443 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-01-05 10:20:44.552 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
-2021-01-05 10:20:44.572 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Started PracticeMybatisPlusApplication in 2.443 seconds (JVM running for 3.409)
-2021-01-05 10:20:51.684 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-05 10:22:17.129 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
-2021-01-05 10:22:21.076 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
-2021-01-05 10:22:21.122 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Starting PracticeMybatisPlusApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 585396 (E:\Dev\project\YzzUtils\practice_mybatis-plus\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-01-05 10:22:21.125 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - The following profiles are active: home
-2021-01-05 10:22:21.947 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
-2021-01-05 10:22:21.947 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-01-05 10:22:21.948 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-05 10:22:22.008 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-01-05 10:22:23.122 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
-2021-01-05 10:22:23.143 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Started PracticeMybatisPlusApplication in 2.442 seconds (JVM running for 3.416)
-2021-01-05 10:22:23.175 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-05 10:23:09.820 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
-2021-01-05 10:23:51.189 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
-2021-01-05 10:23:51.237 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Starting PracticeMybatisPlusApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 587264 (E:\Dev\project\YzzUtils\practice_mybatis-plus\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-01-05 10:23:51.240 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - The following profiles are active: home
-2021-01-05 10:23:52.240 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
-2021-01-05 10:23:52.240 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-01-05 10:23:52.240 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-05 10:23:52.296 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-01-05 10:23:53.305 [restartedMain] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-01-05 10:23:53.552 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
-2021-01-05 10:23:53.566 [restartedMain] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
-2021-01-05 10:23:53.577 [restartedMain] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2021-01-05 10:23:53.604 [restartedMain] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2021-01-05 10:23:53.806 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Started PracticeMybatisPlusApplication in 2.989 seconds (JVM running for 3.995)
-2021-01-05 10:23:56.260 [http-nio-8082-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-05 11:42:56.723 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
-2021-01-05 11:42:56.770 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Starting PracticeMybatisPlusApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 245756 (E:\Dev\project\YzzUtils\practice_mybatis-plus\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-01-05 11:42:56.772 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - The following profiles are active: home
-2021-01-05 11:42:57.741 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
-2021-01-05 11:42:57.742 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-01-05 11:42:57.742 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-05 11:42:57.792 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-01-05 11:42:58.781 [restartedMain] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-01-05 11:42:59.015 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
-2021-01-05 11:42:59.029 [restartedMain] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
-2021-01-05 11:42:59.039 [restartedMain] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2021-01-05 11:42:59.065 [restartedMain] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2021-01-05 11:42:59.194 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Started PracticeMybatisPlusApplication in 2.836 seconds (JVM running for 3.806)
-2021-01-05 11:43:13.152 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-05 11:45:43.719 [http-nio-8082-exec-6] INFO  com.yzz.practice_mybatisplus.handler.MyMetaObjectHandler - start autofill insertTime...
-2021-01-05 11:45:43.721 [http-nio-8082-exec-6] INFO  com.yzz.practice_mybatisplus.handler.MyMetaObjectHandler - end autofill insertTime...
-2021-01-05 11:45:43.779 [http-nio-8082-exec-6] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
-2021-01-05 11:45:44.393 [http-nio-8082-exec-6] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
-### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'insert_time' in 'field list'
-### The error may exist in com/yzz/practice_mybatisplus/dao/StuDao.java (best guess)
-### The error may involve com.yzz.practice_mybatisplus.dao.StuDao.insert-Inline
-### The error occurred while setting parameters
-### SQL: INSERT INTO stu  ( id,  age, gender, insert_time, update_time, version )  VALUES  ( ?,  ?, ?, ?, ?, ? )
-### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'insert_time' in 'field list'
-; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'insert_time' in 'field list'] with root cause
-java.sql.SQLSyntaxErrorException: Unknown column 'insert_time' in 'field list'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497) ~[druid-1.1.23.jar:1.1.23]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
-	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59) ~[mybatis-3.5.5.jar:3.5.5]
-	at com.sun.proxy.$Proxy143.execute(Unknown Source) ~[?:?]
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47) ~[mybatis-3.5.5.jar:3.5.5]
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.5.5.jar:3.5.5]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
-	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63) ~[mybatis-3.5.5.jar:3.5.5]
-	at com.sun.proxy.$Proxy141.update(Unknown Source) ~[?:?]
-	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doUpdate(MybatisSimpleExecutor.java:56) ~[mybatis-plus-core-3.4.1.jar:3.4.1]
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.5.5.jar:3.5.5]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
-	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49) ~[mybatis-3.5.5.jar:3.5.5]
-	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:83) ~[mybatis-plus-extension-3.4.1.jar:3.4.1]
-	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61) ~[mybatis-3.5.5.jar:3.5.5]
-	at com.sun.proxy.$Proxy140.update(Unknown Source) ~[?:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
-	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63) ~[mybatis-3.5.5.jar:3.5.5]
-	at com.sun.proxy.$Proxy140.update(Unknown Source) ~[?:?]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197) ~[mybatis-3.5.5.jar:3.5.5]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184) ~[mybatis-3.5.5.jar:3.5.5]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426) ~[mybatis-spring-2.0.5.jar:2.0.5]
-	at com.sun.proxy.$Proxy93.insert(Unknown Source) ~[?:?]
-	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271) ~[mybatis-spring-2.0.5.jar:2.0.5]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:60) ~[mybatis-plus-core-3.4.1.jar:3.4.1]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148) ~[mybatis-plus-core-3.4.1.jar:3.4.1]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89) ~[mybatis-plus-core-3.4.1.jar:3.4.1]
-	at com.sun.proxy.$Proxy94.insert(Unknown Source) ~[?:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.3.2.jar:5.3.2]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.3.2.jar:5.3.2]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.2.jar:5.3.2]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.2.jar:5.3.2]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.2.jar:5.3.2]
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.2.jar:5.3.2]
-	at com.sun.proxy.$Proxy95.insert(Unknown Source) ~[?:?]
-	at com.yzz.practice_mybatisplus.controller.BpController.insertOne(BpController.java:67) ~[classes/:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.41.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.41.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_251]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_251]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_251]
-2021-01-05 11:46:56.716 [http-nio-8082-exec-7] INFO  com.yzz.practice_mybatisplus.handler.MyMetaObjectHandler - start autofill insertTime...
-2021-01-05 11:46:56.716 [http-nio-8082-exec-7] INFO  com.yzz.practice_mybatisplus.handler.MyMetaObjectHandler - end autofill insertTime...
-2021-01-05 11:46:56.723 [http-nio-8082-exec-7] ERROR com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.23.3:3306/db1?useUnicode=true&characterEncoding=utf8&nullCatalogMeansCurrent=true, jdbcUrl : jdbc:mysql://192.168.23.3:3306/db1?useUnicode=true&characterEncoding=utf8&nullCatalogMeansCurrent=true, lastPacketReceivedIdleMillis : 72390
-2021-01-05 11:47:45.717 [http-nio-8082-exec-4] INFO  com.yzz.practice_mybatisplus.handler.MyMetaObjectHandler - start autofill insertTime...
-2021-01-05 11:47:45.718 [http-nio-8082-exec-4] INFO  com.yzz.practice_mybatisplus.handler.MyMetaObjectHandler - end autofill insertTime...
-2021-01-05 11:49:02.758 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
-2021-01-05 11:49:02.773 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
-2021-01-05 11:59:30.213 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
-2021-01-05 11:59:30.262 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Starting PracticeMybatisPlusApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 305088 (E:\Dev\project\YzzUtils\practice_mybatis-plus\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-01-05 11:59:30.264 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - The following profiles are active: home
-2021-01-05 11:59:31.237 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
-2021-01-05 11:59:31.238 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-01-05 11:59:31.238 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-05 11:59:31.288 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-01-05 11:59:32.262 [restartedMain] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-01-05 11:59:32.500 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
-2021-01-05 11:59:32.514 [restartedMain] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
-2021-01-05 11:59:32.524 [restartedMain] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2021-01-05 11:59:32.551 [restartedMain] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2021-01-05 11:59:32.684 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Started PracticeMybatisPlusApplication in 2.853 seconds (JVM running for 3.829)
-2021-01-05 11:59:53.544 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-05 11:59:53.648 [http-nio-8082-exec-1] INFO  com.yzz.practice_mybatisplus.handler.MyMetaObjectHandler - start autofill insertTime...
-2021-01-05 11:59:53.650 [http-nio-8082-exec-1] INFO  com.yzz.practice_mybatisplus.handler.MyMetaObjectHandler - end autofill insertTime...
-2021-01-05 11:59:53.674 [http-nio-8082-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
-2021-01-05 12:11:21.430 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
-2021-01-05 12:11:21.432 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
-2021-01-05 12:11:27.005 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
-2021-01-05 12:11:27.052 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Starting PracticeMybatisPlusApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 334312 (E:\Dev\project\YzzUtils\practice_mybatis-plus\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-01-05 12:11:27.055 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - The following profiles are active: home
-2021-01-05 12:11:28.019 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
-2021-01-05 12:11:28.019 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-01-05 12:11:28.019 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-05 12:11:28.068 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-01-05 12:11:29.048 [restartedMain] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-01-05 12:11:29.281 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
-2021-01-05 12:11:29.295 [restartedMain] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
-2021-01-05 12:11:29.306 [restartedMain] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2021-01-05 12:11:29.332 [restartedMain] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2021-01-05 12:11:29.464 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Started PracticeMybatisPlusApplication in 2.826 seconds (JVM running for 3.793)
-2021-01-05 12:11:35.026 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-05 12:12:54.222 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
-2021-01-05 12:12:56.824 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
-2021-01-05 12:12:56.876 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Starting PracticeMybatisPlusApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 340576 (E:\Dev\project\YzzUtils\practice_mybatis-plus\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-01-05 12:12:56.879 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - The following profiles are active: home
-2021-01-05 12:12:57.885 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
-2021-01-05 12:12:57.885 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-01-05 12:12:57.886 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-05 12:12:57.935 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-01-05 12:12:58.924 [restartedMain] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-01-05 12:12:59.157 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
-2021-01-05 12:12:59.171 [restartedMain] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
-2021-01-05 12:12:59.181 [restartedMain] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2021-01-05 12:12:59.207 [restartedMain] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2021-01-05 12:12:59.336 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Started PracticeMybatisPlusApplication in 2.889 seconds (JVM running for 3.848)
-2021-01-05 12:13:04.150 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-05 12:17:47.073 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
-2021-01-05 12:17:49.736 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
-2021-01-05 12:17:49.784 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Starting PracticeMybatisPlusApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 356860 (E:\Dev\project\YzzUtils\practice_mybatis-plus\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-01-05 12:17:49.787 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - The following profiles are active: home
-2021-01-05 12:17:50.754 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
-2021-01-05 12:17:50.754 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-01-05 12:17:50.754 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-05 12:17:50.804 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-01-05 12:17:51.766 [restartedMain] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-01-05 12:17:52.004 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
-2021-01-05 12:17:52.018 [restartedMain] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
-2021-01-05 12:17:52.028 [restartedMain] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2021-01-05 12:17:52.055 [restartedMain] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2021-01-05 12:17:52.186 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Started PracticeMybatisPlusApplication in 2.838 seconds (JVM running for 3.76)
-2021-01-05 12:17:59.409 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-05 12:18:31.419 [http-nio-8082-exec-2] INFO  com.yzz.practice_mybatisplus.handler.MyMetaObjectHandler - start autofill insertTime...
-2021-01-05 12:18:31.421 [http-nio-8082-exec-2] INFO  com.yzz.practice_mybatisplus.handler.MyMetaObjectHandler - end autofill insertTime...
-2021-01-05 12:18:31.445 [http-nio-8082-exec-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
-2021-01-05 12:18:32.012 [http-nio-8082-exec-2] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DuplicateKeyException: 
-### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'string' for key 'PRIMARY'
-### The error may exist in com/yzz/practice_mybatisplus/dao/StuDao.java (best guess)
-### The error may involve com.yzz.practice_mybatisplus.dao.StuDao.insert-Inline
-### The error occurred while setting parameters
-### SQL: INSERT INTO stu  ( id, name, age, gender, insert_time, update_time, version )  VALUES  ( ?, ?, ?, ?, ?, ?, ? )
-### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'string' for key 'PRIMARY'
-; Duplicate entry 'string' for key 'PRIMARY'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'string' for key 'PRIMARY'] with root cause
-java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'string' for key 'PRIMARY'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497) ~[druid-1.1.23.jar:1.1.23]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
-	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59) ~[mybatis-3.5.5.jar:3.5.5]
-	at com.sun.proxy.$Proxy128.execute(Unknown Source) ~[?:?]
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47) ~[mybatis-3.5.5.jar:3.5.5]
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.5.5.jar:3.5.5]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
-	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63) ~[mybatis-3.5.5.jar:3.5.5]
-	at com.sun.proxy.$Proxy126.update(Unknown Source) ~[?:?]
-	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doUpdate(MybatisSimpleExecutor.java:56) ~[mybatis-plus-core-3.4.1.jar:3.4.1]
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.5.5.jar:3.5.5]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
-	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49) ~[mybatis-3.5.5.jar:3.5.5]
-	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:83) ~[mybatis-plus-extension-3.4.1.jar:3.4.1]
-	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61) ~[mybatis-3.5.5.jar:3.5.5]
-	at com.sun.proxy.$Proxy125.update(Unknown Source) ~[?:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
-	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63) ~[mybatis-3.5.5.jar:3.5.5]
-	at com.sun.proxy.$Proxy125.update(Unknown Source) ~[?:?]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197) ~[mybatis-3.5.5.jar:3.5.5]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184) ~[mybatis-3.5.5.jar:3.5.5]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426) ~[mybatis-spring-2.0.5.jar:2.0.5]
-	at com.sun.proxy.$Proxy93.insert(Unknown Source) ~[?:?]
-	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271) ~[mybatis-spring-2.0.5.jar:2.0.5]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:60) ~[mybatis-plus-core-3.4.1.jar:3.4.1]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148) ~[mybatis-plus-core-3.4.1.jar:3.4.1]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89) ~[mybatis-plus-core-3.4.1.jar:3.4.1]
-	at com.sun.proxy.$Proxy94.insert(Unknown Source) ~[?:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.3.2.jar:5.3.2]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.3.2.jar:5.3.2]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.2.jar:5.3.2]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.2.jar:5.3.2]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.2.jar:5.3.2]
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.2.jar:5.3.2]
-	at com.sun.proxy.$Proxy95.insert(Unknown Source) ~[?:?]
-	at com.yzz.practice_mybatisplus.service.impl.StuServiceImpl.insertStu(StuServiceImpl.java:75) ~[classes/:?]
-	at com.yzz.practice_mybatisplus.service.impl.StuServiceImpl$$FastClassBySpringCGLIB$$608eb333.invoke(<generated>) ~[classes/:?]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.2.jar:5.3.2]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:687) ~[spring-aop-5.3.2.jar:5.3.2]
-	at com.yzz.practice_mybatisplus.service.impl.StuServiceImpl$$EnhancerBySpringCGLIB$$15b89cd7.insertStu(<generated>) ~[classes/:?]
-	at com.yzz.practice_mybatisplus.controller.BpController.insertOne(BpController.java:69) ~[classes/:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.41.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.41.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_251]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_251]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_251]
-2021-01-05 12:18:57.796 [http-nio-8082-exec-3] INFO  com.yzz.practice_mybatisplus.handler.MyMetaObjectHandler - start autofill insertTime...
-2021-01-05 12:18:57.796 [http-nio-8082-exec-3] INFO  com.yzz.practice_mybatisplus.handler.MyMetaObjectHandler - end autofill insertTime...
-2021-01-05 12:19:17.708 [http-nio-8082-exec-4] INFO  com.yzz.practice_mybatisplus.handler.MyMetaObjectHandler - start autofill insertTime...
-2021-01-05 12:19:17.709 [http-nio-8082-exec-4] INFO  com.yzz.practice_mybatisplus.handler.MyMetaObjectHandler - end autofill insertTime...
+2021-01-10 10:18:14.271 [main] INFO  com.yzz.uploadfile.UploadfileApplication - Starting UploadfileApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 22292 (E:\Dev\project\YzzUtils\uploadfile\target\classes started by yky in E:\Dev\project\YzzUtils)
+2021-01-10 10:18:14.282 [main] INFO  com.yzz.uploadfile.UploadfileApplication - No active profile set, falling back to default profiles: default
+2021-01-10 10:18:14.959 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-01-10 10:18:14.960 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-10 10:18:14.960 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-10 10:18:15.008 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-10 10:18:15.219 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-01-10 10:18:15.236 [main] INFO  com.yzz.uploadfile.UploadfileApplication - Started UploadfileApplication in 1.447 seconds (JVM running for 2.706)
+2021-01-10 10:18:42.017 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-10 10:18:42.025 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Starting PracticeMybatisPlusApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 17948 (E:\Dev\project\YzzUtils\practice_mybatis-plus\target\classes started by yky in E:\Dev\project\YzzUtils)
+2021-01-10 10:18:42.028 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - The following profiles are active: home
+2021-01-10 10:18:43.122 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2021-01-10 10:18:43.122 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-10 10:18:43.122 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-10 10:18:43.167 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-10 10:18:44.226 [restartedMain] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-10 10:18:44.462 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2021-01-10 10:18:44.474 [restartedMain] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-01-10 10:18:44.484 [restartedMain] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-01-10 10:18:44.509 [restartedMain] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-10 10:18:44.650 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Started PracticeMybatisPlusApplication in 3.024 seconds (JVM running for 3.867)
+2021-01-10 10:19:12.758 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-01-10 10:19:12.776 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Starting PracticeMybatisPlusApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 20104 (E:\Dev\project\YzzUtils\practice_mybatis-plus\target\classes started by yky in E:\Dev\project\YzzUtils)
+2021-01-10 10:19:12.779 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - The following profiles are active: home
+2021-01-10 10:19:13.640 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
+2021-01-10 10:19:13.640 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-10 10:19:13.640 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-10 10:19:13.686 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-10 10:19:14.604 [restartedMain] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-10 10:19:14.813 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
+2021-01-10 10:19:14.825 [restartedMain] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-01-10 10:19:14.832 [restartedMain] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-01-10 10:19:14.855 [restartedMain] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-10 10:19:14.962 [restartedMain] INFO  com.yzz.practice_mybatisplus.PracticeMybatisPlusApplication - Started PracticeMybatisPlusApplication in 2.543 seconds (JVM running for 3.378)
+2021-01-10 10:19:19.013 [main] INFO  com.yzz.uploadfile.UploadfileApplication - Starting UploadfileApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 9884 (E:\Dev\project\YzzUtils\uploadfile\target\classes started by yky in E:\Dev\project\YzzUtils)
+2021-01-10 10:19:19.019 [main] INFO  com.yzz.uploadfile.UploadfileApplication - No active profile set, falling back to default profiles: default
+2021-01-10 10:19:19.459 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-01-10 10:19:19.459 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-10 10:19:19.460 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-10 10:19:19.504 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-10 10:19:19.691 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-01-10 10:19:19.707 [main] INFO  com.yzz.uploadfile.UploadfileApplication - Started UploadfileApplication in 0.971 seconds (JVM running for 1.728)
+2021-01-10 10:26:12.186 [main] INFO  com.yzz.uploadfile.UploadfileApplication - Starting UploadfileApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 19260 (E:\Dev\project\YzzUtils\uploadfile\target\classes started by yky in E:\Dev\project\YzzUtils)
+2021-01-10 10:26:12.193 [main] INFO  com.yzz.uploadfile.UploadfileApplication - No active profile set, falling back to default profiles: default
+2021-01-10 10:26:12.651 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-01-10 10:26:12.651 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-10 10:26:12.651 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-10 10:26:12.696 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-10 10:26:12.899 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-01-10 10:26:12.916 [main] INFO  com.yzz.uploadfile.UploadfileApplication - Started UploadfileApplication in 1.002 seconds (JVM running for 1.776)
+2021-01-10 10:26:26.081 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-10 10:27:06.754 [main] INFO  com.yzz.uploadfile.UploadfileApplication - Starting UploadfileApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 15184 (E:\Dev\project\YzzUtils\uploadfile\target\classes started by yky in E:\Dev\project\YzzUtils)
+2021-01-10 10:27:06.761 [main] INFO  com.yzz.uploadfile.UploadfileApplication - No active profile set, falling back to default profiles: default
+2021-01-10 10:27:07.465 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-01-10 10:27:07.465 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-10 10:27:07.465 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-10 10:27:07.515 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-10 10:27:07.731 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-10 10:27:07.911 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-01-10 10:27:07.923 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-01-10 10:27:07.934 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-01-10 10:27:07.960 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-10 10:27:08.051 [main] INFO  com.yzz.uploadfile.UploadfileApplication - Started UploadfileApplication in 1.625 seconds (JVM running for 2.871)
+2021-01-10 10:27:38.030 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-10 10:28:21.149 [main] INFO  com.yzz.uploadfile.UploadfileApplication - Starting UploadfileApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 12136 (E:\Dev\project\YzzUtils\uploadfile\target\classes started by yky in E:\Dev\project\YzzUtils)
+2021-01-10 10:28:21.155 [main] INFO  com.yzz.uploadfile.UploadfileApplication - No active profile set, falling back to default profiles: default
+2021-01-10 10:28:21.813 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-01-10 10:28:21.813 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-10 10:28:21.814 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-10 10:28:21.861 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-10 10:28:22.068 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-10 10:28:22.243 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-01-10 10:28:22.255 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-01-10 10:28:22.265 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-01-10 10:28:22.290 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-10 10:28:22.370 [main] INFO  com.yzz.uploadfile.UploadfileApplication - Started UploadfileApplication in 1.547 seconds (JVM running for 2.435)
+2021-01-10 10:28:26.056 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-10 10:50:29.736 [main] INFO  com.yzz.uploadfile.UploadfileApplication - Starting UploadfileApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 9092 (E:\Dev\project\YzzUtils\uploadfile\target\classes started by yky in E:\Dev\project\YzzUtils)
+2021-01-10 10:50:29.743 [main] INFO  com.yzz.uploadfile.UploadfileApplication - No active profile set, falling back to default profiles: default
+2021-01-10 10:50:30.393 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-01-10 10:50:30.394 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-10 10:50:30.394 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-10 10:50:30.442 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-10 10:50:30.648 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-10 10:50:30.853 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-01-10 10:50:30.865 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-01-10 10:50:30.876 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-01-10 10:50:30.900 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-10 10:50:30.978 [main] INFO  com.yzz.uploadfile.UploadfileApplication - Started UploadfileApplication in 1.59 seconds (JVM running for 2.478)
+2021-01-10 10:50:42.561 [http-nio-8080-exec-6] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-10 10:50:53.043 [http-nio-8080-exec-3] INFO  com.yzz.uploadfile.controller.FileController - 访问接口:上传文件
+2021-01-10 10:50:53.044 [http-nio-8080-exec-3] INFO  com.yzz.uploadfile.controller.FileController - 访问接口:上传文件，结束
+2021-01-10 10:55:33.660 [main] INFO  com.yzz.uploadfile.UploadfileApplication - Starting UploadfileApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 14340 (E:\Dev\project\YzzUtils\uploadfile\target\classes started by yky in E:\Dev\project\YzzUtils)
+2021-01-10 10:55:33.666 [main] INFO  com.yzz.uploadfile.UploadfileApplication - No active profile set, falling back to default profiles: default
+2021-01-10 10:55:34.319 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-01-10 10:55:34.319 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-10 10:55:34.319 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-10 10:55:34.368 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-10 10:55:34.575 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-10 10:55:34.778 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-01-10 10:55:34.790 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-01-10 10:55:34.801 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-01-10 10:55:34.824 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-10 10:55:34.905 [main] INFO  com.yzz.uploadfile.UploadfileApplication - Started UploadfileApplication in 1.577 seconds (JVM running for 2.456)
+2021-01-10 10:55:40.499 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-10 10:55:40.534 [http-nio-8080-exec-1] INFO  com.yzz.uploadfile.controller.FileController - 访问接口:上传文件
+2021-01-10 10:55:40.541 [http-nio-8080-exec-1] INFO  com.yzz.uploadfile.controller.FileController - C:\Users\yky\AppData\Local\Temp\tomcat-docbase.8080.8043363515988648162\fileMana\upLoadFile
+2021-01-10 10:55:40.541 [http-nio-8080-exec-1] INFO  com.yzz.uploadfile.controller.FileController - 访问接口:上传文件，结束
+2021-01-10 10:56:50.849 [main] INFO  com.yzz.uploadfile.UploadfileApplication - Starting UploadfileApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 12552 (E:\Dev\project\YzzUtils\uploadfile\target\classes started by yky in E:\Dev\project\YzzUtils)
+2021-01-10 10:56:50.855 [main] INFO  com.yzz.uploadfile.UploadfileApplication - No active profile set, falling back to default profiles: default
+2021-01-10 10:56:51.540 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2021-01-10 10:56:51.540 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-01-10 10:56:51.540 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-01-10 10:56:51.589 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-01-10 10:56:51.798 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-01-10 10:56:51.972 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2021-01-10 10:56:51.985 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-01-10 10:56:51.995 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-01-10 10:56:52.020 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-01-10 10:56:52.099 [main] INFO  com.yzz.uploadfile.UploadfileApplication - Started UploadfileApplication in 1.605 seconds (JVM running for 2.496)
+2021-01-10 10:57:09.554 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-01-10 10:57:09.588 [http-nio-8080-exec-1] INFO  com.yzz.uploadfile.controller.FileController - 访问接口:上传文件
+2021-01-10 10:57:09.591 [http-nio-8080-exec-1] INFO  com.yzz.uploadfile.controller.FileController - C:\Users\yky\AppData\Local\Temp\tomcat-docbase.8080.7528797723088412880\fileMana\upLoadFile
+2021-01-10 10:57:09.591 [http-nio-8080-exec-1] INFO  com.yzz.uploadfile.controller.FileController - 访问接口:上传文件，结束
