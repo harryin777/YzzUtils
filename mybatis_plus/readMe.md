@@ -1,5 +1,17 @@
 # mybatis-plus的使用
 
+## 更新数据的用法
+
+```java
+QueryWrapper<Course> qw = new QueryWrapper<>();
+qw.eq("id", courseId);
+Course course = new Course();
+course.setStatus("Normal");
+return courseMapper.update(course, qw);
+```
+
+前面的实体类是需要更新的信息，后面qw是where条件
+
 ## 主键自增
 
 mysql一定要配置主键自增才可以，这时候输入的id就无效了。

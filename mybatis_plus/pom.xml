@@ -8,9 +8,9 @@
         <version>1.0</version>
     </parent>
     <groupId>com.yzz</groupId>
-    <artifactId>practice_mybatis-plus</artifactId>
+    <artifactId>mybatis_plus</artifactId>
     <version>1.0</version>
-    <name>practice_mybatis-plus</name>
+    <name>mybatis_plus</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>

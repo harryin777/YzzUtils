@@ -14,15 +14,17 @@
     <groupId>com.yzz</groupId>
     <artifactId>YzzUtils</artifactId>
     <version>1.0</version>
-    <name>top0</name>
+    <name>YU</name>
 
     <packaging>pom</packaging>
 
     <modules>
-        <module>practice_mybatis-plus</module>
+        <module>mybatis_plus</module>
         <module>AUtils</module>
         <module>easyexcel</module>
         <module>uploadfile</module>
+        <module>springsecurity</module>
+        <module>worthlessamodule</module>
     </modules>
 
     <dependencyManagement>
@@ -31,7 +33,7 @@
             <!--子项目依赖-->
             <dependency>
                 <groupId>com.yzz</groupId>
-                <artifactId>practice_mybatis-plus</artifactId>
+                <artifactId>mybatis_plus</artifactId>
                 <version>1.0</version>
             </dependency>
 
@@ -46,6 +48,27 @@
                 <groupId>org.junit.jupiter</groupId>
                 <artifactId>junit-jupiter-api</artifactId>
                 <version>5.7.0</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-engine</artifactId>
+                <version>5.7.0</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.junit.vintage</groupId>
+                <artifactId>junit-vintage-engine</artifactId>
+                <version>5.7.0</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.junit.platform</groupId>
+                <artifactId>junit-platform-launcher</artifactId>
+                <version>1.7.0</version>
                 <scope>test</scope>
             </dependency>
 
@@ -211,6 +234,15 @@
                 <version>4.1.2</version>
             </dependency>
             <!--easyexcel end-->
+
+
+            <!--objectmapper begin-->
+            <dependency>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+                <version>2.11.3</version>
+            </dependency>
+            <!--objectmapper end-->
 
 
 

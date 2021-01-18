@@ -3,8 +3,10 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/AUtils/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/easyexcel/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/practice_mybatis-plus/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/practice_mybatis-plus/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis_plus/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatis_plus/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springsecurity/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/uploadfile/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/worthlessamodule/src/main/java" charset="UTF-8" />
   </component>
 </project>

@@ -51,7 +51,7 @@ public class EasyExcelController {
 		}catch (Exception e){
 			return new ResultDTO(false, StatusCode.error, "失败", null);
 		}
-		return new ResultDTO(true, StatusCode.success, "成功", list);
+		return ResultDTO.success().data("list", list);
 	}
 
 
