@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="mybatis_plus" />
+        <module name="springsecurity" />
+        <module name="worthlessamodule" />
+        <module name="AUtils" />
         <module name="uploadfile" />
         <module name="easyexcel" />
-        <module name="practice_mybatis-plus" />
-        <module name="AUtils" />
       </profile>
     </annotationProcessing>
   </component>
@@ -17,8 +19,10 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="AUtils" options="-parameters" />
       <module name="easyexcel" options="-parameters" />
-      <module name="practice_mybatis-plus" options="-parameters" />
+      <module name="mybatis_plus" options="-parameters" />
+      <module name="springsecurity" options="-parameters" />
       <module name="uploadfile" options="-parameters" />
+      <module name="worthlessamodule" options="-parameters" />
     </option>
   </component>
 </project>
