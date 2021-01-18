@@ -246,7 +246,26 @@ public class Stu implements Serializable {
 
 
 
-## 性能分析插件
+## QueryWrapper 的select用法
+
+可以指定要查询的字段
+
+```java
+ QueryWrapper<User> queryWrapper = new QueryWrapper<>();
+queryWrapper.select("name", "age").like("name", "雨");
+List<User> users = userMapper.selectList(queryWrapper);
+users.forEach(System.out::println);
+```
+
+查询除了a,b的字段
+
+```java
+QueryWrapper<User> queryWrapper = new QueryWrapper<>();
+queryWrapper.select(User.class, info -> !info.getColumn().equals("manager_id")
+                    && !info.getColumn().equals("create_time"));
+List<User> users = userMapper.selectList(queryWrapper);
+users.forEach(System.out::println);
+```
 
 
 
