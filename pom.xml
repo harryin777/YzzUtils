@@ -25,6 +25,7 @@
         <module>uploadfile</module>
         <module>springsecurity</module>
         <module>worthlessamodule</module>
+        <module>springpractice</module>
     </modules>
 
     <dependencyManagement>
