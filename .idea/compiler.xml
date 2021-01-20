@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="mybatis_plus" />
         <module name="springsecurity" />
+        <module name="springpractice" />
         <module name="worthlessamodule" />
         <module name="AUtils" />
         <module name="uploadfile" />
@@ -20,6 +21,7 @@
       <module name="AUtils" options="-parameters" />
       <module name="easyexcel" options="-parameters" />
       <module name="mybatis_plus" options="-parameters" />
+      <module name="springpractice" options="-parameters" />
       <module name="springsecurity" options="-parameters" />
       <module name="uploadfile" options="-parameters" />
       <module name="worthlessamodule" options="-parameters" />
