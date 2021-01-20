@@ -14,6 +14,9 @@
         <module name="easyexcel" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="practice_mybatis-plus" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
