@@ -1,5 +1,6 @@
 package com.yzz.springpractice;
 
+import com.yzz.springpractice.controller.StuController;
 import com.yzz.springpractice.entity.Student;
 import com.yzz.springpractice.entity.Teacher;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -24,5 +25,9 @@ public class App {
 		System.out.println(teacher);
 		Student student = context.getBean("student", Student.class);
 		System.out.println(student);
+		
+		//是否自动装配了controller里的student
+		StuController stuController = context.getBean("StuController", StuController.class);
+		System.out.println(stuController.getStudent().getName());
 	}
 }
