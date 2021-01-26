@@ -1,6 +1,7 @@
 package com.yzz.springpractice.controller;
 
 import com.yzz.springpractice.entity.Student;
+import com.yzz.springpractice.service.Impl.StudentServiceImpl;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -23,4 +24,8 @@ public class StuController {
 	
 	@Autowired
 	Student student;
+	
+	@Autowired
+	StudentServiceImpl studentServiceImpl;
+	
 }

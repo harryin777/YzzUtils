@@ -20,14 +20,7 @@ public class App {
 		 */
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("application.xml");
 		System.out.println("容器启动完成");
-		//根据id匹配bean
-		Teacher teacher = context.getBean("t1", Teacher.class);
-		System.out.println(teacher);
-		Student student = context.getBean("student", Student.class);
-		System.out.println(student);
 		
-		//是否自动装配了controller里的student
-		StuController stuController = context.getBean("StuController", StuController.class);
-		System.out.println(stuController.getStudent().getName());
+		
 	}
 }
