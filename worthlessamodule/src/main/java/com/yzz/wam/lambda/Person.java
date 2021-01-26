@@ -1,9 +1,6 @@
 package com.yzz.wam.lambda;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+import lombok.*;
 
 import javax.annotation.security.DenyAll;
 
@@ -17,7 +14,11 @@ import javax.annotation.security.DenyAll;
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
+@RequiredArgsConstructor
 public class Person {
-	
+
+	@NonNull
 	private String name;
+
+	private int age;
 }

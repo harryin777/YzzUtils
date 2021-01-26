@@ -7,6 +7,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -26,11 +27,11 @@ class PersonTest {
 	@BeforeEach
 	void init(){
 		
-		personList.add(new Person("a"));
-		personList.add(new Person("b"));
-		personList.add(new Person("oipb"));
-		personList.add(new Person("abc"));
-		personList.add(new Person("bad"));
+		personList.add(new Person("a",1));
+		personList.add(new Person("b",2));
+		personList.add(new Person("oipb",3));
+		personList.add(new Person("abc",4));
+		personList.add(new Person("bad",5));
 		
 		stringList.add("abc");
 		stringList.add("ajjsjj");
