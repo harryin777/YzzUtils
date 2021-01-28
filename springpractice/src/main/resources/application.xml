@@ -137,15 +137,19 @@
     <context:component-scan base-package="com.yzz"></context:component-scan>
 
 
-    <!--业务类，需要被AOP拦截的类-->
+    <!--业务类，需要被AOP拦截的类，这个类是个接口的实现类-->
     <bean id="userService"  class="com.yzz.springpractice.service.Impl.StudentServiceImpl"/>
+    <!--业务类，需要被AOP拦截的类，这个类没有实现任何接口-->
+    <bean id="noImplService"  class="com.yzz.springpractice.service.NoImplService"/>
     <!--切面类-->
     <bean id="aopAspect" class="com.yzz.springpractice.aop.InterceptorAop"/>
 
-    <!--aop配置-->
-    <aop:aspectj-autoproxy  proxy-target-class="true"/>
+    <!--aop配置，强制使用cglib代理-->
+<!--    <aop:aspectj-autoproxy  proxy-target-class="true"/>-->
     <aop:config>
+        <!--com.yzz.springpractice.service.NoImplService.NoImpl-->
         <aop:aspect ref="aopAspect">
+            <!--如果这里是一个接口，就可以不用配置上面的那个强制cglib代理，如果是一个类，不管是不是实现类都需要配置强制使用cglib代理-->
             <aop:pointcut expression="execution (* com.yzz.springpractice.service.StuService.getOne(..))" id="pointCut"/>
             <aop:before  pointcut-ref="pointCut" method="doBefore"/>
             <aop:after-returning pointcut-ref="pointCut" method="doAferReturning"/>

@@ -38,5 +38,8 @@ class AppTest {
 		
 		//aop测试
 		stuController.getStudentServiceImpl().getOne("!!!!");
+		
+		//为一个不实现任何接口的类创建代理测试
+		stuController.getNoImplService().NoImpl();
 	}
 }
