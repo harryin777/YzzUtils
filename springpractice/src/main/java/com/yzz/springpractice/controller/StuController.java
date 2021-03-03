@@ -8,6 +8,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 
@@ -21,6 +24,7 @@ import javax.annotation.Resource;
 @NoArgsConstructor
 @Data
 @Controller
+@RequestMapping("/stuController")
 public class StuController {
 	
 	@Autowired
@@ -31,5 +35,11 @@ public class StuController {
 	
 	@Resource
 	private NoImplService noImplService;
+	
+	@GetMapping("/testStu")
+	@ResponseBody
+	public String testStu(){
+		return "testStu";
+	}
 	
 }

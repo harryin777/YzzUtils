@@ -1,16 +1,22 @@
-2021-01-10 10:56:50.849 [main] INFO  com.yzz.uploadfile.UploadfileApplication - Starting UploadfileApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 12552 (E:\Dev\project\YzzUtils\uploadfile\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-01-10 10:56:50.855 [main] INFO  com.yzz.uploadfile.UploadfileApplication - No active profile set, falling back to default profiles: default
-2021-01-10 10:56:51.540 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2021-01-10 10:56:51.540 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-01-10 10:56:51.540 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-01-10 10:56:51.589 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-01-10 10:56:51.798 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-01-10 10:56:51.972 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2021-01-10 10:56:51.985 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
-2021-01-10 10:56:51.995 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2021-01-10 10:56:52.020 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2021-01-10 10:56:52.099 [main] INFO  com.yzz.uploadfile.UploadfileApplication - Started UploadfileApplication in 1.605 seconds (JVM running for 2.496)
-2021-01-10 10:57:09.554 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-01-10 10:57:09.588 [http-nio-8080-exec-1] INFO  com.yzz.uploadfile.controller.FileController - 访问接口:上传文件
-2021-01-10 10:57:09.591 [http-nio-8080-exec-1] INFO  com.yzz.uploadfile.controller.FileController - C:\Users\yky\AppData\Local\Temp\tomcat-docbase.8080.7528797723088412880\fileMana\upLoadFile
-2021-01-10 10:57:09.591 [http-nio-8080-exec-1] INFO  com.yzz.uploadfile.controller.FileController - 访问接口:上传文件，结束
+2021-03-03 15:42:48.496 [main] INFO  com.yzz.wam.WamApplication - Starting WamApplication using Java 1.8.0_231 on MECH-YKY with PID 4948 (D:\java\things\YzzUtils\worthlessamodule\target\classes started by harry in D:\java\things\YzzUtils)
+2021-03-03 15:42:48.506 [main] INFO  com.yzz.wam.WamApplication - No active profile set, falling back to default profiles: default
+2021-03-03 15:42:49.347 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9233"]
+2021-03-03 15:42:49.348 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-03 15:42:49.348 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-03 15:42:49.432 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-03 15:42:49.806 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9233"]
+2021-03-03 15:42:49.834 [main] INFO  com.yzz.wam.WamApplication - Started WamApplication in 1.912 seconds (JVM running for 3.53)
+2021-03-03 15:43:15.371 [http-nio-9233-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-03 15:43:15.379 [http-nio-9233-exec-1] INFO  com.yzz.wam.filter.MyFilter - 进入过滤器
+2021-03-03 15:43:19.998 [http-nio-9233-exec-1] INFO  com.yzz.wam.intercepter.MyInterceptors - 进入拦截器
+2021-03-03 15:43:19.999 [http-nio-9233-exec-1] INFO  com.yzz.wam.intercepter.MyInterceptors - 完成拦截器
+2021-03-03 15:43:20.000 [http-nio-9233-exec-1] INFO  com.yzz.wam.intercepter.MyInterceptors - 完成拦截器2
+2021-03-03 15:43:20.002 [http-nio-9233-exec-1] INFO  com.yzz.wam.filter.MyFilter - 完成过滤器
+2021-03-03 15:43:20.009 [http-nio-9233-exec-1] INFO  com.yzz.wam.intercepter.MyInterceptors - 进入拦截器
+2021-03-03 15:43:20.034 [http-nio-9233-exec-1] INFO  com.yzz.wam.intercepter.MyInterceptors - 完成拦截器
+2021-03-03 15:43:20.043 [http-nio-9233-exec-1] INFO  com.yzz.wam.intercepter.MyInterceptors - 完成拦截器2
+2021-03-03 15:43:30.444 [http-nio-9233-exec-2] INFO  com.yzz.wam.filter.MyFilter - 进入过滤器
+2021-03-03 15:43:35.513 [http-nio-9233-exec-2] INFO  com.yzz.wam.intercepter.MyInterceptors - 进入拦截器
+2021-03-03 15:43:35.531 [http-nio-9233-exec-2] INFO  com.yzz.wam.intercepter.MyInterceptors - 完成拦截器
+2021-03-03 15:43:35.531 [http-nio-9233-exec-2] INFO  com.yzz.wam.intercepter.MyInterceptors - 完成拦截器2
+2021-03-03 15:43:35.531 [http-nio-9233-exec-2] INFO  com.yzz.wam.filter.MyFilter - 完成过滤器

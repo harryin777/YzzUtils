@@ -1,9 +1,6 @@
-2021-01-21 10:10:33.337 [main] INFO  com.yzz.wam.lambda.PersonTest - Starting PersonTest using Java 1.8.0_231 on MECH-YKY with PID 6168 (started by harry in D:\java\things\YzzUtils\worthlessamodule)
-2021-01-21 10:10:33.407 [main] INFO  com.yzz.wam.lambda.PersonTest - No active profile set, falling back to default profiles: default
-2021-01-21 10:10:36.161 [main] INFO  com.yzz.wam.lambda.PersonTest - Started PersonTest in 3.687 seconds (JVM running for 6.673)
-2021-01-21 10:15:12.387 [main] INFO  com.yzz.wam.lambda.PersonTest - Starting PersonTest using Java 1.8.0_231 on MECH-YKY with PID 18736 (started by harry in D:\java\things\YzzUtils\worthlessamodule)
-2021-01-21 10:15:12.397 [main] INFO  com.yzz.wam.lambda.PersonTest - No active profile set, falling back to default profiles: default
-2021-01-21 10:15:13.847 [main] INFO  com.yzz.wam.lambda.PersonTest - Started PersonTest in 1.839 seconds (JVM running for 3.331)
-2021-01-21 10:16:30.777 [main] INFO  com.yzz.wam.lambda.PersonTest - Starting PersonTest using Java 1.8.0_231 on MECH-YKY with PID 17008 (started by harry in D:\java\things\YzzUtils\worthlessamodule)
-2021-01-21 10:16:30.787 [main] INFO  com.yzz.wam.lambda.PersonTest - No active profile set, falling back to default profiles: default
-2021-01-21 10:16:32.238 [main] INFO  com.yzz.wam.lambda.PersonTest - Started PersonTest in 1.838 seconds (JVM running for 3.336)
+2021-03-02 11:33:06.301 [main] INFO  com.yzz.wam.pra_objectmapper.MapperTest - Starting MapperTest using Java 1.8.0_231 on MECH-YKY with PID 17488 (started by harry in D:\java\things\YzzUtils\worthlessamodule)
+2021-03-02 11:33:06.387 [main] INFO  com.yzz.wam.pra_objectmapper.MapperTest - No active profile set, falling back to default profiles: default
+2021-03-02 11:33:09.043 [main] INFO  com.yzz.wam.pra_objectmapper.MapperTest - Started MapperTest in 3.471 seconds (JVM running for 6.898)
+2021-03-02 11:34:26.085 [main] INFO  com.yzz.wam.pra_objectmapper.MapperTest - Starting MapperTest using Java 1.8.0_231 on MECH-YKY with PID 10636 (started by harry in D:\java\things\YzzUtils\worthlessamodule)
+2021-03-02 11:34:26.097 [main] INFO  com.yzz.wam.pra_objectmapper.MapperTest - No active profile set, falling back to default profiles: default
+2021-03-02 11:34:27.534 [main] INFO  com.yzz.wam.pra_objectmapper.MapperTest - Started MapperTest in 1.79 seconds (JVM running for 3.874)
