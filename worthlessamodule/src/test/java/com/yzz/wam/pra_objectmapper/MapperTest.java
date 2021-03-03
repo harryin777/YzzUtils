@@ -9,6 +9,7 @@ import com.fasterxml.jackson.databind.SerializationFeature;
 import com.yzz.wam.WamApplication;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 
@@ -23,8 +24,7 @@ import java.util.*;
  * @Date 2021/1/18
  * @Version 1.0
  */
-@SpringBootTest()
-public class Test {
+public class MapperTest {
 	
 	public static ObjectMapper mapper = new ObjectMapper();
 	
@@ -38,7 +38,7 @@ public class Test {
 	}
 
 	@DisplayName("对象与json字符串、byte数组")
-	@org.junit.jupiter.api.Test
+	@Test
 	void testObj() throws JsonGenerationException, JsonMappingException, Exception {
 		XwjUser user = new XwjUser(1, "Hello World", new Date());
 		
@@ -59,7 +59,7 @@ public class Test {
 	}
 	
 	@DisplayName("list集合与json字符串")
-	@org.junit.jupiter.api.Test
+	@Test
 	void testList() throws JsonGenerationException, JsonMappingException, IOException {
 		List<XwjUser> userList = new ArrayList<>();
 		userList.add(new XwjUser(1, "aaa", new Date()));
@@ -75,7 +75,7 @@ public class Test {
 	}
 	
 	@DisplayName("map与json字符串")
-	@org.junit.jupiter.api.Test
+	@Test
 	void testMap() throws JsonProcessingException {
 		Map<String, Object> testMap = new HashMap<>();
 		testMap.put("name", "merry");
@@ -98,7 +98,7 @@ public class Test {
 	}
 	
 	@DisplayName("修改转换时的日期格式：")
-	@org.junit.jupiter.api.Test
+	@Test
 	public void testOther() throws IOException {
 		// 修改时间格式
 		mapper.setDateFormat(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"));
