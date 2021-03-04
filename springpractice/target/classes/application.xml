@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util
+        http://www.springframework.org/schema/util/spring-util-4.1.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/mvc https://www.springframework.org/schema/mvc/spring-mvc.xsd">
+    <!-- 注册Teacher对象-->
+    <bean id = "t1" class="com.yzz.springpractice.entity.Teacher">
+        <constructor-arg name="name" value="王老师"/>
+        <constructor-arg name="age" value="23"/>
+        <constructor-arg name="phone" value="123456789"/>
+        <constructor-arg name="sex" value="女"/>
+    </bean>
+
+    <bean id = "t2" class="com.yzz.springpractice.entity.Teacher">
+        <constructor-arg name="name" value="李老师"/>
+        <constructor-arg name="age" value="24"/>
+        <constructor-arg name="phone" value="123456789"/>
+        <constructor-arg name="sex" value="男"/>
+    </bean>
+
+    <bean id = "StuController" class="com.yzz.springpractice.controller.StuController" >
+
+    </bean>
+
+
+    <!-- 注册Student对象 class指明student的路径 包名.类名 不要带后缀
+        id 用来标识spring容器中的对象 在此处就是标识Student的对象  全局唯一 不能相同
+    -->
+    <bean id = "student" class="com.yzz.springpractice.entity.Student">
+        <!-- property标签用来为属性赋值 给属性赋值 必须保证对应的属性有set方法 否则是无法set值的
+            也可以使用构造器注入
+            <constructor-arg ref="yetAnotherBean"/>
+            <constructor-arg type="int" value="1"/>
+            如果是基本类型+string 直接用value进行赋值 如果是其他类型用另外的标签
+        -->
+        <property name="name" value="张三"/>
+        <property name="age" value="18"/>
+        <property name="sex" value="男"/>
+
+        <!--注入list属性使用list标签 -->
+        <property name="courses">
+            <list>
+                <value>语文</value>
+                <value>数学</value>
+                <value>外语</value>
+            </list>
+        </property>
+        <!--注入set属性使用set标签 -->
+        <property name="hobbis">
+            <set>
+                <value>打篮球</value>
+                <value>看电影</value>
+            </set>
+        </property>
+        <!-- 注入map属性使用map标签-->
+        <property name="scoreMap">
+            <map>
+                <entry key="语文" value="79.5"/>
+                <entry key="数学" value="85"/>
+                <entry key="外语" value="88"/>
+            </map>
+        </property>
+        <!--注入数组 使用array标签-->
+        <property name="teachers">
+            <array>
+                <ref bean="t1"/>
+                <ref bean="t2"/>
+                <!-- 通过Null表现来赋值一个空值 -->
+                <null/>
+            </array>
+        </property>
+    </bean>
+
+    <!-- 注入StudentService-->
+<!--    <bean id="studentService" class="com.haici.spring.demo.service.StudentService">-->
+<!--        <property name="studentList">-->
+<!--            <list>-->
+<!--                <ref bean="student"/>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--    </bean>-->
+
+<!--    &lt;!&ndash; 注入TtudentService&ndash;&gt;-->
+<!--    <bean id="teacherService" class="com.haici.spring.demo.service.TeacherService">-->
+<!--        <property name="studentService" ref="studentService" />-->
+<!--    </bean>-->
+
+    <!-- 还可以通过p命名空间来注入属性 作为了解内容-->
+
+    <!-- 使用util命名空间创建公用的集合类型对象 这样别的类去引用的时候可以通过ref来引用公用的集合-->
+    <util:map id="m1">
+        <entry key="语文" value="79.5"/>
+        <entry key="数学" value="85"/>
+        <entry key="外语" value="88"/>
+    </util:map>
+
+    <bean id = "student2" class="com.yzz.springpractice.entity.Student">
+        <property name="name" value="张三"/>
+        <property name="age" value="18"/>
+        <property name="sex" value="男"/>
+        <property name="courses">
+            <list>
+                <value>语文</value>
+                <value>数学</value>
+                <value>外语</value>
+            </list>
+        </property>
+        <!--注入set属性使用set标签 -->
+        <property name="hobbis">
+            <set>
+                <value>打篮球</value>
+                <value>看电影</value>
+            </set>
+        </property>
+        <!-- 注入map属性使用map标签-->
+        <property name="scoreMap" ref="m1">
+            <!--<map>
+                <entry key="语文" value="79.5"/>
+                <entry key="数学" value="85"/>
+                <entry key="外语" value="88"/>
+            </map>-->
+        </property>
+        <!--注入数组 使用array标签-->
+        <property name="teachers">
+            <array>
+                <ref bean="t1"/>
+            </array>
+        </property>
+    </bean>
+
+
+    <context:component-scan base-package="com.yzz"></context:component-scan>
+
+
+    <!--业务类，需要被AOP拦截的类，这个类是个接口的实现类-->
+    <bean id="userService"  class="com.yzz.springpractice.service.Impl.StudentServiceImpl"/>
+    <!--业务类，需要被AOP拦截的类，这个类没有实现任何接口-->
+    <bean id="noImplService"  class="com.yzz.springpractice.service.NoImplService"/>
+    <!--切面类-->
+    <bean id="aopAspect" class="com.yzz.springpractice.aop.InterceptorAop"/>
+
+    <!--aop配置，强制使用cglib代理-->
+<!--    <aop:aspectj-autoproxy  proxy-target-class="true"/>-->
+    <aop:config>
+        <!--com.yzz.springpractice.service.NoImplService.NoImpl-->
+        <aop:aspect ref="aopAspect">
+            <!--如果这里是一个接口，就可以不用配置上面的那个强制cglib代理，如果是一个类，不管是不是实现类都需要配置强制使用cglib代理-->
+            <aop:pointcut expression="execution (* com.yzz.springpractice.service.StuService.getOne(..))" id="pointCut"/>
+            <aop:before  pointcut-ref="pointCut" method="doBefore"/>
+            <aop:after-returning pointcut-ref="pointCut" method="doAferReturning"/>
+            <aop:after-throwing  pointcut-ref="pointCut" method="doAferThrowing"/>
+            <aop:after pointcut-ref="pointCut" method="doAfter"/>
+        </aop:aspect>
+    </aop:config>
+    
+    
+    
+    <!--springmvc配置拦截器-->
+    <mvc:interceptors>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"/>
+            <bean class="com.yzz.springpractice.interceptors.MyInterceptors"/>
+        </mvc:interceptor>
+    </mvc:interceptors>
+
+</beans>

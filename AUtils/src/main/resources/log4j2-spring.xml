@@ -10,9 +10,10 @@
         <!-- %logger{36} 表示 Logger 名字最长36个字符 -->
         <property name="LOG_PATTERN" value="%date{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n" />
         <!-- 定义日志存储的路径，如果不是以/开头，就默认是项目根目录 -->
+        <!-- 定义日志存储的路径，如果是以/开头，就当前磁盘的根目录 -->
         <property name="FILE_PATH" value="logs" />
         <!--        <property name="FILE_PATH" value="E:\myproject2\YzzUtils\log" />-->
-        <property name="FILE_NAME" value="mytools" />
+        <property name="FILE_NAME" value="YzzUtils" />
     </Properties>
 
     <appenders>
@@ -79,7 +80,10 @@
     <loggers>
 
         <!--若是additivity设为false，则 子Logger 只会在自己的appender，这个地方指定了append是conslo里输出，而不会在 父Logger 的appender里输出。如果同时开了additvity而且没有指定appender，那么会出现重复打印日志的情况-->
-        <logger name="com.yzz.practice_mybatisplus.dao" level="trace" additivity="false">
+        <logger name="com.yzz.practice_mybatisplus.dao" level="debug" additivity="false">
+            <AppenderRef ref="Console"/>
+        </logger>
+        <logger name="com.yzz.springsecurity.security.dao.UserDao" level="debug" additivity="false">
             <AppenderRef ref="Console"/>
         </logger>
 
