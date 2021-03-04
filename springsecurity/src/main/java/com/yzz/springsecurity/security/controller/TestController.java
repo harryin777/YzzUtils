@@ -32,12 +32,4 @@ public class TestController {
 		log.info("访问test1 结束");
 		return "test1";
 	}
-	
-	@PostMapping("/login123")
-	public UserDetails login123(String username){
-		log.info("login123");
-		UserVO userVO = userService.getOne(username);
-		log.info("login123 结束");
-		return userVO;
-	}
 }
