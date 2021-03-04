@@ -1,0 +1,12 @@
+server:
+  port: 9099
+
+spring:
+  profiles:
+    active: @activatedProperties@
+
+
+#这里的控制只有当http.httpBasic和.formlogin都不开启的情况下才有用
+#security:
+#  basic:
+#    enable: false

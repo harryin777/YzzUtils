@@ -1,246 +1,49 @@
-2021-01-05 11:45:44.393 [http-nio-8082-exec-6] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.jdbc.BadSqlGrammarException: 
-### Error updating database.  Cause: java.sql.SQLSyntaxErrorException: Unknown column 'insert_time' in 'field list'
-### The error may exist in com/yzz/practice_mybatisplus/dao/StuDao.java (best guess)
-### The error may involve com.yzz.practice_mybatisplus.dao.StuDao.insert-Inline
-### The error occurred while setting parameters
-### SQL: INSERT INTO stu  ( id,  age, gender, insert_time, update_time, version )  VALUES  ( ?,  ?, ?, ?, ?, ? )
-### Cause: java.sql.SQLSyntaxErrorException: Unknown column 'insert_time' in 'field list'
-; bad SQL grammar []; nested exception is java.sql.SQLSyntaxErrorException: Unknown column 'insert_time' in 'field list'] with root cause
-java.sql.SQLSyntaxErrorException: Unknown column 'insert_time' in 'field list'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497) ~[druid-1.1.23.jar:1.1.23]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
-	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59) ~[mybatis-3.5.5.jar:3.5.5]
-	at com.sun.proxy.$Proxy143.execute(Unknown Source) ~[?:?]
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47) ~[mybatis-3.5.5.jar:3.5.5]
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.5.5.jar:3.5.5]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
-	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63) ~[mybatis-3.5.5.jar:3.5.5]
-	at com.sun.proxy.$Proxy141.update(Unknown Source) ~[?:?]
-	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doUpdate(MybatisSimpleExecutor.java:56) ~[mybatis-plus-core-3.4.1.jar:3.4.1]
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.5.5.jar:3.5.5]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
-	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49) ~[mybatis-3.5.5.jar:3.5.5]
-	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:83) ~[mybatis-plus-extension-3.4.1.jar:3.4.1]
-	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61) ~[mybatis-3.5.5.jar:3.5.5]
-	at com.sun.proxy.$Proxy140.update(Unknown Source) ~[?:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
-	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63) ~[mybatis-3.5.5.jar:3.5.5]
-	at com.sun.proxy.$Proxy140.update(Unknown Source) ~[?:?]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197) ~[mybatis-3.5.5.jar:3.5.5]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184) ~[mybatis-3.5.5.jar:3.5.5]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426) ~[mybatis-spring-2.0.5.jar:2.0.5]
-	at com.sun.proxy.$Proxy93.insert(Unknown Source) ~[?:?]
-	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271) ~[mybatis-spring-2.0.5.jar:2.0.5]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:60) ~[mybatis-plus-core-3.4.1.jar:3.4.1]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148) ~[mybatis-plus-core-3.4.1.jar:3.4.1]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89) ~[mybatis-plus-core-3.4.1.jar:3.4.1]
-	at com.sun.proxy.$Proxy94.insert(Unknown Source) ~[?:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.3.2.jar:5.3.2]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.3.2.jar:5.3.2]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.2.jar:5.3.2]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.2.jar:5.3.2]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.2.jar:5.3.2]
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.2.jar:5.3.2]
-	at com.sun.proxy.$Proxy95.insert(Unknown Source) ~[?:?]
-	at com.yzz.practice_mybatisplus.controller.BpController.insertOne(BpController.java:67) ~[classes/:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.41.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.41.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_251]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_251]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_251]
-2021-01-05 11:46:56.723 [http-nio-8082-exec-7] ERROR com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.23.3:3306/db1?useUnicode=true&characterEncoding=utf8&nullCatalogMeansCurrent=true, jdbcUrl : jdbc:mysql://192.168.23.3:3306/db1?useUnicode=true&characterEncoding=utf8&nullCatalogMeansCurrent=true, lastPacketReceivedIdleMillis : 72390
-2021-01-05 12:18:32.012 [http-nio-8082-exec-2] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.springframework.dao.DuplicateKeyException: 
-### Error updating database.  Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'string' for key 'PRIMARY'
-### The error may exist in com/yzz/practice_mybatisplus/dao/StuDao.java (best guess)
-### The error may involve com.yzz.practice_mybatisplus.dao.StuDao.insert-Inline
-### The error occurred while setting parameters
-### SQL: INSERT INTO stu  ( id, name, age, gender, insert_time, update_time, version )  VALUES  ( ?, ?, ?, ?, ?, ?, ? )
-### Cause: java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'string' for key 'PRIMARY'
-; Duplicate entry 'string' for key 'PRIMARY'; nested exception is java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'string' for key 'PRIMARY'] with root cause
-java.sql.SQLIntegrityConstraintViolationException: Duplicate entry 'string' for key 'PRIMARY'
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:117) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.ClientPreparedStatement.execute(ClientPreparedStatement.java:370) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.alibaba.druid.pool.DruidPooledPreparedStatement.execute(DruidPooledPreparedStatement.java:497) ~[druid-1.1.23.jar:1.1.23]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
-	at org.apache.ibatis.logging.jdbc.PreparedStatementLogger.invoke(PreparedStatementLogger.java:59) ~[mybatis-3.5.5.jar:3.5.5]
-	at com.sun.proxy.$Proxy128.execute(Unknown Source) ~[?:?]
-	at org.apache.ibatis.executor.statement.PreparedStatementHandler.update(PreparedStatementHandler.java:47) ~[mybatis-3.5.5.jar:3.5.5]
-	at org.apache.ibatis.executor.statement.RoutingStatementHandler.update(RoutingStatementHandler.java:74) ~[mybatis-3.5.5.jar:3.5.5]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
-	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63) ~[mybatis-3.5.5.jar:3.5.5]
-	at com.sun.proxy.$Proxy126.update(Unknown Source) ~[?:?]
-	at com.baomidou.mybatisplus.core.executor.MybatisSimpleExecutor.doUpdate(MybatisSimpleExecutor.java:56) ~[mybatis-plus-core-3.4.1.jar:3.4.1]
-	at org.apache.ibatis.executor.BaseExecutor.update(BaseExecutor.java:117) ~[mybatis-3.5.5.jar:3.5.5]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
-	at org.apache.ibatis.plugin.Invocation.proceed(Invocation.java:49) ~[mybatis-3.5.5.jar:3.5.5]
-	at com.baomidou.mybatisplus.extension.plugins.MybatisPlusInterceptor.intercept(MybatisPlusInterceptor.java:83) ~[mybatis-plus-extension-3.4.1.jar:3.4.1]
-	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:61) ~[mybatis-3.5.5.jar:3.5.5]
-	at com.sun.proxy.$Proxy125.update(Unknown Source) ~[?:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
-	at org.apache.ibatis.plugin.Plugin.invoke(Plugin.java:63) ~[mybatis-3.5.5.jar:3.5.5]
-	at com.sun.proxy.$Proxy125.update(Unknown Source) ~[?:?]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.update(DefaultSqlSession.java:197) ~[mybatis-3.5.5.jar:3.5.5]
-	at org.apache.ibatis.session.defaults.DefaultSqlSession.insert(DefaultSqlSession.java:184) ~[mybatis-3.5.5.jar:3.5.5]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
-	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:426) ~[mybatis-spring-2.0.5.jar:2.0.5]
-	at com.sun.proxy.$Proxy93.insert(Unknown Source) ~[?:?]
-	at org.mybatis.spring.SqlSessionTemplate.insert(SqlSessionTemplate.java:271) ~[mybatis-spring-2.0.5.jar:2.0.5]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperMethod.execute(MybatisMapperMethod.java:60) ~[mybatis-plus-core-3.4.1.jar:3.4.1]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy$PlainMethodInvoker.invoke(MybatisMapperProxy.java:148) ~[mybatis-plus-core-3.4.1.jar:3.4.1]
-	at com.baomidou.mybatisplus.core.override.MybatisMapperProxy.invoke(MybatisMapperProxy.java:89) ~[mybatis-plus-core-3.4.1.jar:3.4.1]
-	at com.sun.proxy.$Proxy94.insert(Unknown Source) ~[?:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:344) ~[spring-aop-5.3.2.jar:5.3.2]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:198) ~[spring-aop-5.3.2.jar:5.3.2]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-5.3.2.jar:5.3.2]
-	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-5.3.2.jar:5.3.2]
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.3.2.jar:5.3.2]
-	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:215) ~[spring-aop-5.3.2.jar:5.3.2]
-	at com.sun.proxy.$Proxy95.insert(Unknown Source) ~[?:?]
-	at com.yzz.practice_mybatisplus.service.impl.StuServiceImpl.insertStu(StuServiceImpl.java:75) ~[classes/:?]
-	at com.yzz.practice_mybatisplus.service.impl.StuServiceImpl$$FastClassBySpringCGLIB$$608eb333.invoke(<generated>) ~[classes/:?]
-	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218) ~[spring-core-5.3.2.jar:5.3.2]
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:687) ~[spring-aop-5.3.2.jar:5.3.2]
-	at com.yzz.practice_mybatisplus.service.impl.StuServiceImpl$$EnhancerBySpringCGLIB$$15b89cd7.insertStu(<generated>) ~[classes/:?]
-	at com.yzz.practice_mybatisplus.controller.BpController.insertOne(BpController.java:69) ~[classes/:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.41.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.41.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_251]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_251]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_251]
+2021-03-04 15:17:52.832 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.yzz.hub, com.yzz.springsecurity.security]' package. Please check your configuration.
+2021-03-04 15:19:40.632 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.yzz.hub, com.yzz.springsecurity.security]' package. Please check your configuration.
+2021-03-04 15:23:31.588 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 15:24:49.637 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 15:25:46.839 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 15:27:19.026 [http-nio-9099-exec-7] ERROR com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.160.4:3306/db1?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true, jdbcUrl : jdbc:mysql://192.168.160.4:3306/db1?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true, lastPacketReceivedIdleMillis : 68196
+2021-03-04 15:29:24.249 [http-nio-9099-exec-2] ERROR com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.160.4:3306/db1?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true, jdbcUrl : jdbc:mysql://192.168.160.4:3306/db1?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true, lastPacketReceivedIdleMillis : 125122
+2021-03-04 15:31:07.927 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 15:32:22.169 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 15:34:06.040 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 15:36:09.921 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 15:37:35.210 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 15:45:58.555 [http-nio-9099-exec-7] ERROR com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.160.4:3306/db1?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true, jdbcUrl : jdbc:mysql://192.168.160.4:3306/db1?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true, lastPacketReceivedIdleMillis : 466187
+2021-03-04 16:09:35.944 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 16:10:19.369 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 16:11:36.347 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 16:12:11.579 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 16:13:47.971 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 16:23:06.103 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 16:31:05.123 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 16:32:35.132 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 16:33:20.230 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 16:34:04.860 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 16:35:11.886 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 16:38:31.833 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 16:40:53.868 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 16:42:37.543 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 16:43:09.479 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 16:43:44.091 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 16:45:43.438 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 16:46:38.300 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 16:47:26.241 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 16:48:48.901 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 16:50:12.560 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 16:51:07.985 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 16:55:02.676 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 17:03:36.251 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 17:07:15.986 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 17:08:43.650 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 17:15:16.641 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 17:15:50.658 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 17:19:33.352 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 17:24:43.870 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 17:26:17.661 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 17:26:48.978 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 17:34:34.118 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 17:35:59.137 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 17:39:31.625 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-04 17:53:01.608 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
