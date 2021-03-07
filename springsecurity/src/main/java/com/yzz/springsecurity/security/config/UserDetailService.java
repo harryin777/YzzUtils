@@ -2,6 +2,7 @@ package com.yzz.springsecurity.security.config;
 
 import com.yzz.springsecurity.security.vo.UserVO;
 import com.yzz.springsecurity.security.service.UserService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -15,6 +16,7 @@ import javax.annotation.Resource;
  * @Date 2021/3/4
  * @Version 1.0
  */
+@Slf4j
 @Component
 public class UserDetailService implements UserDetailsService {
 
