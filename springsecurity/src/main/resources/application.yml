@@ -10,3 +10,6 @@ spring:
 #security:
 #  basic:
 #    enable: false
+
+token:
+  expirationSeconds: 5*60

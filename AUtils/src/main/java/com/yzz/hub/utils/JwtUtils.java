@@ -1,11 +1,15 @@
 package com.yzz.hub.utils;
 
+import cn.hutool.core.date.DateUtil;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;
 import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
 import org.apache.commons.lang.StringUtils;
 
+import javax.xml.crypto.Data;
 import java.nio.charset.StandardCharsets;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -20,6 +24,8 @@ public class JwtUtils {
     private static final String ACCESS_TOKEN = "access_token";
 
     private static final String SIGNING_KEY = "value";
+    
+    private static final String salt = "aabbcc";
 
     /**
      * 获取token中包含的信息
@@ -73,5 +79,45 @@ public class JwtUtils {
         }
         return (String) resultMap.get(SIGNING_KEY);
     }
+    
+    
+    /**
+     * 生成token
+     * @param subject （主体信息）
+     * @param expirationSeconds 过期时间（秒）
+     * @param claims 自定义身份信息
+     * @return
+     */
+    public static String generateToken(String subject, int expirationSeconds, Map<String,Object> claims) {
+        return Jwts.builder()
+                .setClaims(claims)
+                .setSubject(subject)
+                .setExpiration(new Date(System.currentTimeMillis() + expirationSeconds * 1000))
+                .signWith(SignatureAlgorithm.HS512, salt) // 不使用公钥
+                .compact();
+    }
+    
+    
+    // 是否已过期
+    public static boolean isExpiration(Date expirationTime){
+        /*return getTokenBody(token).getExpiration().before(new Date());*/
+        
+        //通过redis中的失效时间进行判断
+        Date currentTime = DateUtil.date();
+        if(DateUtil.compare(currentTime,expirationTime) == 1
+                || DateUtil.compare(currentTime,expirationTime) == 0){
+            //当前时间比过期时间小，失效
+            return true;
+        }else{
+            return false;
+        }
+    }
+    
+    public static void main(String[] args) {
+        Date d1 = DateUtil.parse("2021-3-21", "yyyy-MM-dd");
+        Date d2 = DateUtil.date();
+        System.out.println(JwtUtils.isExpiration(d1));
+    }
+
 
 }

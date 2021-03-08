@@ -43,8 +43,9 @@ public class MyAuthenticationProvider implements AuthenticationProvider {
 		}
 
 		String password = (String) authentication.getCredentials();
-		if(passwordEncoder.matches(password, userDetails.getPassword())){
-			log.info("密码符合");
+		if(!passwordEncoder.matches(password, userDetails.getPassword())){
+			log.info("密码不符合");
+			return null;
 		}
 		//注意这里的构造方法，多了一个参数：authority，可以在源码里看到如果只有两个参数
 		//那么鉴权的结果就是false
