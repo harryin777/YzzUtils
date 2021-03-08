@@ -13,3 +13,4 @@
 2021-03-04 20:37:12.176 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
 2021-03-04 20:38:37.823 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
 2021-03-04 20:38:49.052 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-05 17:39:47.341 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
