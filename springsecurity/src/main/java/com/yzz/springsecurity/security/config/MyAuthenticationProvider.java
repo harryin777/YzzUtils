@@ -7,7 +7,9 @@ import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 
@@ -18,35 +20,36 @@ import javax.annotation.Resource;
  * @Version 1.0
  */
 @Slf4j
+@Component
 public class MyAuthenticationProvider implements AuthenticationProvider {
 	
 	
 	@Resource
 	private PasswordEncoder passwordEncoder;
-	
+
 	@Resource
-	private UserService userService;
+	private UserDetailService userDetailService;
 	
 	
 	@Override
 	public Authentication authenticate(Authentication authentication) throws AuthenticationException {
 		
 		String username = (String) authentication.getName();
-		String password = (String) authentication.getCredentials();
-		UserVO userVO = userService.getOne(username);
-		if(userVO == null){
+		UserDetails userDetails = userDetailService.loadUserByUsername(username);
+
+		if(userDetails == null){
 			System.out.println("该用户不存在");
 			return null;
 		}
-		
-		
-		if(passwordEncoder.matches(userVO.getPassword(), password)){
-			log.info("密码复合");
+
+		String password = (String) authentication.getCredentials();
+		if(passwordEncoder.matches(password, userDetails.getPassword())){
+			log.info("密码符合");
 		}
 		//注意这里的构造方法，多了一个参数：authority，可以在源码里看到如果只有两个参数
 		//那么鉴权的结果就是false
 		UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken
-				= new UsernamePasswordAuthenticationToken(username, password, userVO.getAuthorities());
+				= new UsernamePasswordAuthenticationToken(username, password, userDetails.getAuthorities());
 		return usernamePasswordAuthenticationToken;
 	}
 	

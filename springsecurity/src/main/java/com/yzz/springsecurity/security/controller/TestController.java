@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * @ClassName TestController
@@ -27,8 +28,9 @@ public class TestController {
 	private UserService userService;
 	
 	@GetMapping("/test1")
-	public String test1(){
+	public String test1(HttpServletRequest request){
 		log.info("访问test1");
+		String a1 = request.getParameter("a1");
 		log.info("访问test1 结束");
 		return "test1";
 	}
