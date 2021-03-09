@@ -1,18 +1,16 @@
 package com.yzz.springsecurity.security.service;
 
 import com.yzz.springsecurity.security.entity.Role;
-import com.yzz.springsecurity.security.vo.UserVO;
 
 import java.util.List;
 
 /**
- * @ClassName UserService
+ * @ClassName MenuService
  * @Author yky
- * @Date 2021/3/4
+ * @Date 2021/3/9
  * @Version 1.0
  */
-public interface UserService {
+public interface MenuService {
 	
-	List<Role> getRolesByUserId(int userId);
-
+	List<Role> getRoleByMenuId(int menuId);
 }

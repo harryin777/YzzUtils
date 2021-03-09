@@ -12,4 +12,7 @@ spring:
 #    enable: false
 
 token:
-  expirationSeconds: 5*60
+  expirationSeconds: 60
+
+mybatis-plus:
+  type-aliases-package: com.yzz.springsecurity.security

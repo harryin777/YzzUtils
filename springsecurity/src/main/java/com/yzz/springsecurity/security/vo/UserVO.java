@@ -28,8 +28,6 @@ import java.util.List;
 @TableName("uservo")
 public class UserVO implements Serializable, UserDetails {
 	
-	private int id;
-	
 	private String username;
 	
 	private String password;

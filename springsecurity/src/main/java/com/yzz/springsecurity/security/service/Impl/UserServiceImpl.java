@@ -2,11 +2,13 @@ package com.yzz.springsecurity.security.service.Impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.yzz.springsecurity.security.dao.UserDao;
+import com.yzz.springsecurity.security.entity.Role;
 import com.yzz.springsecurity.security.vo.UserVO;
 import com.yzz.springsecurity.security.service.UserService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * @ClassName UserServiceImpl
@@ -21,9 +23,7 @@ public class UserServiceImpl implements UserService {
 	private UserDao userDao;
 	
 	@Override
-	public UserVO getOne(String userName) {
-		QueryWrapper<UserVO> qw = new QueryWrapper<>();
-		qw.eq("username", userName);
-		return userDao.selectOne(qw);
+	public List<Role> getRolesByUserId(int userId) {
+		return userDao.getRolesByUserId(userId);
 	}
 }

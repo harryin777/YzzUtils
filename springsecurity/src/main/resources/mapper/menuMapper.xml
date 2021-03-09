@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yzz.springsecurity.security.entity.Menu">
+
+    <select id="getRoleByMenuId" resultType="Role" parameterType="Integer">
+        SELECT
+            c.id,
+            c.role_name
+        FROM
+            menu a
+            LEFT JOIN role_menu b ON a.id = b.menu_id
+            LEFT JOIN role c ON b.role_id = c.id
+        where a.id = #{id};
+
+    </select>
+
+
+
+</mapper>

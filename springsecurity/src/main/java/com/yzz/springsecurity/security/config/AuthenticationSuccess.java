@@ -40,5 +40,8 @@ public class AuthenticationSuccess implements AuthenticationSuccessHandler {
 		map.put("ip", ip);
 		//生成token
 		String token_new = JwtUtils.generateToken(username, expirationSeconds, map);
+		log.info("生成的token, {}", token_new);
+		//token返回给前端
+		response.getWriter().write(token_new);
 	}
 }

@@ -499,3 +499,464 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [index
 2021-03-08 21:04:12.877 [http-nio-9233-exec-2] INFO  com.yzz.wam.intercepter.MyInterceptors - 完成拦截器
 2021-03-08 21:04:12.877 [http-nio-9233-exec-2] INFO  com.yzz.wam.intercepter.MyInterceptors - 完成拦截器2
 2021-03-08 21:04:12.877 [http-nio-9233-exec-2] INFO  com.yzz.wam.filter.MyFilter - 完成过滤器
+2021-03-09 10:59:03.895 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Starting SpringSecApplication using Java 1.8.0_231 on MECH-YKY with PID 18824 (D:\java\things\YzzUtils\springsecurity\target\classes started by harry in D:\java\things\YzzUtils)
+2021-03-09 10:59:03.957 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - The following profiles are active: office
+2021-03-09 10:59:07.183 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9099"]
+2021-03-09 10:59:07.183 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-09 10:59:07.183 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-09 10:59:07.322 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-09 10:59:07.443 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-03-09 10:59:41.176 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Starting SpringSecApplication using Java 1.8.0_231 on MECH-YKY with PID 16460 (D:\java\things\YzzUtils\springsecurity\target\classes started by harry in D:\java\things\YzzUtils)
+2021-03-09 10:59:41.185 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - The following profiles are active: office
+2021-03-09 10:59:42.548 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9099"]
+2021-03-09 10:59:42.548 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-09 10:59:42.549 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-09 10:59:42.636 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-09 10:59:44.212 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-09 10:59:44.892 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-09 10:59:45.749 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9099"]
+2021-03-09 10:59:45.778 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-03-09 10:59:45.810 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-03-09 10:59:45.905 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-03-09 10:59:46.022 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Started SpringSecApplication in 5.42 seconds (JVM running for 7.468)
+2021-03-09 11:00:13.410 [http-nio-9099-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-09 11:00:13.560 [http-nio-9099-exec-1] ERROR com.yzz.springsecurity.security.config.MyAuthenticationEntryPoint - 出现异常, Full authentication is required to access this resource
+2021-03-09 11:00:13.991 [http-nio-9099-exec-2] ERROR com.yzz.springsecurity.security.config.MyAuthenticationEntryPoint - 出现异常, Full authentication is required to access this resource
+2021-03-09 11:01:29.185 [http-nio-9099-exec-5] ERROR com.yzz.springsecurity.security.config.MyAuthenticationEntryPoint - 出现异常, Full authentication is required to access this resource
+2021-03-09 11:01:36.070 [http-nio-9099-exec-7] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-03-09 11:01:37.348 [http-nio-9099-exec-7] INFO  com.yzz.springsecurity.security.config.AuthenticationSuccess - 生成的token, eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMjMiLCJpcCI6IjA6MDowOjA6MDowOjA6MSIsImV4cCI6MTYxNTI1ODk1N30.wwwqp77-Sf6POvGPkgf6eFUHwOwOZKYyg1d3TWzh5I3zVyisGy4DEEy_vQodHOpCgmOn-Txy0ZNur_PejIKNtQ
+2021-03-09 11:01:55.947 [http-nio-9099-exec-9] INFO  com.yzz.springsecurity.security.config.AuthenticationLogout - 登出系统
+2021-03-09 11:02:50.343 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2021-03-09 11:02:50.361 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2021-03-09 11:02:57.041 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Starting SpringSecApplication using Java 1.8.0_231 on MECH-YKY with PID 1500 (D:\java\things\YzzUtils\springsecurity\target\classes started by harry in D:\java\things\YzzUtils)
+2021-03-09 11:02:57.051 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - The following profiles are active: office
+2021-03-09 11:02:58.520 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9099"]
+2021-03-09 11:02:58.520 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-09 11:02:58.521 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-09 11:02:58.605 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-09 11:02:59.394 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-09 11:02:59.753 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-09 11:03:00.155 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9099"]
+2021-03-09 11:03:00.174 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-03-09 11:03:00.190 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-03-09 11:03:00.231 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-03-09 11:03:00.313 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Started SpringSecApplication in 3.982 seconds (JVM running for 5.659)
+2021-03-09 11:03:06.380 [http-nio-9099-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-09 11:05:04.934 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+2021-03-09 11:05:11.667 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Starting SpringSecApplication using Java 1.8.0_231 on MECH-YKY with PID 15228 (D:\java\things\YzzUtils\springsecurity\target\classes started by harry in D:\java\things\YzzUtils)
+2021-03-09 11:05:11.676 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - The following profiles are active: office
+2021-03-09 11:05:13.090 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9099"]
+2021-03-09 11:05:13.090 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-09 11:05:13.091 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-09 11:05:13.176 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-09 11:05:13.998 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-09 11:05:14.350 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-09 11:05:14.761 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9099"]
+2021-03-09 11:05:14.780 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-03-09 11:05:14.793 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-03-09 11:05:14.831 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-03-09 11:05:14.910 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Started SpringSecApplication in 3.9 seconds (JVM running for 5.449)
+2021-03-09 11:06:08.420 [http-nio-9099-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-09 11:06:31.932 [http-nio-9099-exec-3] ERROR com.yzz.springsecurity.security.config.MyAuthenticationEntryPoint - 出现异常, Full authentication is required to access this resource
+2021-03-09 11:06:31.932 [http-nio-9099-exec-2] ERROR com.yzz.springsecurity.security.config.MyAuthenticationEntryPoint - 出现异常, Full authentication is required to access this resource
+2021-03-09 11:06:49.458 [http-nio-9099-exec-4] ERROR com.yzz.springsecurity.security.config.MyAuthenticationEntryPoint - 出现异常, Full authentication is required to access this resource
+2021-03-09 11:08:06.163 [http-nio-9099-exec-5] ERROR com.yzz.springsecurity.security.config.MyAuthenticationEntryPoint - 出现异常, Full authentication is required to access this resource
+2021-03-09 11:09:46.403 [http-nio-9099-exec-7] ERROR com.yzz.springsecurity.security.config.MyAuthenticationEntryPoint - 出现异常, Full authentication is required to access this resource
+2021-03-09 11:10:46.469 [http-nio-9099-exec-9] ERROR com.yzz.springsecurity.security.config.MyAuthenticationEntryPoint - 出现异常, Full authentication is required to access this resource
+2021-03-09 11:10:54.717 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Starting SpringSecApplication using Java 1.8.0_231 on MECH-YKY with PID 21224 (D:\java\things\YzzUtils\springsecurity\target\classes started by harry in D:\java\things\YzzUtils)
+2021-03-09 11:10:54.727 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - The following profiles are active: office
+2021-03-09 11:10:56.097 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9099"]
+2021-03-09 11:10:56.098 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-09 11:10:56.099 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-09 11:10:56.184 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-09 11:10:56.987 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-09 11:10:57.357 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-09 11:10:57.783 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9099"]
+2021-03-09 11:10:57.802 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-03-09 11:10:57.819 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-03-09 11:10:57.857 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-03-09 11:10:57.935 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Started SpringSecApplication in 3.866 seconds (JVM running for 5.666)
+2021-03-09 11:11:02.511 [http-nio-9099-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-09 11:11:20.987 [http-nio-9099-exec-1] ERROR com.yzz.springsecurity.security.config.MyAuthenticationEntryPoint - 出现异常, Full authentication is required to access this resource
+2021-03-09 11:13:22.176 [http-nio-9099-exec-2] ERROR com.yzz.springsecurity.security.config.MyAuthenticationEntryPoint - 出现异常, Full authentication is required to access this resource
+2021-03-09 11:14:20.332 [http-nio-9099-exec-4] ERROR com.yzz.springsecurity.security.config.MyAuthenticationEntryPoint - 出现异常, Full authentication is required to access this resource
+2021-03-09 11:22:16.130 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Starting SpringSecApplication using Java 1.8.0_231 on MECH-YKY with PID 2968 (D:\java\things\YzzUtils\springsecurity\target\classes started by harry in D:\java\things\YzzUtils)
+2021-03-09 11:22:16.141 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - The following profiles are active: office
+2021-03-09 11:22:17.487 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9099"]
+2021-03-09 11:22:17.488 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-09 11:22:17.488 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-09 11:22:17.571 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-09 11:22:18.352 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-09 11:22:18.706 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-09 11:22:19.122 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9099"]
+2021-03-09 11:22:19.142 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-03-09 11:22:19.156 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-03-09 11:22:19.192 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-03-09 11:22:19.269 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Started SpringSecApplication in 3.741 seconds (JVM running for 5.267)
+2021-03-09 11:22:29.108 [http-nio-9099-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-09 14:42:15.849 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Starting SpringSecApplication using Java 1.8.0_231 on MECH-YKY with PID 8232 (D:\java\things\YzzUtils\springsecurity\target\classes started by harry in D:\java\things\YzzUtils)
+2021-03-09 14:42:15.856 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - The following profiles are active: office
+2021-03-09 14:42:17.222 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9099"]
+2021-03-09 14:42:17.223 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-09 14:42:17.223 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-09 14:42:17.309 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-09 14:42:18.108 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-09 14:42:18.459 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-09 14:42:18.886 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9099"]
+2021-03-09 14:42:18.906 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-03-09 14:42:18.921 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-03-09 14:42:18.961 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-03-09 14:42:19.043 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Started SpringSecApplication in 3.847 seconds (JVM running for 5.379)
+2021-03-09 14:42:28.841 [http-nio-9099-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-09 14:42:48.381 [http-nio-9099-exec-3] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-03-09 14:42:49.226 [http-nio-9099-exec-3] INFO  com.yzz.springsecurity.security.config.AuthenticationSuccess - 生成的token, eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMjMiLCJpcCI6IjA6MDowOjA6MDowOjA6MSIsImV4cCI6MTYxNTI3MjIyOX0.esRAYmNDvQ78PtIpnvMhODo6eAIvrssZpaSvDgxk0oD2KiFO_Qyhv8axrDzsNjBdjP3bpPWhU5U3xzp4xGf5ZQ
+2021-03-09 14:43:12.220 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2021-03-09 14:43:12.223 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2021-03-09 14:43:18.851 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Starting SpringSecApplication using Java 1.8.0_231 on MECH-YKY with PID 2784 (D:\java\things\YzzUtils\springsecurity\target\classes started by harry in D:\java\things\YzzUtils)
+2021-03-09 14:43:18.860 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - The following profiles are active: office
+2021-03-09 14:43:20.260 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9099"]
+2021-03-09 14:43:20.260 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-09 14:43:20.260 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-09 14:43:20.356 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-09 14:43:21.201 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.vo.UserVO"
+2021-03-09 14:43:21.547 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-09 14:43:21.944 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9099"]
+2021-03-09 14:43:21.963 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-03-09 14:43:21.976 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-03-09 14:43:22.012 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-03-09 14:43:22.086 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Started SpringSecApplication in 3.836 seconds (JVM running for 5.473)
+2021-03-09 14:43:29.916 [http-nio-9099-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-09 14:43:32.899 [http-nio-9099-exec-5] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-03-09 14:43:33.773 [http-nio-9099-exec-5] INFO  com.yzz.springsecurity.security.config.AuthenticationSuccess - 生成的token, eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMjMiLCJpcCI6IjA6MDowOjA6MDowOjA6MSIsImV4cCI6MTYxNTI3MjI3M30.fbtol4x7BgO_FGpA6OIX4-pwJQEjdvPs8Leo2rQ6kHdjXcbwc3TEfesPTV2eFFQs617Xx7JtAIssq7M0CUmO9w
+2021-03-09 14:43:39.286 [http-nio-9099-exec-6] INFO  com.yzz.springsecurity.security.controller.TestController - 访问test1
+2021-03-09 14:43:39.287 [http-nio-9099-exec-6] INFO  com.yzz.springsecurity.security.controller.TestController - 访问test1 结束
+2021-03-09 16:25:44.859 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Starting SpringSecApplication using Java 1.8.0_231 on MECH-YKY with PID 10644 (D:\java\things\YzzUtils\springsecurity\target\classes started by harry in D:\java\things\YzzUtils)
+2021-03-09 16:25:44.868 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - The following profiles are active: office
+2021-03-09 16:25:46.272 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9099"]
+2021-03-09 16:25:46.273 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-09 16:25:46.273 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-09 16:25:46.362 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-09 16:25:46.785 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+2021-03-09 16:25:46.788 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-03-09 16:27:00.793 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Starting SpringSecApplication using Java 1.8.0_231 on MECH-YKY with PID 14772 (D:\java\things\YzzUtils\springsecurity\target\classes started by harry in D:\java\things\YzzUtils)
+2021-03-09 16:27:00.801 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - The following profiles are active: office
+2021-03-09 16:27:02.420 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9099"]
+2021-03-09 16:27:02.420 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-09 16:27:02.420 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-09 16:27:02.562 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-09 16:27:03.513 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Menu"
+2021-03-09 16:27:03.565 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+2021-03-09 16:27:03.568 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-03-09 16:27:53.789 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Starting SpringSecApplication using Java 1.8.0_231 on MECH-YKY with PID 4160 (D:\java\things\YzzUtils\springsecurity\target\classes started by harry in D:\java\things\YzzUtils)
+2021-03-09 16:27:53.799 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - The following profiles are active: office
+2021-03-09 16:27:55.226 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9099"]
+2021-03-09 16:27:55.227 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-09 16:27:55.227 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-09 16:27:55.315 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-09 16:27:56.170 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Menu"
+2021-03-09 16:27:56.262 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.User"
+2021-03-09 16:27:56.291 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Role"
+2021-03-09 16:27:56.575 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-09 16:27:56.952 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+2021-03-09 16:27:56.958 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-03-09 16:31:14.481 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Starting SpringSecApplication using Java 1.8.0_231 on MECH-YKY with PID 12484 (D:\java\things\YzzUtils\springsecurity\target\classes started by harry in D:\java\things\YzzUtils)
+2021-03-09 16:31:14.492 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - The following profiles are active: office
+2021-03-09 16:31:15.983 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9099"]
+2021-03-09 16:31:15.984 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-09 16:31:15.985 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-09 16:31:16.070 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-09 16:31:16.924 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Menu"
+2021-03-09 16:31:17.022 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.User"
+2021-03-09 16:31:17.056 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Role"
+2021-03-09 16:31:17.378 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-09 16:31:17.841 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9099"]
+2021-03-09 16:31:17.861 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-03-09 16:31:17.877 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-03-09 16:31:17.921 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-03-09 16:31:18.006 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Started SpringSecApplication in 4.183 seconds (JVM running for 5.849)
+2021-03-09 16:31:24.927 [http-nio-9099-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-09 16:31:25.040 [http-nio-9099-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-03-09 16:33:17.566 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2021-03-09 16:33:17.571 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2021-03-09 16:33:25.002 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Starting SpringSecApplication using Java 1.8.0_231 on MECH-YKY with PID 21828 (D:\java\things\YzzUtils\springsecurity\target\classes started by harry in D:\java\things\YzzUtils)
+2021-03-09 16:33:25.014 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - The following profiles are active: office
+2021-03-09 16:33:26.538 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9099"]
+2021-03-09 16:33:26.538 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-09 16:33:26.538 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-09 16:33:26.923 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-09 16:33:27.841 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Menu"
+2021-03-09 16:33:27.935 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.User"
+2021-03-09 16:33:27.966 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Role"
+2021-03-09 16:33:28.272 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-09 16:33:28.740 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9099"]
+2021-03-09 16:33:28.777 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-03-09 16:33:28.792 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-03-09 16:33:28.834 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-03-09 16:33:28.914 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Started SpringSecApplication in 4.732 seconds (JVM running for 7.059)
+2021-03-09 16:33:33.369 [http-nio-9099-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-09 16:35:14.827 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+2021-03-09 16:35:23.497 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Starting SpringSecApplication using Java 1.8.0_231 on MECH-YKY with PID 23084 (D:\java\things\YzzUtils\springsecurity\target\classes started by harry in D:\java\things\YzzUtils)
+2021-03-09 16:35:23.505 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - The following profiles are active: office
+2021-03-09 16:35:24.870 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9099"]
+2021-03-09 16:35:24.871 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-09 16:35:24.871 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-09 16:35:24.966 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-09 16:35:25.904 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Menu"
+2021-03-09 16:35:26.001 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.User"
+2021-03-09 16:35:26.029 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Role"
+2021-03-09 16:35:26.326 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-09 16:35:26.749 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9099"]
+2021-03-09 16:35:26.768 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-03-09 16:35:26.781 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-03-09 16:35:26.817 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-03-09 16:35:26.894 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Started SpringSecApplication in 4.027 seconds (JVM running for 5.513)
+2021-03-09 16:35:40.329 [http-nio-9099-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-09 16:35:40.443 [http-nio-9099-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-03-09 16:37:25.653 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2021-03-09 16:37:25.657 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2021-03-09 16:37:34.160 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Starting SpringSecApplication using Java 1.8.0_231 on MECH-YKY with PID 21924 (D:\java\things\YzzUtils\springsecurity\target\classes started by harry in D:\java\things\YzzUtils)
+2021-03-09 16:37:34.169 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - The following profiles are active: office
+2021-03-09 16:37:35.544 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9099"]
+2021-03-09 16:37:35.545 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-09 16:37:35.545 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-09 16:37:35.633 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-09 16:37:36.486 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Menu"
+2021-03-09 16:37:36.579 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.User"
+2021-03-09 16:37:36.607 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Role"
+2021-03-09 16:37:36.892 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-09 16:37:37.251 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+2021-03-09 16:37:37.253 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-03-09 16:38:07.666 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Starting SpringSecApplication using Java 1.8.0_231 on MECH-YKY with PID 16048 (D:\java\things\YzzUtils\springsecurity\target\classes started by harry in D:\java\things\YzzUtils)
+2021-03-09 16:38:07.675 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - The following profiles are active: office
+2021-03-09 16:38:09.026 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9099"]
+2021-03-09 16:38:09.027 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-09 16:38:09.027 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-09 16:38:09.136 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-09 16:38:09.990 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Menu"
+2021-03-09 16:38:10.085 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.User"
+2021-03-09 16:38:10.115 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Role"
+2021-03-09 16:38:10.398 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-09 16:38:10.814 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9099"]
+2021-03-09 16:38:10.838 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-03-09 16:38:10.855 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-03-09 16:38:10.891 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-03-09 16:38:10.967 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Started SpringSecApplication in 3.998 seconds (JVM running for 5.761)
+2021-03-09 16:38:28.945 [http-nio-9099-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-09 16:38:29.092 [http-nio-9099-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-03-09 16:39:01.740 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2021-03-09 16:39:01.744 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2021-03-09 16:39:08.221 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Starting SpringSecApplication using Java 1.8.0_231 on MECH-YKY with PID 21060 (D:\java\things\YzzUtils\springsecurity\target\classes started by harry in D:\java\things\YzzUtils)
+2021-03-09 16:39:08.231 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - The following profiles are active: office
+2021-03-09 16:39:09.645 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9099"]
+2021-03-09 16:39:09.645 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-09 16:39:09.645 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-09 16:39:09.731 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-09 16:39:10.580 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Menu"
+2021-03-09 16:39:10.676 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.User"
+2021-03-09 16:39:10.707 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Role"
+2021-03-09 16:39:10.998 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-09 16:39:11.452 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9099"]
+2021-03-09 16:39:11.472 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-03-09 16:39:11.485 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-03-09 16:39:11.520 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-03-09 16:39:11.596 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Started SpringSecApplication in 3.996 seconds (JVM running for 5.538)
+2021-03-09 16:39:13.124 [http-nio-9099-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-09 16:42:14.120 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+2021-03-09 16:42:24.940 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Starting SpringSecApplication using Java 1.8.0_231 on MECH-YKY with PID 8516 (D:\java\things\YzzUtils\springsecurity\target\classes started by harry in D:\java\things\YzzUtils)
+2021-03-09 16:42:24.949 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - The following profiles are active: office
+2021-03-09 16:42:26.595 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9099"]
+2021-03-09 16:42:26.596 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-09 16:42:26.596 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-09 16:42:26.685 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-09 16:42:27.600 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Menu"
+2021-03-09 16:42:27.708 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.User"
+2021-03-09 16:42:27.739 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Role"
+2021-03-09 16:42:28.052 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-09 16:42:28.523 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9099"]
+2021-03-09 16:42:28.547 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-03-09 16:42:28.563 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-03-09 16:42:28.615 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-03-09 16:42:28.704 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Started SpringSecApplication in 4.441 seconds (JVM running for 7.706)
+2021-03-09 16:42:34.099 [http-nio-9099-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-09 16:42:34.209 [http-nio-9099-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-03-09 16:43:41.180 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2021-03-09 16:43:41.183 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2021-03-09 16:43:49.817 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Starting SpringSecApplication using Java 1.8.0_231 on MECH-YKY with PID 7764 (D:\java\things\YzzUtils\springsecurity\target\classes started by harry in D:\java\things\YzzUtils)
+2021-03-09 16:43:49.827 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - The following profiles are active: office
+2021-03-09 16:43:51.226 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9099"]
+2021-03-09 16:43:51.226 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-09 16:43:51.226 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-09 16:43:51.311 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-09 16:43:52.166 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Menu"
+2021-03-09 16:43:52.259 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.User"
+2021-03-09 16:43:52.288 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Role"
+2021-03-09 16:43:52.572 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-09 16:43:52.940 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+2021-03-09 16:43:52.943 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+2021-03-09 16:51:10.490 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Starting SpringSecApplication using Java 1.8.0_231 on MECH-YKY with PID 19796 (D:\java\things\YzzUtils\springsecurity\target\classes started by harry in D:\java\things\YzzUtils)
+2021-03-09 16:51:10.502 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - The following profiles are active: office
+2021-03-09 16:51:11.932 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9099"]
+2021-03-09 16:51:11.933 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-09 16:51:11.933 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-09 16:51:12.068 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-09 16:51:12.979 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Menu"
+2021-03-09 16:51:13.094 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.User"
+2021-03-09 16:51:13.129 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Role"
+2021-03-09 16:51:13.420 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-09 16:51:13.877 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9099"]
+2021-03-09 16:51:13.897 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-03-09 16:51:13.911 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-03-09 16:51:13.947 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-03-09 16:51:14.026 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Started SpringSecApplication in 4.28 seconds (JVM running for 6.127)
+2021-03-09 16:59:33.114 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-0} closing ...
+2021-03-09 16:59:41.543 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Starting SpringSecApplication using Java 1.8.0_231 on MECH-YKY with PID 4004 (D:\java\things\YzzUtils\springsecurity\target\classes started by harry in D:\java\things\YzzUtils)
+2021-03-09 16:59:41.552 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - The following profiles are active: office
+2021-03-09 16:59:42.872 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9099"]
+2021-03-09 16:59:42.872 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-09 16:59:42.872 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-09 16:59:42.956 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-09 16:59:43.785 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Menu"
+2021-03-09 16:59:43.876 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.User"
+2021-03-09 16:59:43.905 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Role"
+2021-03-09 16:59:44.172 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-09 16:59:44.589 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9099"]
+2021-03-09 16:59:44.607 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-03-09 16:59:44.619 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-03-09 16:59:44.657 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-03-09 16:59:44.731 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Started SpringSecApplication in 3.786 seconds (JVM running for 5.299)
+2021-03-09 17:00:09.986 [http-nio-9099-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-09 17:00:10.118 [http-nio-9099-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-03-09 17:05:32.583 [http-nio-9099-exec-5] ERROR com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.160.4:3306/db1?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true, jdbcUrl : jdbc:mysql://192.168.160.4:3306/db1?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true, lastPacketReceivedIdleMillis : 314617
+2021-03-09 17:05:32.586 [http-nio-9099-exec-5] ERROR com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.160.4:3306/db1?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true, jdbcUrl : jdbc:mysql://192.168.160.4:3306/db1?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true, lastPacketReceivedIdleMillis : 315887
+2021-03-09 17:11:55.711 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2021-03-09 17:11:55.716 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2021-03-09 17:12:04.008 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Starting SpringSecApplication using Java 1.8.0_231 on MECH-YKY with PID 18112 (D:\java\things\YzzUtils\springsecurity\target\classes started by harry in D:\java\things\YzzUtils)
+2021-03-09 17:12:04.022 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - The following profiles are active: office
+2021-03-09 17:12:05.740 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9099"]
+2021-03-09 17:12:05.740 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-09 17:12:05.741 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-09 17:12:05.859 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-09 17:12:06.823 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Menu"
+2021-03-09 17:12:06.943 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.User"
+2021-03-09 17:12:06.976 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Role"
+2021-03-09 17:12:07.297 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-09 17:12:07.839 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9099"]
+2021-03-09 17:12:07.866 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-03-09 17:12:07.883 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-03-09 17:12:07.926 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-03-09 17:12:08.021 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Started SpringSecApplication in 5.044 seconds (JVM running for 6.878)
+2021-03-09 17:12:24.217 [http-nio-9099-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-09 17:12:24.345 [http-nio-9099-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-03-09 17:13:16.341 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2021-03-09 17:13:16.345 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2021-03-09 17:13:23.127 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Starting SpringSecApplication using Java 1.8.0_231 on MECH-YKY with PID 18712 (D:\java\things\YzzUtils\springsecurity\target\classes started by harry in D:\java\things\YzzUtils)
+2021-03-09 17:13:23.136 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - The following profiles are active: office
+2021-03-09 17:13:24.592 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9099"]
+2021-03-09 17:13:24.592 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-09 17:13:24.593 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-09 17:13:24.681 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-09 17:13:25.523 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Menu"
+2021-03-09 17:13:25.621 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.User"
+2021-03-09 17:13:25.650 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Role"
+2021-03-09 17:13:25.948 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-09 17:13:26.379 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9099"]
+2021-03-09 17:13:26.398 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-03-09 17:13:26.416 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-03-09 17:13:26.468 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-03-09 17:13:26.571 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Started SpringSecApplication in 4.066 seconds (JVM running for 5.689)
+2021-03-09 17:13:29.940 [http-nio-9099-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-09 17:13:30.061 [http-nio-9099-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-03-09 17:15:07.791 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2021-03-09 17:15:07.795 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2021-03-09 17:15:14.458 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Starting SpringSecApplication using Java 1.8.0_231 on MECH-YKY with PID 5248 (D:\java\things\YzzUtils\springsecurity\target\classes started by harry in D:\java\things\YzzUtils)
+2021-03-09 17:15:14.467 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - The following profiles are active: office
+2021-03-09 17:15:15.867 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9099"]
+2021-03-09 17:15:15.868 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-09 17:15:15.868 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-09 17:15:15.954 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-09 17:15:16.789 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Menu"
+2021-03-09 17:15:16.885 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.User"
+2021-03-09 17:15:16.915 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Role"
+2021-03-09 17:15:17.186 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-09 17:15:17.621 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9099"]
+2021-03-09 17:15:17.642 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-03-09 17:15:17.656 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-03-09 17:15:17.691 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-03-09 17:15:17.769 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Started SpringSecApplication in 3.896 seconds (JVM running for 5.487)
+2021-03-09 17:15:31.731 [http-nio-9099-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-09 17:15:31.860 [http-nio-9099-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-03-09 17:16:35.124 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2021-03-09 17:16:35.127 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2021-03-09 17:16:41.526 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Starting SpringSecApplication using Java 1.8.0_231 on MECH-YKY with PID 1732 (D:\java\things\YzzUtils\springsecurity\target\classes started by harry in D:\java\things\YzzUtils)
+2021-03-09 17:16:41.536 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - The following profiles are active: office
+2021-03-09 17:16:42.893 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9099"]
+2021-03-09 17:16:42.893 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-09 17:16:42.894 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-09 17:16:43.006 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-09 17:16:43.883 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Menu"
+2021-03-09 17:16:43.991 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.User"
+2021-03-09 17:16:44.025 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Role"
+2021-03-09 17:16:44.369 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-09 17:16:44.885 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9099"]
+2021-03-09 17:16:44.909 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-03-09 17:16:44.927 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-03-09 17:16:44.983 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-03-09 17:16:45.130 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Started SpringSecApplication in 4.239 seconds (JVM running for 5.782)
+2021-03-09 17:17:00.876 [http-nio-9099-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-09 17:17:01.005 [http-nio-9099-exec-2] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-03-09 17:46:05.104 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2021-03-09 17:46:05.107 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2021-03-09 17:46:17.760 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Starting SpringSecApplication using Java 1.8.0_231 on MECH-YKY with PID 19956 (D:\java\things\YzzUtils\springsecurity\target\classes started by harry in D:\java\things\YzzUtils)
+2021-03-09 17:46:17.768 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - The following profiles are active: office
+2021-03-09 17:46:19.147 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9099"]
+2021-03-09 17:46:19.148 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-09 17:46:19.148 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-09 17:46:19.270 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-09 17:46:20.101 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Menu"
+2021-03-09 17:46:20.191 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.User"
+2021-03-09 17:46:20.219 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Role"
+2021-03-09 17:46:20.492 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-09 17:46:20.966 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9099"]
+2021-03-09 17:46:20.989 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-03-09 17:46:21.005 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-03-09 17:46:21.044 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-03-09 17:46:21.133 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Started SpringSecApplication in 4.075 seconds (JVM running for 5.625)
+2021-03-09 17:47:07.607 [http-nio-9099-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-09 17:47:07.734 [http-nio-9099-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-03-09 17:50:09.550 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2021-03-09 17:50:09.554 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2021-03-09 17:50:15.931 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Starting SpringSecApplication using Java 1.8.0_231 on MECH-YKY with PID 14012 (D:\java\things\YzzUtils\springsecurity\target\classes started by harry in D:\java\things\YzzUtils)
+2021-03-09 17:50:15.941 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - The following profiles are active: office
+2021-03-09 17:50:17.372 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9099"]
+2021-03-09 17:50:17.373 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-09 17:50:17.373 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-09 17:50:17.507 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-09 17:50:18.463 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Menu"
+2021-03-09 17:50:18.592 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.User"
+2021-03-09 17:50:18.629 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Role"
+2021-03-09 17:50:18.936 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-09 17:50:19.399 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9099"]
+2021-03-09 17:50:19.424 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-03-09 17:50:19.444 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-03-09 17:50:19.501 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-03-09 17:50:19.602 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Started SpringSecApplication in 4.327 seconds (JVM running for 5.867)
+2021-03-09 17:50:25.020 [http-nio-9099-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-09 17:50:25.144 [http-nio-9099-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-03-09 17:52:02.742 [http-nio-9099-exec-2] ERROR com.alibaba.druid.pool.DruidAbstractDataSource - discard long time none received connection. , jdbcUrl : jdbc:mysql://192.168.160.4:3306/db1?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true, jdbcUrl : jdbc:mysql://192.168.160.4:3306/db1?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true, lastPacketReceivedIdleMillis : 60030
+2021-03-09 18:00:18.485 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Starting SpringSecApplication using Java 1.8.0_231 on MECH-YKY with PID 13968 (D:\java\things\YzzUtils\springsecurity\target\classes started by harry in D:\java\things\YzzUtils)
+2021-03-09 18:00:18.494 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - The following profiles are active: office
+2021-03-09 18:00:19.819 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9099"]
+2021-03-09 18:00:19.819 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-09 18:00:19.820 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-09 18:00:19.903 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-09 18:00:20.825 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Menu"
+2021-03-09 18:00:20.927 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.User"
+2021-03-09 18:00:20.964 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Role"
+2021-03-09 18:00:21.254 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2021-03-09 18:00:21.704 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9099"]
+2021-03-09 18:00:21.726 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2021-03-09 18:00:21.741 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2021-03-09 18:00:21.778 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2021-03-09 18:00:21.858 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Started SpringSecApplication in 4.011 seconds (JVM running for 5.479)
+2021-03-09 18:00:25.867 [http-nio-9099-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-09 18:00:25.992 [http-nio-9099-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited

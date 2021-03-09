@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yzz.springsecurity.security.entity.User">
+
+    <select id="getRolesByUserId" resultType="Role" parameterType="Integer">
+        select c.id, c.role_name from s_user a LEFT JOIN user_role b on a.id = b.user_id LEFT JOIN role c on b.role_id = c.id
+        where a.id = #{id};
+    </select>
+
+
+
+</mapper>

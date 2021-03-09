@@ -4,6 +4,7 @@ import com.yzz.springsecurity.security.dao.UserDao;
 import com.yzz.springsecurity.security.service.UserService;
 import com.yzz.springsecurity.security.vo.UserVO;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -21,7 +22,6 @@ import javax.servlet.http.HttpServletRequest;
  */
 @Slf4j
 @RestController
-@RequestMapping("/testController")
 public class TestController {
 	
 	@Resource
@@ -33,5 +33,14 @@ public class TestController {
 		String a1 = request.getParameter("a1");
 		log.info("访问test1 结束");
 		return "test1";
+	}
+	
+	@PreAuthorize("has")
+	@GetMapping("/test2")
+	public String test2(HttpServletRequest request){
+		log.info("访问test2");
+		String a1 = request.getParameter("a1");
+		log.info("访问test2 结束");
+		return "test2";
 	}
 }
