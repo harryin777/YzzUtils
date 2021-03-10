@@ -35,7 +35,6 @@ public class TestController {
 		return "test1";
 	}
 	
-	@PreAuthorize("has")
 	@GetMapping("/test2")
 	public String test2(HttpServletRequest request){
 		log.info("访问test2");

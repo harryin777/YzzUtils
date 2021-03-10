@@ -83,7 +83,7 @@
         <logger name="com.yzz.practice_mybatisplus.dao" level="debug" additivity="false">
             <AppenderRef ref="Console"/>
         </logger>
-        <logger name="com.yzz.springsecurity.security.dao.UserDao" level="debug" additivity="false">
+        <logger name="com.yzz.springsecurity.security.dao" level="debug" additivity="false">
             <AppenderRef ref="Console"/>
         </logger>
 

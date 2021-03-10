@@ -287,6 +287,15 @@
                 <version>2.5.0.RELEASE</version>
             </dependency>
 
+            <!--redis begin-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-data-redis</artifactId>
+                <version>2.3.8.RELEASE</version>
+            </dependency>
+            <!--redis end-->
+
+
 
 
 

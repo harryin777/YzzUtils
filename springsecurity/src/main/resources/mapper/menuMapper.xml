@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.yzz.springsecurity.security.entity.Menu">
+<mapper namespace="com.yzz.springsecurity.security.dao.MenuDao">
+
+    <resultMap id="MenuAndRoleVoResultMap" type="MenuAndRoleVo">
+        <id column="menuId" property="menuId"></id>
+        <result column="urlPattern" property="urlPattern"></result>
+        <collection property="roleList" ofType="com.yzz.springsecurity.security.entity.Role">
+            <id column="id" property="id"></id>
+            <result column="role_name" property="roleName"></result>
+        </collection>
+    </resultMap>
 
     <select id="getRoleByMenuId" resultType="Role" parameterType="Integer">
         SELECT
@@ -12,6 +21,18 @@
             LEFT JOIN role c ON b.role_id = c.id
         where a.id = #{id};
 
+    </select>
+
+    <select id="getAllMenusRoles" resultMap="MenuAndRoleVoResultMap">
+        SELECT
+            a.id as menuId,
+            a.url_pattern as urlPattern,
+            c.id,
+            c.role_name
+        FROM
+	        menu a
+        LEFT JOIN role_menu b ON a.id = b.menu_id
+        LEFT JOIN role c ON b.role_id = c.id;
     </select>
 
 

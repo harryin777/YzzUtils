@@ -1,10 +1,13 @@
 package com.yzz.springsecurity.security.config;
 
+import com.yzz.hub.utils.JsonUtils;
+import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.http.HttpStatus;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.web.access.AccessDeniedHandler;
 import org.springframework.stereotype.Component;
+import springfox.documentation.spring.web.json.Json;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -20,9 +23,10 @@ import java.io.IOException;
 @Component
 @Slf4j
 public class AuthenticationAccessDeny implements AccessDeniedHandler {
+	@SneakyThrows
 	@Override
 	public void handle(HttpServletRequest request, HttpServletResponse response, AccessDeniedException accessDeniedException) throws IOException, ServletException {
 		log.info("没有足够的权限");
-		response.getWriter().write(HttpStatus.SC_FORBIDDEN);
+		response.getWriter().write(JsonUtils.obj2json("没有足够的权限"+HttpStatus.SC_FORBIDDEN));
 	}
 }

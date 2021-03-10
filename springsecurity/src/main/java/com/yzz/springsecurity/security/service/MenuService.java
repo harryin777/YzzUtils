@@ -1,6 +1,7 @@
 package com.yzz.springsecurity.security.service;
 
 import com.yzz.springsecurity.security.entity.Role;
+import com.yzz.springsecurity.security.vo.MenuAndRoleVO;
 
 import java.util.List;
 
@@ -13,4 +14,6 @@ import java.util.List;
 public interface MenuService {
 	
 	List<Role> getRoleByMenuId(int menuId);
+	
+	List<MenuAndRoleVO> getAllMenusRoles();
 }

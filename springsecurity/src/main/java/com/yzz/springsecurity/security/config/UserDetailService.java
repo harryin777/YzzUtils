@@ -1,6 +1,7 @@
 package com.yzz.springsecurity.security.config;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.yzz.hub.utils.RedisUtils;
 import com.yzz.springsecurity.security.dao.MenuDao;
 import com.yzz.springsecurity.security.dao.RoleDao;
 import com.yzz.springsecurity.security.dao.UserDao;
@@ -37,11 +38,17 @@ public class UserDetailService implements UserDetailsService {
 
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		//数据库获取到用户
-		User user = userDao.selectOne(new QueryWrapper<User>().eq("username", username));
-		List<Role> roleList = userService.getRolesByUserId(user.getId());
-		//注意这个地方的返回值，如果属性中的password不是用BCryptPasswordEncoder加密过的话，会报错
-		UserVO userVO = new UserVO(user.getUsername(), user.getPassword(), roleList);
+		//redis获取到用户
+		UserVO userVO = (UserVO) RedisUtils.getObject(username);
+		
+		if(userVO == null){
+			User user = userDao.selectOne(new QueryWrapper<User>().eq("username", username));
+			List<Role> roleList = userService.getRolesByUserId(user.getId());
+			//注意这个地方的返回值，如果属性中的password不是用BCryptPasswordEncoder加密过的话，会报错
+			userVO = new UserVO(user.getUsername(), user.getPassword(), roleList);
+			RedisUtils.setObject(username, userVO);
+		}
+		
 		return userVO;
 	}
 }

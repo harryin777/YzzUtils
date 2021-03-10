@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.ObjectPostProcessor;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -51,6 +52,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 					.antMatchers("/loginM.html", "/login123/123")
 					.permitAll()//开启授权配置
 					.anyRequest()//所有请求
+//					.access("")
 					.authenticated()//都需要认证
 					.withObjectPostProcessor(new ObjectPostProcessor<FilterSecurityInterceptor>() {
 						@Override
@@ -74,9 +76,28 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 					.exceptionHandling()
 					.accessDeniedHandler(authenticationAccessDeny)
 	//				.authenticationEntryPoint(myauthenticationEntryPoint)
+					
 					;
 
 
+	}
+	
+	@Override
+	public void configure(WebSecurity web) throws Exception {
+		// web.ignoring是直接绕开spring security的所有filter，直接跳过验证
+		web.ignoring().antMatchers(
+				"/sso/**",
+				"/sync/**",
+				"/findUserSysAuth2",
+				"/label/**",
+				"/Bi/findBiUserById",
+				"/encodeByUserId",
+				"/loginM.html",
+				"/**.html",
+				"/css/**",
+				"images/**",
+				"/js/**"
+		);
 	}
 	
 	/**

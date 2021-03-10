@@ -3,6 +3,7 @@ package com.yzz.springsecurity.security.service.Impl;
 import com.yzz.springsecurity.security.dao.MenuDao;
 import com.yzz.springsecurity.security.entity.Role;
 import com.yzz.springsecurity.security.service.MenuService;
+import com.yzz.springsecurity.security.vo.MenuAndRoleVO;
 import lombok.extern.slf4j.Slf4j;
 import org.checkerframework.checker.index.qual.SameLen;
 import org.springframework.stereotype.Service;
@@ -26,5 +27,10 @@ public class MenuServiceImpl implements MenuService {
 	@Override
 	public List<Role> getRoleByMenuId(int menuId) {
 		return menuDao.getRoleByMenuId(menuId);
+	}
+	
+	@Override
+	public List<MenuAndRoleVO> getAllMenusRoles() {
+		return menuDao.getAllMenusRoles();
 	}
 }

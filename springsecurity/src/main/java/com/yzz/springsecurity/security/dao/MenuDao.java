@@ -3,6 +3,7 @@ package com.yzz.springsecurity.security.dao;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.yzz.springsecurity.security.entity.Menu;
 import com.yzz.springsecurity.security.entity.Role;
+import com.yzz.springsecurity.security.vo.MenuAndRoleVO;
 
 import java.util.List;
 
@@ -15,4 +16,6 @@ import java.util.List;
 public interface MenuDao extends BaseMapper<Menu> {
 	
 	List<Role> getRoleByMenuId(int menuId);
+	
+	List<MenuAndRoleVO> getAllMenusRoles();
 }
