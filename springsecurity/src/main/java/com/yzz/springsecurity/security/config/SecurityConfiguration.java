@@ -7,8 +7,11 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.builders.WebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.security.web.access.intercept.FilterSecurityInterceptor;
 
@@ -20,7 +23,7 @@ import javax.annotation.Resource;
  * @Date 2021/3/4
  * @Version 1.0
  */
-@Configuration
+//@Configuration
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	
 	@Resource
@@ -92,6 +95,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 				"/label/**",
 				"/Bi/findBiUserById",
 				"/encodeByUserId",
+				//注意这里如果没有登录页，会发生一直重定向的问题
 				"/loginM.html",
 				"/**.html",
 				"/css/**",
