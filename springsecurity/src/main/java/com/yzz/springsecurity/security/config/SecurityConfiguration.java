@@ -23,7 +23,7 @@ import javax.annotation.Resource;
  * @Date 2021/3/4
  * @Version 1.0
  */
-//@Configuration
+@Configuration
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	
 	@Resource

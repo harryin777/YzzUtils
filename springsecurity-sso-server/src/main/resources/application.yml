@@ -1,0 +1,25 @@
+server:
+  port: 8088
+
+spring:
+  profiles:
+    active: @activatedProperties@
+  thymeleaf:
+    # 模板文件前缀
+    prefix: classpath:/static/
+    # 模板文件后缀
+    suffix: .html
+
+
+#这里的控制只有当http.httpBasic和.formlogin都不开启的情况下才有用
+#security:
+#  basic:
+#    enable: false
+
+token:
+  expirationSeconds: 60
+
+mybatis-plus:
+  mapper-locations: /mapper/*.xml
+  type-aliases-package: com.yzz.springsecurity
+

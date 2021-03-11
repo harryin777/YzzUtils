@@ -26,6 +26,9 @@
         <module>springsecurity</module>
         <module>worthlessamodule</module>
         <module>springpractice</module>
+        <module>springsecurity-sso-server</module>
+        <module>springsecurity-sso-client2</module>
+        <module>springsecurity-sso-client1</module>
     </modules>
 
     <dependencyManagement>
@@ -284,8 +287,16 @@
             <dependency>
                 <groupId>org.springframework.security.oauth</groupId>
                 <artifactId>spring-security-oauth2</artifactId>
-                <version>2.5.0.RELEASE</version>
+                <version>2.3.5.RELEASE</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.springframework.security</groupId>
+                <artifactId>spring-security-jwt</artifactId>
+                <version>1.1.1.RELEASE</version>
+            </dependency>
+
+
 
             <!--redis begin-->
             <dependency>

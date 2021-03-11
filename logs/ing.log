@@ -1,17 +1,9 @@
-2021-03-09 18:00:18.485 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Starting SpringSecApplication using Java 1.8.0_231 on MECH-YKY with PID 13968 (D:\java\things\YzzUtils\springsecurity\target\classes started by harry in D:\java\things\YzzUtils)
-2021-03-09 18:00:18.494 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - The following profiles are active: office
-2021-03-09 18:00:19.819 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9099"]
-2021-03-09 18:00:19.819 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-03-09 18:00:19.820 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-03-09 18:00:19.903 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-03-09 18:00:20.825 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Menu"
-2021-03-09 18:00:20.927 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.User"
-2021-03-09 18:00:20.964 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Role"
-2021-03-09 18:00:21.254 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-03-09 18:00:21.704 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9099"]
-2021-03-09 18:00:21.726 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
-2021-03-09 18:00:21.741 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2021-03-09 18:00:21.778 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2021-03-09 18:00:21.858 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Started SpringSecApplication in 4.011 seconds (JVM running for 5.479)
-2021-03-09 18:00:25.867 [http-nio-9099-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-03-09 18:00:25.992 [http-nio-9099-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-03-11 17:57:51.446 [main] INFO  com.yzz.springsecurity.ssoclient1.SpringsecuritySsoClient1Application - Starting SpringsecuritySsoClient1Application using Java 1.8.0_231 on MECH-YKY with PID 660 (D:\java\things\YzzUtils\springsecurity-sso-client1\target\classes started by harry in D:\java\things\YzzUtils)
+2021-03-11 17:57:51.456 [main] INFO  com.yzz.springsecurity.ssoclient1.SpringsecuritySsoClient1Application - The following profiles are active: office
+2021-03-11 17:57:52.313 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.yzz.springsecurity.ssoclient1]' package. Please check your configuration.
+2021-03-11 17:57:52.715 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8087"]
+2021-03-11 17:57:52.716 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-11 17:57:52.716 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-11 17:57:52.827 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-11 17:57:54.492 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8087"]
+2021-03-11 17:57:54.526 [main] INFO  com.yzz.springsecurity.ssoclient1.SpringsecuritySsoClient1Application - Started SpringsecuritySsoClient1Application in 3.727 seconds (JVM running for 5.35)

@@ -33,10 +33,11 @@ public class RedisUtils {
 	}
 	
 	public static Object getObject(String key){
-		Object o = redisTemplate.opsForValue().get(key);
-		if(o == null)
-			return null;
-		return SerializeUtils.deserialize((byte[]) o);
+		if(redisTemplate.hasKey(key)) {
+			Object o = redisTemplate.opsForValue().get(key);
+			return SerializeUtils.deserialize((byte[]) o);
+		}
+		return null;
 	}
 	
 	
@@ -213,7 +214,9 @@ public class RedisUtils {
 	 * @return
 	 */
 	public static String get(String key) {
-		return (String) redisTemplate.opsForValue().get(key);
+		if(redisTemplate.hasKey(key))
+			return (String) redisTemplate.opsForValue().get(key);
+		return null;
 	}
 	
 	/**
@@ -224,7 +227,9 @@ public class RedisUtils {
 	 * @return
 	 */
 	public static String getRange(String key, long start, long end) {
-		return redisTemplate.opsForValue().get(key, start, end);
+		if(redisTemplate.hasKey(key))
+			return redisTemplate.opsForValue().get(key, start, end);
+		return null;
 	}
 	
 	/**
@@ -378,7 +383,9 @@ public class RedisUtils {
 	 * @return
 	 */
 	public static Object hGet(String key, String field) {
-		return redisTemplate.opsForHash().get(key, field);
+		if(redisTemplate.hasKey(key))
+			return redisTemplate.opsForHash().get(key, field);
+		return null;
 	}
 	
 	/**
@@ -388,7 +395,9 @@ public class RedisUtils {
 	 * @return
 	 */
 	public static Map<Object, Object> hGetAll(String key) {
-		return redisTemplate.opsForHash().entries(key);
+		if(redisTemplate.hasKey(key))
+			return redisTemplate.opsForHash().entries(key);
+		return null;
 	}
 	
 	/**

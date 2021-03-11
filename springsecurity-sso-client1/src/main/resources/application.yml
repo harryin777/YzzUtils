@@ -1,0 +1,30 @@
+server:
+  port: 8087
+
+spring:
+  profiles:
+    active: @activatedProperties@
+  thymeleaf:
+    # 模板文件前缀
+    prefix: classpath:/static/
+    # 模板文件后缀
+    suffix: .html
+
+token:
+  expirationSeconds: 60
+
+mybatis-plus:
+  mapper-locations: /mapper/*.xml
+  type-aliases-package: com.yzz.springsecurity
+
+security:
+  oauth2:
+    client:
+      client-id: client1
+      client-secret: client1
+      access-token-uri: http://localhost:8088/oauth/token
+      user-authorization-uri: http://localhost:8088/oauth/authorize
+    resource:
+      jwt:
+        key-uri: http://localhost:8088/oauth/token_key
+

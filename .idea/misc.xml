@@ -10,6 +10,9 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/practice_mybatis-plus/pom.xml" />
         <option value="$PROJECT_DIR$/uploadfile/pom.xml" />
+        <option value="$PROJECT_DIR$/springsecurity-sso-server/pom.xml" />
+        <option value="$PROJECT_DIR$/springsecurity-sso-client1/pom.xml" />
+        <option value="$PROJECT_DIR$/springsecurity-sso-client2/pom.xml" />
       </list>
     </option>
   </component>
