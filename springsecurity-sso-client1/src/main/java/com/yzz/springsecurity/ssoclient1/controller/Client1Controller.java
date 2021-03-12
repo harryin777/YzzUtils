@@ -14,9 +14,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class Client1Controller {
 	
-	@GetMapping("/testC1")
-	@ResponseBody
+	@GetMapping("/testclient")
 	public String testC1(){
-		return "testC1";
+		return "testclient";
 	}
 }

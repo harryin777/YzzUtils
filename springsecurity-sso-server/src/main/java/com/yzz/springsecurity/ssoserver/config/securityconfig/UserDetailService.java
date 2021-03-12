@@ -40,6 +40,11 @@ public class UserDetailService implements UserDetailsService {
 		
 		if(userVO == null){
 			User user = userDao.selectOne(new QueryWrapper<User>().eq("username", username));
+			if(user == null){
+				log.info("不存在该用户");
+				return null;
+			}
+			
 			List<Role> roleList = userService.getRolesByUserId(user.getId());
 			//注意这个地方的返回值，如果属性中的password不是用BCryptPasswordEncoder加密过的话，会报错
 			userVO = new UserVO(user.getUsername(), user.getPassword(), roleList);

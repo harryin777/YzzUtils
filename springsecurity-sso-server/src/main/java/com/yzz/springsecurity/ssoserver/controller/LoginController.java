@@ -2,7 +2,7 @@ package com.yzz.springsecurity.ssoserver.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
@@ -18,6 +18,16 @@ public class LoginController {
 	@RequestMapping("/loginIndex")
 	public String loginIndex(){
 		log.info("访问loginIndex");
+		return "index";
+	}
+	
+	@GetMapping("/login")
+	public String login() {
+		return "login";
+	}
+	
+	@GetMapping("/")
+	public String index() {
 		return "index";
 	}
 }

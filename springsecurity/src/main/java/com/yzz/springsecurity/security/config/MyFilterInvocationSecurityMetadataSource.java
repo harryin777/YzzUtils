@@ -48,7 +48,7 @@ public class MyFilterInvocationSecurityMetadataSource implements FilterInvocatio
 		Map<Object, Object> menuRoleMappingMap =
 				 RedisUtils.hGetAll("menu_role");
 		
-		if(menuRoleMappingMap.size() ==  0){
+		if(menuRoleMappingMap ==  null){
 			//数据库查询所有菜单以及对应的权限
 			List<MenuAndRoleVO> menuAndRoleVOList = menuService.getAllMenusRoles();
 			menuRoleMappingMap = new HashMap<>();
@@ -57,8 +57,10 @@ public class MyFilterInvocationSecurityMetadataSource implements FilterInvocatio
 						(List<Role>) menuRoleMappingMap.getOrDefault(menuAndRoleVOList.get(i), new ArrayList<>());
 				roleList.addAll(menuAndRoleVOList.get(i).getRoleList());
 				//以url作为key，放进map
-				RedisUtils.hPut("menu_role", menuAndRoleVOList.get(i).getUrlPattern(), roleList);
+				
 			}
+			//把map放进redis
+			RedisUtils.hPutAll("menu_role", menuRoleMappingMap);
 			
 		}
 		
