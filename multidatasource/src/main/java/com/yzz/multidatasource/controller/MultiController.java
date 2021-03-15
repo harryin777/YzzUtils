@@ -1,0 +1,30 @@
+package com.yzz.multidatasource.controller;
+
+import com.yzz.multidatasource.service.AService;
+import com.yzz.multidatasource.service.BService;
+import com.yzz.multidatasource.service.CService;
+import org.springframework.web.bind.annotation.RestController;
+
+import javax.annotation.Resource;
+
+/**
+ * @ClassName MultiController
+ * @Author yky
+ * @Date 2021/3/15
+ * @Version 1.0
+ */
+@RestController
+public class MultiController {
+	
+	@Resource
+	private AService aService;
+	
+	@Resource
+	private BService bService;
+	
+	@Resource
+	private CService cService;
+	
+	
+	
+}

@@ -1,0 +1,33 @@
+spring:
+  profiles: office
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.160.4:3306/db1?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true
+    username: root
+    password: rootroot
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      # 初始化大小，最小，最大
+      initialSize: 5
+      minIdle: 1
+      maxActive: 50
+      # 配置获取连接等待超时的时间
+      maxWait: 60000
+      
+mdb:
+  datasource:
+    a:
+      url: jdbc:mysql://192.168.160.4:3306/a?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&failOverReadOnly=false
+      username: root
+      password: rootroot
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    b:
+      url: jdbc:mysql://192.168.160.4:3306/b?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&failOverReadOnly=false
+      username: root
+      password: rootroot
+      driver-class-name: com.mysql.cj.jdbc.Driver
+    c:
+      url: jdbc:mysql://192.168.160.4:3306/c?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&failOverReadOnly=false
+      username: root
+      password: rootroot
+      driver-class-name: com.mysql.cj.jdbc.Driver

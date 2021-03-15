@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/springsecurity-sso-server/pom.xml" />
         <option value="$PROJECT_DIR$/springsecurity-sso-client1/pom.xml" />
         <option value="$PROJECT_DIR$/springsecurity-sso-client2/pom.xml" />
+        <option value="$PROJECT_DIR$/multidatasource/pom.xml" />
       </list>
     </option>
   </component>
