@@ -4,11 +4,6 @@ server:
 spring:
   profiles:
     active: @activatedProperties@
-  thymeleaf:
-    # 模板文件前缀
-    prefix: classpath:/static/
-    # 模板文件后缀
-    suffix: .html
 
 token:
   expirationSeconds: 60

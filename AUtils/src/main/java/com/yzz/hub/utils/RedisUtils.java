@@ -415,7 +415,7 @@ public class RedisUtils {
 		redisTemplate.opsForHash().put(key, hashKey, value);
 	}
 	
-	public static void hPutAll(String key, Map<String, String> maps) {
+	public static void hPutAll(String key, Map<Object, Object> maps) {
 		redisTemplate.opsForHash().putAll(key, maps);
 	}
 	

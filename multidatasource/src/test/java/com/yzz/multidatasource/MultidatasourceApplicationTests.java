@@ -1,10 +1,10 @@
-package com.yzz.springsecurity.ssoclient1;
+package com.yzz.multidatasource;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringsecuritySsoClient1ApplicationTests {
+class MultidatasourceApplicationTests {
 
 	@Test
 	void contextLoads() {
