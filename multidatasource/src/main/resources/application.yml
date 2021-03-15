@@ -10,18 +10,3 @@ spring:
 mybatis-plus:
   mapper-locations: mapper/*.xml
   type-aliases-package: com.yzz.multidatasource.entity
-  global-config:
-    id-type: 0
-    field-strategy: 1
-    db-column-underline: true
-    refresh-mapper: true
-    capital-mode: true
-  #    配置自增主键的策略
-    key-generator: com.baimidou.mybatisplus.incrementer.OracleKeyGenerator
-  #    配置这两个属性以后，删除数据的时候不会真的删除库里的logic_flag这个字段
-  #    只是查询的时候不显示了
-  #    需要增加以下两个值，所以需要对象表要有这个字段
-  #    logic-delete-value: 1
-  #    logic-not-delete-value: -1
-  configuration:
-    map-underscore-to-camel-case: true
