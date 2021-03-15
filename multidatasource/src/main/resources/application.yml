@@ -8,8 +8,8 @@ spring:
     time-zone: GMT+8
 
 mybatis-plus:
-  mapper-locations: /mapper/*.xml
-  type-aliases-package: com.yzz.practice_mybatisplus.entity
+  mapper-locations: mapper/*.xml
+  type-aliases-package: com.yzz.multidatasource.entity
   global-config:
     id-type: 0
     field-strategy: 1

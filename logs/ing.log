@@ -1,18 +1,13 @@
-2021-03-12 16:36:19.386 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Starting SpringSecApplication using Java 1.8.0_231 on MECH-YKY with PID 8368 (D:\java\things\YzzUtils\springsecurity\target\classes started by harry in D:\java\things\YzzUtils)
-2021-03-12 16:36:19.396 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - The following profiles are active: office
-2021-03-12 16:36:21.039 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9099"]
-2021-03-12 16:36:21.040 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-03-12 16:36:21.041 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-03-12 16:36:21.132 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-03-12 16:36:21.551 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Menu"
-2021-03-12 16:36:21.601 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.Role"
-2021-03-12 16:36:21.633 [main] WARN  com.baomidou.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.yzz.springsecurity.security.entity.User"
-2021-03-12 16:36:22.545 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-2021-03-12 16:36:23.348 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9099"]
-2021-03-12 16:36:23.371 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
-2021-03-12 16:36:23.385 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-2021-03-12 16:36:23.427 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-2021-03-12 16:36:23.548 [main] INFO  com.yzz.springsecurity.security.SpringSecApplication - Started SpringSecApplication in 4.83 seconds (JVM running for 6.435)
-2021-03-12 16:36:36.061 [http-nio-9099-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-03-12 16:36:39.824 [http-nio-9099-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
-2021-03-12 16:36:49.313 [http-nio-9099-exec-3] INFO  com.yzz.springsecurity.security.config.AuthenticationSuccess - 生成的token, eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMjMiLCJpcCI6IjA6MDowOjA6MDowOjA6MSIsImV4cCI6MTYxNTUzODI2OX0.KbmlnVJF64__WliCypKfY_J91AfTqxYCtwsqebrn2xEXu-9DBu23a--V1f3hnx7ZEbOuTKs7PUHH9KDVEi1l7A
+2021-03-15 22:07:19.134 [main] INFO  com.yzz.multidatasource.MultidatasourceApplication - Starting MultidatasourceApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 18668 (E:\Dev\project\YzzUtils\multidatasource\target\classes started by yky in E:\Dev\project\YzzUtils)
+2021-03-15 22:07:19.139 [main] INFO  com.yzz.multidatasource.MultidatasourceApplication - The following profiles are active: home
+2021-03-15 22:07:19.906 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+2021-03-15 22:07:19.906 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-15 22:07:19.907 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-15 22:07:19.962 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-15 22:07:20.001 [main] INFO  com.yzz.multidatasource.config.MyConfiguration - defaultDataSource
+2021-03-15 22:07:20.049 [main] INFO  com.yzz.multidatasource.config.MyConfiguration - prodADataSource
+2021-03-15 22:07:20.070 [main] INFO  com.yzz.multidatasource.config.MyConfiguration - prodBDataSource
+2021-03-15 22:07:20.084 [main] INFO  com.yzz.multidatasource.config.MyConfiguration - prodCDataSource
+2021-03-15 22:07:20.152 [main] WARN  com.baomidou.mybatisplus.extension.spring.MybatisSqlSessionFactoryBean - Property 'mapperLocations' was specified but matching resources are not found.
+2021-03-15 22:07:20.991 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+2021-03-15 22:07:21.009 [main] INFO  com.yzz.multidatasource.MultidatasourceApplication - Started MultidatasourceApplication in 2.251 seconds (JVM running for 2.915)

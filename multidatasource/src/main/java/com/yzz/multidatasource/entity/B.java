@@ -3,6 +3,7 @@ package com.yzz.multidatasource.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 /**
  * @ClassName B
@@ -13,9 +14,10 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@ToString
 public class B {
 	
-	private int id;
+	private Integer id;
 	
 	private String name;
 }

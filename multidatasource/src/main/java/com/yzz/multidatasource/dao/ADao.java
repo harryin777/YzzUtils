@@ -10,4 +10,6 @@ import com.yzz.multidatasource.entity.A;
  * @Version 1.0
  */
 public interface ADao extends BaseMapper<A> {
+
+	A getOne();
 }

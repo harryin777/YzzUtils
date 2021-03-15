@@ -19,6 +19,7 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>multidatasource</module>
         <module>mybatis_plus</module>
         <module>AUtils</module>
         <module>easyexcel</module>
