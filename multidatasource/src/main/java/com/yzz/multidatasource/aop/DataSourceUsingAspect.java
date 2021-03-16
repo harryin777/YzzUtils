@@ -3,10 +3,14 @@ package com.yzz.multidatasource.aop;
 import com.yzz.multidatasource.annotation.UsingDataSource;
 import com.yzz.multidatasource.config.DataSourceContextHolder;
 import com.yzz.multidatasource.myenum.DataSourceEnum;
+import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
+import org.springframework.core.annotation.Order;
+import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Method;
 
@@ -16,10 +20,14 @@ import java.lang.reflect.Method;
  * @Date 2021/3/15
  * @Version 1.0
  */
+@Component
+@Slf4j
+@Aspect
+@Order(-1)
 public class DataSourceUsingAspect {
 
 	// mapper包下所有包，下所有类，所有方法，参数任意，返回值任意
-	@Pointcut("execution(* ai.test.service.impl.*.*(..))")
+	@Pointcut("execution(* com.yzz.multidatasource.service.impl.*.*(..))")
 	public void pointCut() {
 
 	}
@@ -38,6 +46,7 @@ public class DataSourceUsingAspect {
 	//前置通知，设置数据源
 	@Before("pointCut()")
 	public void doBefore(JoinPoint point) throws ClassNotFoundException {
+		log.info("进入前置通知");
 		//获取接口或者类的名称
 		String cName = point.getSignature().getDeclaringType().getSimpleName();
 
@@ -74,6 +83,7 @@ public class DataSourceUsingAspect {
 	//后置通知，把数据源清除
 	@After("pointCut()")
 	public void doAfter() {
+		log.info("进入后置通知");
 		DataSourceContextHolder.clear();
 	}
 }
