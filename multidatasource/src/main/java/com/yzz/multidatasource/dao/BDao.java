@@ -11,4 +11,6 @@ import com.yzz.multidatasource.entity.B;
  * @Version 1.0
  */
 public interface BDao extends BaseMapper<B> {
+
+	B getOne();
 }

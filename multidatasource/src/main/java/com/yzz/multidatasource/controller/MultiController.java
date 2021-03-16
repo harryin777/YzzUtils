@@ -1,8 +1,10 @@
 package com.yzz.multidatasource.controller;
 
+import com.yzz.multidatasource.annotation.UsingDataSource;
 import com.yzz.multidatasource.service.AService;
 import com.yzz.multidatasource.service.BService;
 import com.yzz.multidatasource.service.CService;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
@@ -24,6 +26,23 @@ public class MultiController {
 	
 	@Resource
 	private CService cService;
+
+
+
+	@GetMapping("/testa")
+	public String testa(){
+		return aService.getOne().toString();
+	}
+
+	@GetMapping("/testb")
+	public String testb(){
+		return bService.getOne().toString();
+	}
+
+	@GetMapping("/testc")
+	public String testc(){
+		return cService.getOne().toString();
+	}
 	
 	
 	

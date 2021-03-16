@@ -1,8 +1,10 @@
 package com.yzz.multidatasource.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.yzz.multidatasource.annotation.UsingDataSource;
 import com.yzz.multidatasource.dao.BDao;
 import com.yzz.multidatasource.entity.B;
+import com.yzz.multidatasource.myenum.DataSourceEnum;
 import com.yzz.multidatasource.service.BService;
 import org.springframework.stereotype.Service;
 
@@ -19,9 +21,10 @@ public class BServiceImpl implements BService {
 	
 	@Resource
 	private BDao bDao;
-	
+
+	@UsingDataSource(value = DataSourceEnum.PROD_B)
 	@Override
 	public B getOne() {
-		return bDao.selectOne(new QueryWrapper<B>());
+		return bDao.getOne();
 	}
 }

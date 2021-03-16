@@ -11,4 +11,6 @@ import com.yzz.multidatasource.entity.C;
  * @Version 1.0
  */
 public interface CDao extends BaseMapper<C> {
+
+	C getOne();
 }
