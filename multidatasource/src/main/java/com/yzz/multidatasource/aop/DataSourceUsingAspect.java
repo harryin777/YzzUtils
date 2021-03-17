@@ -53,6 +53,7 @@ public class DataSourceUsingAspect {
 		//获取到了这个方法的名称
 		String mName = point.getSignature().getName();
 
+		//获取到全类名
 		String declaringTypeName = point.getSignature().getDeclaringTypeName();
 		//获取到了类的全路径
 		Class<?> aClass = Class.forName(declaringTypeName);
