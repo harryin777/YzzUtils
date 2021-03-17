@@ -3,6 +3,7 @@ package com.yzz.wam.lambda;
 import lombok.*;
 
 import javax.annotation.security.DenyAll;
+import java.io.Serializable;
 
 /**
  * @ClassName Person
@@ -15,7 +16,7 @@ import javax.annotation.security.DenyAll;
 @NoArgsConstructor
 @AllArgsConstructor
 @RequiredArgsConstructor
-public class Person {
+public class Person implements Serializable {
 
 	@NonNull
 	private String name;

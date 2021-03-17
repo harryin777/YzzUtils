@@ -48,7 +48,7 @@ public class ResultDTO {
 			name = "data",
 			dataType = "Map"
 	)
-	private Map data; //返回数据
+	private Map data = new HashMap(); //返回数据
 	
 	public ResultDTO(boolean success, Integer code, String message) {
 		super();
