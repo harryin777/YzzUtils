@@ -11,21 +11,23 @@ spring:
       initialSize: 5
       minIdle: 1
       maxActive: 50
+      # 配置获取连接等待超时的时间
+      maxWait: 60000
 
 mdb:
   datasource:
     a:
-      url: jdbc:mysql://192.168.23.3:3306/a?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&failOverReadOnly=false
+      url: jdbc:mysql://192.168.23.3:3306/a?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&failOverReadOnly=false&serverTimezone=Asia/Shanghai
       username: root
       password: Rootroot123!
       driver-class-name: com.mysql.cj.jdbc.Driver
     b:
-      url: jdbc:mysql://192.168.23.3:3306/b?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&failOverReadOnly=false
+      url: jdbc:mysql://192.168.23.3:3306/b?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&failOverReadOnly=false&serverTimezone=Asia/Shanghai
       username: root
       password: Rootroot123!
       driver-class-name: com.mysql.cj.jdbc.Driver
     c:
-      url: jdbc:mysql://192.168.23.3:3306/c?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&failOverReadOnly=false
+      url: jdbc:mysql://192.168.23.3:3306/c?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&failOverReadOnly=false&serverTimezone=Asia/Shanghai
       username: root
       password: Rootroot123!
       driver-class-name: com.mysql.cj.jdbc.Driver      
