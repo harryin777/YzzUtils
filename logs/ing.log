@@ -1,85 +1,14 @@
-2021-03-17 22:33:44.907 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
-2021-03-17 22:33:44.958 [restartedMain] INFO  com.yzz.multidatasource.MultidatasourceApplication - Starting MultidatasourceApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 19704 (E:\Dev\project\YzzUtils\multidatasource\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-03-17 22:33:44.961 [restartedMain] INFO  com.yzz.multidatasource.MultidatasourceApplication - The following profiles are active: home
-2021-03-17 22:33:46.009 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
-2021-03-17 22:33:46.009 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-03-17 22:33:46.010 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-03-17 22:33:46.063 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-03-17 22:33:46.115 [restartedMain] INFO  com.yzz.multidatasource.config.MyConfiguration - defaultDataSource
-2021-03-17 22:33:46.193 [restartedMain] INFO  com.yzz.multidatasource.config.MyConfiguration - prodADataSource
-2021-03-17 22:33:46.215 [restartedMain] INFO  com.yzz.multidatasource.config.MyConfiguration - prodBDataSource
-2021-03-17 22:33:46.231 [restartedMain] INFO  com.yzz.multidatasource.config.MyConfiguration - prodCDataSource
-2021-03-17 22:33:47.538 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
-2021-03-17 22:33:47.559 [restartedMain] INFO  com.yzz.multidatasource.MultidatasourceApplication - Started MultidatasourceApplication in 3.055 seconds (JVM running for 3.884)
-2021-03-17 22:33:53.722 [http-nio-8086-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-03-17 22:33:53.739 [http-nio-8086-exec-1] INFO  com.yzz.multidatasource.aop.DataSourceUsingAspect - 进入前置通知
-2021-03-17 22:33:53.783 [http-nio-8086-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
-2021-03-17 22:33:57.863 [Druid-ConnectionPool-Create-890018310] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://192.168.23.3:3306/a?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&failOverReadOnly=false&serverTimezone=Asia/Shanghai, errorCode 0, state 08001
-java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:906) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:831) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1644) ~[druid-1.1.23.jar:1.1.23]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1710) ~[druid-1.1.23.jar:1.1.23]
-	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2774) [druid-1.1.23.jar:1.1.23]
-Caused by: com.mysql.cj.exceptions.CJException: Unknown database 'a'
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_251]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_251]
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_251]
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_251]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:129) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:786) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:711) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:679) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:128) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:466) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:171) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1342) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.NativeSession.connect(NativeSession.java:157) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:850) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	... 7 more
-2021-03-17 22:34:01.873 [Druid-ConnectionPool-Create-890018310] ERROR com.alibaba.druid.pool.DruidDataSource - create connection SQLException, url: jdbc:mysql://192.168.23.3:3306/a?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&failOverReadOnly=false&serverTimezone=Asia/Shanghai, errorCode 0, state 08001
-java.sql.SQLNonTransientConnectionException: Could not create connection to database server. Attempted reconnect 3 times. Giving up.
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:110) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:906) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:831) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1644) ~[druid-1.1.23.jar:1.1.23]
-	at com.alibaba.druid.pool.DruidAbstractDataSource.createPhysicalConnection(DruidAbstractDataSource.java:1710) ~[druid-1.1.23.jar:1.1.23]
-	at com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2774) [druid-1.1.23.jar:1.1.23]
-Caused by: com.mysql.cj.exceptions.CJException: Unknown database 'a'
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:1.8.0_251]
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[?:1.8.0_251]
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:1.8.0_251]
-	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[?:1.8.0_251]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:129) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:786) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:711) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:679) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.protocol.a.NativeProtocol.checkErrorMessage(NativeProtocol.java:128) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(NativeAuthenticationProvider.java:466) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.protocol.a.NativeAuthenticationProvider.connect(NativeAuthenticationProvider.java:171) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.protocol.a.NativeProtocol.connect(NativeProtocol.java:1342) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.NativeSession.connect(NativeSession.java:157) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	at com.mysql.cj.jdbc.ConnectionImpl.connectWithRetries(ConnectionImpl.java:850) ~[mysql-connector-java-8.0.21.jar:8.0.21]
-	... 7 more
-2021-03-17 22:34:01.874 [Druid-ConnectionPool-Create-890018310] INFO  com.alibaba.druid.pool.DruidAbstractDataSource - {dataSource-1} failContinuous is true
+2021-03-17 14:30:20.072 [main] INFO  com.yzz.wam.WamApplication - Starting WamApplication using Java 1.8.0_231 on MECH-YKY with PID 20176 (D:\java\things\YzzUtils\worthlessamodule\target\classes started by harry in D:\java\things\YzzUtils)
+2021-03-17 14:30:20.083 [main] INFO  com.yzz.wam.WamApplication - No active profile set, falling back to default profiles: default
+2021-03-17 14:30:21.195 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9233"]
+2021-03-17 14:30:21.196 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-17 14:30:21.196 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-17 14:30:21.315 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-17 14:30:22.090 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9233"]
+2021-03-17 14:30:22.118 [main] INFO  com.yzz.wam.WamApplication - Started WamApplication in 2.799 seconds (JVM running for 4.536)
+2021-03-17 14:35:25.332 [http-nio-9233-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-17 14:35:25.343 [http-nio-9233-exec-1] INFO  com.yzz.wam.filter.MyFilter - 进入过滤器
+2021-03-17 14:35:25.349 [http-nio-9233-exec-1] INFO  com.yzz.wam.intercepter.MyInterceptors - 进入拦截器
+2021-03-17 14:35:25.443 [http-nio-9233-exec-1] INFO  com.yzz.wam.intercepter.MyInterceptors - 完成拦截器
+2021-03-17 14:35:25.443 [http-nio-9233-exec-1] INFO  com.yzz.wam.intercepter.MyInterceptors - 完成拦截器2
+2021-03-17 14:35:25.445 [http-nio-9233-exec-1] INFO  com.yzz.wam.filter.MyFilter - 完成过滤器
