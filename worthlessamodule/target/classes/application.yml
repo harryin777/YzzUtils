@@ -1,8 +1,0 @@
-server:
-  port: 9233
-spring:
-  thymeleaf:
-    # 模板文件前缀
-    prefix: classpath:/static/
-    # 模板文件后缀
-    suffix: .html

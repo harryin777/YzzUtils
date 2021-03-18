@@ -1,14 +1,17 @@
-2021-03-17 14:30:20.072 [main] INFO  com.yzz.wam.WamApplication - Starting WamApplication using Java 1.8.0_231 on MECH-YKY with PID 20176 (D:\java\things\YzzUtils\worthlessamodule\target\classes started by harry in D:\java\things\YzzUtils)
-2021-03-17 14:30:20.083 [main] INFO  com.yzz.wam.WamApplication - No active profile set, falling back to default profiles: default
-2021-03-17 14:30:21.195 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-9233"]
-2021-03-17 14:30:21.196 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-03-17 14:30:21.196 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-03-17 14:30:21.315 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-03-17 14:30:22.090 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-9233"]
-2021-03-17 14:30:22.118 [main] INFO  com.yzz.wam.WamApplication - Started WamApplication in 2.799 seconds (JVM running for 4.536)
-2021-03-17 14:35:25.332 [http-nio-9233-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-03-17 14:35:25.343 [http-nio-9233-exec-1] INFO  com.yzz.wam.filter.MyFilter - 进入过滤器
-2021-03-17 14:35:25.349 [http-nio-9233-exec-1] INFO  com.yzz.wam.intercepter.MyInterceptors - 进入拦截器
-2021-03-17 14:35:25.443 [http-nio-9233-exec-1] INFO  com.yzz.wam.intercepter.MyInterceptors - 完成拦截器
-2021-03-17 14:35:25.443 [http-nio-9233-exec-1] INFO  com.yzz.wam.intercepter.MyInterceptors - 完成拦截器2
-2021-03-17 14:35:25.445 [http-nio-9233-exec-1] INFO  com.yzz.wam.filter.MyFilter - 完成过滤器
+2021-03-18 20:15:40.127 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.1.6.Final
+2021-03-18 20:15:40.178 [restartedMain] INFO  com.yzz.multidatasource.MultidatasourceApplication - Starting MultidatasourceApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 11056 (E:\Dev\project\YzzUtils\multidatasource\target\classes started by yky in E:\Dev\project\YzzUtils)
+2021-03-18 20:15:40.180 [restartedMain] INFO  com.yzz.multidatasource.MultidatasourceApplication - The following profiles are active: home
+2021-03-18 20:15:41.237 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+2021-03-18 20:15:41.238 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-18 20:15:41.238 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-18 20:15:41.292 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-18 20:15:41.347 [restartedMain] INFO  com.yzz.multidatasource.config.MyConfiguration - defaultDataSource
+2021-03-18 20:15:41.426 [restartedMain] INFO  com.yzz.multidatasource.config.MyConfiguration - prodADataSource
+2021-03-18 20:15:41.447 [restartedMain] INFO  com.yzz.multidatasource.config.MyConfiguration - prodBDataSource
+2021-03-18 20:15:41.467 [restartedMain] INFO  com.yzz.multidatasource.config.MyConfiguration - prodCDataSource
+2021-03-18 20:15:42.806 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+2021-03-18 20:15:42.827 [restartedMain] INFO  com.yzz.multidatasource.MultidatasourceApplication - Started MultidatasourceApplication in 3.091 seconds (JVM running for 3.951)
+2021-03-18 20:15:47.450 [http-nio-8086-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-18 20:15:47.466 [http-nio-8086-exec-1] INFO  com.yzz.multidatasource.aop.DataSourceUsingAspect - 进入前置通知
+2021-03-18 20:15:47.512 [http-nio-8086-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2021-03-18 20:15:47.731 [http-nio-8086-exec-1] INFO  com.yzz.multidatasource.aop.DataSourceUsingAspect - 进入后置通知
