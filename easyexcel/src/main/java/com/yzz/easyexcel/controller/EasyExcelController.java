@@ -2,7 +2,7 @@ package com.yzz.easyexcel.controller;
 
 import com.yzz.easyexcel.service.EasyExcelService;
 import com.yzz.easyexcel.vo.Stu;
-import com.yzz.hub.dto.ResultDTO;
+import com.yzz.hub.vo.ResultVO;
 import com.yzz.hub.vo.StatusCode;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -33,25 +33,25 @@ public class EasyExcelController {
 	
 	@ApiOperation("写入excel")
 	@PostMapping("/writeExcel")
-	public ResultDTO writeExcel(){
+	public ResultVO writeExcel(){
 		try{
 			easyExcelService.writeData();
 		}catch (Exception e){
-			return new ResultDTO(false, StatusCode.error, "失败", null);
+			return new ResultVO(false, StatusCode.error, "失败", null);
 		}
-		return new ResultDTO(true, StatusCode.success, "成功", null);
+		return new ResultVO(true, StatusCode.success, "成功", null);
 	}
 	
 	@ApiOperation("读取excel")
 	@GetMapping("/readExcel")
-	public ResultDTO readExcel(){
+	public ResultVO readExcel(){
 		List<Stu> list = new ArrayList<>();
 		try{
 			list = easyExcelService.readData();
 		}catch (Exception e){
-			return new ResultDTO(false, StatusCode.error, "失败", null);
+			return new ResultVO(false, StatusCode.error, "失败", null);
 		}
-		return ResultDTO.success().data("list", list);
+		return ResultVO.success().data("list", list);
 	}
 
 

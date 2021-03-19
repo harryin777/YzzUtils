@@ -4,7 +4,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
-import com.yzz.hub.dto.ResultDTO;
+import com.yzz.hub.vo.ResultVO;
 import com.yzz.practice_mybatisplus.dao.StuDao;
 import com.yzz.practice_mybatisplus.entity.Stu;
 import com.yzz.practice_mybatisplus.service.StuService;
@@ -54,7 +54,7 @@ public class StuServiceImpl extends ServiceImpl<StuDao, Stu> implements StuServi
 	}
 	
 	@Override
-	public ResultDTO selectBatch(int pageCur, int pageSize) {
+	public ResultVO selectBatch(int pageCur, int pageSize) {
 		PageHelper.startPage(pageCur, pageSize);
 //		List<Stu> listStu = stuDao.selectList(new QueryWrapper<>());
 		List<Stu> listStu = stuDao.getAll();
@@ -67,7 +67,7 @@ public class StuServiceImpl extends ServiceImpl<StuDao, Stu> implements StuServi
 		pageData.put("currentPage", result.getPageNum());
 		pageData.put("list", listStu);
 		
-		return new ResultDTO(true, 200, "查询成功", pageData);
+		return new ResultVO(true, 200, "查询成功", pageData);
 	}
 
 	@Override

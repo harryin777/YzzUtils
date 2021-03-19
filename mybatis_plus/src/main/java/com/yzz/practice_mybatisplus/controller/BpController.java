@@ -1,6 +1,6 @@
 package com.yzz.practice_mybatisplus.controller;
 
-import com.yzz.hub.dto.ResultDTO;
+import com.yzz.hub.vo.ResultVO;
 import com.yzz.practice_mybatisplus.dao.StuDao;
 import com.yzz.practice_mybatisplus.entity.Stu;
 import com.yzz.practice_mybatisplus.service.StuService;
@@ -86,7 +86,7 @@ public class BpController {
 	@ApiOperation("分页查询")
 	@ResponseBody
 	@RequestMapping(value = "/selectBatch", method = RequestMethod.GET)
-	public ResultDTO selectBatch(@RequestParam int pageCur, @RequestParam int pageSize){
+	public ResultVO selectBatch(@RequestParam int pageCur, @RequestParam int pageSize){
 		return stuService.selectBatch(pageCur, pageSize);
 	}
 }

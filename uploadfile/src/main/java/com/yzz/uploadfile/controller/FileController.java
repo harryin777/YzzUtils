@@ -1,6 +1,6 @@
 package com.yzz.uploadfile.controller;
 
-import com.yzz.hub.dto.ResultDTO;
+import com.yzz.hub.vo.ResultVO;
 import com.yzz.uploadfile.service.FileService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -13,7 +13,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
-import java.util.HashMap;
 
 /**
  * @ClassName FileController
@@ -32,13 +31,13 @@ public class FileController {
 
 	@ApiOperation("上传文件")
 	@PostMapping("/upLoadFile")
-	public ResultDTO upLoadFile(@RequestParam MultipartFile file, HttpServletRequest request){
+	public ResultVO upLoadFile(@RequestParam MultipartFile file, HttpServletRequest request){
 		log.info("访问接口:上传文件");
 		String path = request.getSession().getServletContext().getRealPath(request.getRequestURI());
 		log.info(path);
 		boolean back = fileService.upLoadFile(file);
 		log.info("访问接口:上传文件，结束");
-		return ResultDTO.success().data(null);
+		return ResultVO.success().data(null);
 	}
 
 }
