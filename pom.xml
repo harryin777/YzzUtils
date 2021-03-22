@@ -30,6 +30,8 @@
         <module>springsecurity-sso-server</module>
         <module>springsecurity-sso-client2</module>
         <module>springsecurity-sso-client1</module>
+        <module>rpc-server</module>
+        <module>rpc-client</module>
     </modules>
 
     <dependencyManagement>

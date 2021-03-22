@@ -6,6 +6,8 @@
     <file url="file://$PROJECT_DIR$/multidatasource/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mybatis_plus/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mybatis_plus/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rpc-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rpc-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springpractice/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springsecurity-sso-client1/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springsecurity-sso-client2/src/main/java" charset="UTF-8" />

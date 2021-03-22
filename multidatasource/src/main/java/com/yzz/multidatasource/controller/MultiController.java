@@ -4,6 +4,7 @@ import com.yzz.multidatasource.annotation.UsingDataSource;
 import com.yzz.multidatasource.service.AService;
 import com.yzz.multidatasource.service.BService;
 import com.yzz.multidatasource.service.CService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,6 +16,7 @@ import javax.annotation.Resource;
  * @Date 2021/3/15
  * @Version 1.0
  */
+@Slf4j
 @RestController
 public class MultiController {
 	
