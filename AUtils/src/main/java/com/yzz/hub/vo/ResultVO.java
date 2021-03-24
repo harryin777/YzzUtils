@@ -93,7 +93,7 @@ public class ResultVO implements Serializable {
 		return this;
 	}
 
-	public ResultVO data(Map<String, Object> map){
+	public ResultVO data(Map<String, ? extends Object> map){
 		this.setData(map);
 		return this;
 	}

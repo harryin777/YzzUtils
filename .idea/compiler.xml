@@ -7,19 +7,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="worthlessamodule" />
-        <module name="easyexcel" />
-        <module name="uploadfile" />
+        <module name="AUtils" />
         <module name="multidatasource" />
         <module name="springpractice" />
-        <module name="AUtils" />
-        <module name="springsecurity-sso-server" />
-        <module name="springsecurity" />
-        <module name="springsecurity-sso-client2" />
-        <module name="springsecurity-sso-client1" />
-        <module name="mybatis_plus" />
         <module name="rpc-server" />
         <module name="rpc-client" />
+        <module name="springsecurity-sso-client1" />
+        <module name="worthlessamodule" />
+        <module name="springsecurity" />
+        <module name="springsecurity-sso-client2" />
+        <module name="uploadfile" />
+        <module name="mybatis_plus" />
+        <module name="springsecurity-sso-server" />
+        <module name="easyexcel" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
