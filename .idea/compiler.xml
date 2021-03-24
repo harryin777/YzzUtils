@@ -7,13 +7,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="worthlessamodule" />
+        <module name="AUtils" />
         <module name="easyexcel" />
         <module name="uploadfile" />
         <module name="multidatasource" />
         <module name="springpractice" />
-        <module name="AUtils" />
         <module name="springsecurity-sso-server" />
+        <module name="worthlessamodule" />
         <module name="springsecurity" />
         <module name="springsecurity-sso-client2" />
         <module name="springsecurity-sso-client1" />
