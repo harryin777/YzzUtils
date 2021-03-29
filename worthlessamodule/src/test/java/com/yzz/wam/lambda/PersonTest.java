@@ -33,10 +33,10 @@ class PersonTest {
 		personList.add(new Person("abc",4));
 		personList.add(new Person("bad",5));
 		
-		stringList.add("abc");
-		stringList.add("ajjsjj");
-		stringList.add("osbm");
-		stringList.add("osbm666");
+		stringList.add("12abc");
+		stringList.add("12ajjsjj");
+		stringList.add("12osbm");
+		stringList.add("12osbm666");
 	}
 	
 	@DisplayName("测试Consumer用法")
@@ -84,6 +84,13 @@ class PersonTest {
 		System.out.println("自定义类型 拼接名字"+nameCollect);
 		System.out.println("基本类型 拼接"+strAppend);
 		
+	}
+	
+	@DisplayName("修改list中的内容")
+	@Test
+	void testAdjustString(){
+		stringList.forEach(e -> e = e.substring(1,2));
+		System.out.println(stringList);
 	}
 	
 }
