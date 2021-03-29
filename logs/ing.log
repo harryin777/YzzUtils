@@ -1,10 +1,10 @@
-2021-03-20 16:01:29.321 [main] INFO  com.yzz.rpcserver.RpcServerApplication - Starting RpcServerApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 740 (E:\Dev\project\YzzUtils\rpc-server\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-03-20 16:01:29.351 [main] INFO  com.yzz.rpcserver.RpcServerApplication - No active profile set, falling back to default profiles: default
-2021-03-20 16:01:29.974 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2021-03-20 16:01:29.974 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-03-20 16:01:29.974 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-03-20 16:01:30.028 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-03-20 16:01:30.492 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2021-03-20 16:01:30.511 [main] INFO  com.yzz.rpcserver.RpcServerApplication - Started RpcServerApplication in 1.606 seconds (JVM running for 2.391)
-2021-03-20 16:01:30.512 [main] INFO  com.yzz.rpcserver.config.AfterInitialConfig - springboot启动后执行的方法
-2021-03-20 16:01:30.512 [main] INFO  com.yzz.rpcserver.service.impl.ServiceCenter - server start
+2021-03-29 21:46:19.844 [main] INFO  com.yzz.distributelock.DistributelockApplication - Starting DistributelockApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 18996 (E:\Dev\project\YzzUtils\distributelock\target\classes started by yky in E:\Dev\project\YzzUtils)
+2021-03-29 21:46:19.851 [main] INFO  com.yzz.distributelock.DistributelockApplication - The following profiles are active: home
+2021-03-29 21:46:20.493 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+2021-03-29 21:46:20.494 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-29 21:46:20.494 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-29 21:46:20.552 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-29 21:46:20.683 [main] INFO  org.redisson.Version - Redisson 3.14.1
+2021-03-29 21:46:21.358 [main] WARN  org.redisson.cluster.ClusterConnectionManager - ERR This instance has cluster support disabled. channel: [id: 0xae202e07, L:/192.168.23.1:1348 - R:/192.168.23.3:6379] command: (CLUSTER NODES), params: []
+2021-03-29 21:46:23.775 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+2021-03-29 21:46:23.790 [main] INFO  com.yzz.distributelock.DistributelockApplication - Started DistributelockApplication in 4.415 seconds (JVM running for 5.211)

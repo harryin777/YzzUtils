@@ -1,94 +1,32 @@
-2021-03-20 15:16:08.529 [main] INFO  com.yzz.rpcclient.RpcClientApplication - Starting RpcClientApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 10632 (E:\Dev\project\YzzUtils\rpc-client\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-03-20 15:16:08.541 [main] INFO  com.yzz.rpcclient.RpcClientApplication - No active profile set, falling back to default profiles: default
-2021-03-20 15:16:09.695 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
-2021-03-20 15:16:09.695 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-03-20 15:16:09.696 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-03-20 15:16:09.759 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-03-20 15:16:10.369 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
-2021-03-20 15:16:10.390 [main] INFO  com.yzz.rpcclient.RpcClientApplication - Started RpcClientApplication in 2.431 seconds (JVM running for 4.093)
-2021-03-20 15:17:22.011 [main] INFO  com.yzz.rpcclient.RpcClientApplication - Starting RpcClientApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 19016 (E:\Dev\project\YzzUtils\rpc-client\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-03-20 15:17:22.042 [main] INFO  com.yzz.rpcclient.RpcClientApplication - No active profile set, falling back to default profiles: default
-2021-03-20 15:17:22.667 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8082"]
-2021-03-20 15:17:22.667 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-03-20 15:17:22.667 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-03-20 15:17:22.722 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-03-20 15:17:23.184 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8082"]
-2021-03-20 15:17:23.202 [main] INFO  com.yzz.rpcclient.RpcClientApplication - Started RpcClientApplication in 1.623 seconds (JVM running for 2.413)
-2021-03-20 15:17:27.750 [http-nio-8082-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2021-03-20 15:17:27.778 [http-nio-8082-exec-1] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.ClassNotFoundException: com.yzz.rpcserver.service.ServiceForTest] with root cause
-java.lang.ClassNotFoundException: com.yzz.rpcserver.service.ServiceForTest
-	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[?:1.8.0_251]
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:418) ~[?:1.8.0_251]
-	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355) ~[?:1.8.0_251]
-	at java.lang.ClassLoader.loadClass(ClassLoader.java:351) ~[?:1.8.0_251]
-	at java.lang.Class.forName0(Native Method) ~[?:1.8.0_251]
-	at java.lang.Class.forName(Class.java:264) ~[?:1.8.0_251]
-	at com.yzz.rpcclient.rpc.RPCClient.getRemoteProxyObj(RPCClient.java:21) ~[classes/:?]
-	at com.yzz.rpcclient.controller.RPCClientController.testRPC(RPCClientController.java:23) ~[classes/:?]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_251]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_251]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_251]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_251]
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:197) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:141) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:894) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1061) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.41.jar:4.0.FR]
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.3.2.jar:5.3.2]
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.41.jar:4.0.FR]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.3.2.jar:5.3.2]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:888) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1597) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_251]
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_251]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.41.jar:9.0.41]
-	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_251]
-2021-03-20 16:00:00.230 [main] INFO  com.yzz.rpcserver.RpcServerApplication - Starting RpcServerApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 5256 (E:\Dev\project\YzzUtils\rpc-server\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-03-20 16:00:00.236 [main] INFO  com.yzz.rpcserver.RpcServerApplication - No active profile set, falling back to default profiles: default
-2021-03-20 16:00:00.854 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2021-03-20 16:00:00.854 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-03-20 16:00:00.855 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-03-20 16:00:00.918 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-03-20 16:00:00.956 [main] INFO  org.apache.catalina.core.StandardService - Stopping service [Tomcat]
-2021-03-20 16:01:29.321 [main] INFO  com.yzz.rpcserver.RpcServerApplication - Starting RpcServerApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 740 (E:\Dev\project\YzzUtils\rpc-server\target\classes started by yky in E:\Dev\project\YzzUtils)
-2021-03-20 16:01:29.351 [main] INFO  com.yzz.rpcserver.RpcServerApplication - No active profile set, falling back to default profiles: default
-2021-03-20 16:01:29.974 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
-2021-03-20 16:01:29.974 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-2021-03-20 16:01:29.974 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
-2021-03-20 16:01:30.028 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-2021-03-20 16:01:30.492 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
-2021-03-20 16:01:30.511 [main] INFO  com.yzz.rpcserver.RpcServerApplication - Started RpcServerApplication in 1.606 seconds (JVM running for 2.391)
-2021-03-20 16:01:30.512 [main] INFO  com.yzz.rpcserver.config.AfterInitialConfig - springboot启动后执行的方法
-2021-03-20 16:01:30.512 [main] INFO  com.yzz.rpcserver.service.impl.ServiceCenter - server start
+2021-03-29 21:44:16.798 [main] INFO  com.yzz.distributelock.DistributelockApplication - Starting DistributelockApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 20916 (E:\Dev\project\YzzUtils\distributelock\target\classes started by yky in E:\Dev\project\YzzUtils)
+2021-03-29 21:44:16.812 [main] INFO  com.yzz.distributelock.DistributelockApplication - The following profiles are active: home
+2021-03-29 21:44:18.098 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+2021-03-29 21:44:18.098 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-29 21:44:18.099 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-29 21:44:18.172 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-29 21:44:18.330 [main] INFO  org.redisson.Version - Redisson 3.14.1
+2021-03-29 21:44:40.048 [main] WARN  org.redisson.cluster.ClusterConnectionManager - Connection timed out: no further information: /192.168.23.3:7000
+2021-03-29 21:44:42.645 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+2021-03-29 21:44:42.670 [main] INFO  com.yzz.distributelock.DistributelockApplication - Started DistributelockApplication in 26.694 seconds (JVM running for 27.544)
+2021-03-29 21:44:46.419 [http-nio-8086-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-29 21:45:19.679 [main] INFO  com.yzz.distributelock.DistributelockApplication - Starting DistributelockApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 5252 (E:\Dev\project\YzzUtils\distributelock\target\classes started by yky in E:\Dev\project\YzzUtils)
+2021-03-29 21:45:19.686 [main] INFO  com.yzz.distributelock.DistributelockApplication - The following profiles are active: home
+2021-03-29 21:45:20.442 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+2021-03-29 21:45:20.443 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-29 21:45:20.443 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-29 21:45:20.501 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-29 21:45:20.638 [main] INFO  org.redisson.Version - Redisson 3.14.1
+2021-03-29 21:45:42.264 [main] WARN  org.redisson.cluster.ClusterConnectionManager - Connection timed out: no further information: /192.168.23.3:7000
+2021-03-29 21:45:44.673 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+2021-03-29 21:45:44.688 [main] INFO  com.yzz.distributelock.DistributelockApplication - Started DistributelockApplication in 25.473 seconds (JVM running for 26.266)
+2021-03-29 21:45:44.841 [http-nio-8086-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-29 21:46:19.844 [main] INFO  com.yzz.distributelock.DistributelockApplication - Starting DistributelockApplication using Java 1.8.0_251 on DESKTOP-VD7PFJ0 with PID 18996 (E:\Dev\project\YzzUtils\distributelock\target\classes started by yky in E:\Dev\project\YzzUtils)
+2021-03-29 21:46:19.851 [main] INFO  com.yzz.distributelock.DistributelockApplication - The following profiles are active: home
+2021-03-29 21:46:20.493 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8086"]
+2021-03-29 21:46:20.494 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-29 21:46:20.494 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+2021-03-29 21:46:20.552 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-29 21:46:20.683 [main] INFO  org.redisson.Version - Redisson 3.14.1
+2021-03-29 21:46:21.358 [main] WARN  org.redisson.cluster.ClusterConnectionManager - ERR This instance has cluster support disabled. channel: [id: 0xae202e07, L:/192.168.23.1:1348 - R:/192.168.23.3:6379] command: (CLUSTER NODES), params: []
+2021-03-29 21:46:23.775 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8086"]
+2021-03-29 21:46:23.790 [main] INFO  com.yzz.distributelock.DistributelockApplication - Started DistributelockApplication in 4.415 seconds (JVM running for 5.211)

@@ -25,8 +25,37 @@ public class RedisUtils {
 	@SuppressWarnings("unchecked")
 	private static RedisTemplate<String, Object> redisTemplate = SpringUtils
 			.getBean("redisTemplate", RedisTemplate.class);
-	
-	
+
+	/**
+	 * 分布式锁相关操作
+	 */
+	/**
+	 * 原理是从redis中获取到的lockKey的值是不是存在，如果不存在表示写入的是当前值，表示锁获取成功；
+	 * 如果获取到的值存在，再判断是否已经超过了指定的期限，如果超过了指定的期限，则认为锁获取成功，否则认为锁获取失败；
+	 *
+	 * @param lockKey 用于获取锁定的key
+	 * @param timeout 设定的超时时间
+	 * @return true表示获取到锁，false表示未获取到锁
+	 */
+	public static boolean getLock(String lockKey, long timeout) {
+		long now = System.currentTimeMillis();
+		// Redis的GetSet返回的值必须是字符串，否则会抛异常，因而将其转换为字符串
+		String nowTime = String.valueOf(now);
+		String oldTime = null;
+		// 判断用于锁定的key是否已经被设置了值，如果被设置了值，则用于控制后续的处理逻辑不再进行
+		if ((oldTime = (String) redisTemplate.opsForValue().getAndSet(lockKey, nowTime)) != null) {
+			// 检查锁lockKey的值是不是超过了设定的时间，如2秒钟，没有超过则返回，不继续处理后续的任务；
+			// 注：这个逻辑有个问题，就是客户端在2秒钟之内不停的重试，就永远不会进入到后面的处理环节。
+			// 不过针对正常的业务请求这个是可以约定的，针对非正常的请求，被拦截也很正常，所以这个问题不是问题。
+			if (now - Long.parseLong(oldTime) < timeout) {
+				return false;
+			}
+			return true;
+		}
+		return true;
+	}
+
+
 	/** -------------------object相关操作------------------ */
 	public static void setObject(String key,Object object){
 		redisTemplate.opsForValue().set(key, SerializeUtils.serizlize(object));

@@ -1,0 +1,18 @@
+spring:
+  profiles: office
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.160.4:3306/db1?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true
+    username: root
+    password: rootroot
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      # 初始化大小，最小，最大
+      initialSize: 5
+      minIdle: 1
+      maxActive: 50
+      # 配置获取连接等待超时的时间
+      maxWait: 60000
+  redis:
+    host: 192.168.160.4
+    port: 6379

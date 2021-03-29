@@ -1,0 +1,12 @@
+server:
+  port: 8086
+spring:
+  profiles:
+    active: @activatedProperties@
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+mybatis-plus:
+  mapper-locations: mapper/*.xml
+  type-aliases-package: com.yzz.multidatasource.entity
