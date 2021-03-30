@@ -32,6 +32,7 @@
         <module>springsecurity-sso-client1</module>
         <module>rpc-server</module>
         <module>rpc-client</module>
+        <module>distributelock</module>
     </modules>
 
     <dependencyManagement>
