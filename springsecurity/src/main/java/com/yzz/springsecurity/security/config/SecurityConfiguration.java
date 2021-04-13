@@ -66,7 +66,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 						}
 					})
 				.and()
-					.formLogin()//开启表单认证，即使不配置这个，2.3.9默认是表单
+					.formLogin()//开启表单认证，即使不配置这个，2.3.9版本默认是表单
 					.loginPage("/loginM.html")//这里是配置默认的登录页面
 					.loginProcessingUrl("/login123/123")//这里是指登录页面action的url，然后springsecurity就会自动处理登录
 					.successHandler(authenticationSuccess)
