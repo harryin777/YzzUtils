@@ -13,6 +13,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
@@ -30,6 +31,7 @@ import java.util.Map;
 @Slf4j
 @Configuration
 @MapperScan("com.yzz.multidatasource.dao")
+@ComponentScan("com.yzz")
 public class MyConfiguration {
 	
 	@Bean(name = "defaultDataSource")
