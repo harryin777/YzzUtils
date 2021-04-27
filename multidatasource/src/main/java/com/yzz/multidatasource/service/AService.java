@@ -10,5 +10,5 @@ import com.yzz.multidatasource.entity.A;
  */
 public interface AService {
 	
-	A getOne();
+	A getOne(ThreadLocal threadLocal);
 }

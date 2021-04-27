@@ -13,16 +13,22 @@ import java.util.concurrent.Callable;
  * @Date 2021/4/26
  * @Version 1.0
  */
-@Component
-public class MyThread implements Callable<String> {
+
+public class MyThreadInner implements Callable<String> {
 
 	private AService aService;
+	//注意这里用到了threadLocal，因为在下面的线程执行内容里，
+	//才会根据不同的数据源设置不同的threadLocal
+	private ThreadLocal threadLocal = new ThreadLocal();
+	private String dataSource;
 
-	public MyThread(AService service){
+	public MyThreadInner(AService service, String dSource){
 		this.aService = service;
+		this.dataSource = dSource;
 	}
 	@Override
 	public String call() throws Exception {
-		return aService.getOne().toString();
+		threadLocal.set(dataSource);
+		return aService.getOne(threadLocal).toString();
 	}
 }

@@ -1,19 +1,14 @@
 package com.yzz.multidatasource.controller;
 
-import com.yzz.multidatasource.annotation.UsingDataSource;
-import com.yzz.multidatasource.config.MyThread;
+import com.yzz.multidatasource.config.MyThreadOuter;
 import com.yzz.multidatasource.service.AService;
 import com.yzz.multidatasource.service.BService;
 import com.yzz.multidatasource.service.CService;
 import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
-import org.omg.PortableServer.ThreadPolicy;
 import org.springframework.scheduling.concurrent.CustomizableThreadFactory;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.ArrayList;
@@ -54,10 +49,10 @@ public class MultiController {
 
 	private String type;
 
-	@GetMapping("/testa")
-	public String testa(){
-		return aService.getOne().toString();
-	}
+//	@GetMapping("/testa")
+//	public String testa(){
+//		return aService.getOne().toString();
+//	}
 
 	@GetMapping("/testb")
 	public String testb(){
@@ -69,24 +64,17 @@ public class MultiController {
 		return cService.getOne().toString();
 	}
 
-	@GetMapping("/multiThread")
-	public String multiThread(@RequestParam List<String> dataSourceList) throws ExecutionException, InterruptedException {
-		List<String> result = new ArrayList<>();
-		for (int i = 0; i < dataSourceList.size(); i++) {
-			preMethod(dataSourceList.get(i));
-			FutureTask<String> futureTask = replaceThread(aService);
-			result.add(futureTask.get());
+	@PostMapping("/multiThread")
+	public String multiThread(@RequestBody List<List<String>> strList) throws ExecutionException, InterruptedException {
+		List<List<String>> result = new ArrayList<>();
+		for (int i = 0; i < strList.size(); i++) {
+			FutureTask<List<String>> listFutureTask =
+					(FutureTask<List<String>>) threadPoolExecutor.submit(new MyThreadOuter(threadPoolExecutor, strList.get(i), aService));
+			result.add(listFutureTask.get());
 		}
 		return result.toString();
 	}
-
-	public void preMethod(String type){
-		this.type = type;
-	}
-
-	public FutureTask<String> replaceThread(AService aService){
-		return (FutureTask<String>) threadPoolExecutor.submit(new MyThread(aService));
-	}
+	
 	
 	
 }

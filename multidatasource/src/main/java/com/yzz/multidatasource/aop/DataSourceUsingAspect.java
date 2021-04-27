@@ -1,5 +1,6 @@
 package com.yzz.multidatasource.aop;
 
+import com.yzz.hub.utils.ThreadLocalUtil;
 import com.yzz.multidatasource.annotation.UsingDataSource;
 import com.yzz.multidatasource.config.DataSourceContextHolder;
 import com.yzz.multidatasource.controller.MultiController;
@@ -15,6 +16,7 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 import java.lang.reflect.Method;
+import java.util.Map;
 
 /**
  * @ClassName DataSourceUsingAspect
@@ -28,18 +30,16 @@ import java.lang.reflect.Method;
 @Order(-1)
 public class DataSourceUsingAspect {
 
-	@Resource
-	private MultiController multiController;
 
-	@Pointcut("execution(* com.yzz.multidatasource.controller.MultiController.replaceThread(..))")
-	public void pointCut2() {
+//	@Pointcut("execution(* com.yzz.multidatasource.controller.MultiController.replaceThread(..))")
+//	public void pointCut2() {
+//
+//	}
 
-	}
-
-	@Before("pointCut2()")
-	public void doBefore2(JoinPoint point) throws ClassNotFoundException {
+	@Before(value = "pointCut(threadLocal)")
+	public void doBefore2(JoinPoint point, ThreadLocal threadLocal) throws ClassNotFoundException {
 		log.info("进入前置通知2");
-		String type = multiController.getType();
+		String type = (String) threadLocal.get();
 		if("a".equals(type)){
 			log.info("当前数据源A");
 			DataSourceContextHolder.setDataSource(DataSourceEnum.PROD_A.getValue());
@@ -52,10 +52,15 @@ public class DataSourceUsingAspect {
 		}
 	}
 
-	@After("pointCut2()")
-	public void doAfter2() {
+	@After("pointCut(threadLocal)")
+	public void doAfter2(ThreadLocal threadLocal) {
 		log.info("进入后置通知2");
 		DataSourceContextHolder.clear();
+	}
+	// 注意这里的切点是有参数的
+	@Pointcut("execution(* com.yzz.multidatasource.service.impl.*.*(..)) && args(threadLocal)")
+	public void pointCut(ThreadLocal threadLocal) {
+	
 	}
 
 //	// mapper包下所有包，下所有类，所有方法，参数任意，返回值任意

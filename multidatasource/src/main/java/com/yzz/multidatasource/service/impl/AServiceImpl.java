@@ -24,7 +24,7 @@ public class AServiceImpl implements AService {
 
 	@UsingDataSource(value = DataSourceEnum.PROD_A)
 	@Override
-	public A getOne() {
+	public A getOne(ThreadLocal threadLocal) {
 		return aDao.getOne();
 	}
 }
